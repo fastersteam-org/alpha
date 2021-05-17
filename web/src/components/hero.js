@@ -5,6 +5,7 @@ import CTALink from "./CTALink";
 
 import { getGatsbyImageData } from "gatsby-source-sanity";
 import { GatsbyImage } from "gatsby-plugin-image";
+import "./header.module.css"
 const maybeImage = illustration => {
   let img = null;
   if (illustration && illustration.image && illustration.image.asset && !illustration.disabled) {
@@ -44,7 +45,7 @@ function Hero(props) {
         )}
       </div>
       {/* Right col */}
-      <div className="w-full md:w-3/5 py-6 text-center">{img}</div>
+      <div className="w-full md:w-3/5 py-6 text-center z-index">{img}</div>
     </div>
   );
 }
