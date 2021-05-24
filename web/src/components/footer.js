@@ -20,7 +20,12 @@ const Footer = ({ siteTitle }) => (
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <a href="http://bit.ly/FASTERFUNK21">
                 <span className="hover:underline text-gray-800 hover:text-orange-500">
-                  FASTER Education
+                <Link
+                to="/education"
+                className="no-underline hover:underline text-gray-800 hover:text-orange-500"
+              >
+               FASTER Education 
+              </Link>  
                 </span>
               </a>
             </li>
@@ -50,12 +55,15 @@ const Footer = ({ siteTitle }) => (
               </span>
               </a>
             </li>
-          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a 
-              href="https://bit.ly/FASTERGCalendarPub"><span className="no-underline hover:underline text-gray-800 hover:text-orange-500">
-                Events
-              </span>
-              </a>
+          <li className="mt-2 inline-block mr-2 md:block md:mr-0"> 
+              <span className="no-underline hover:underline text-gray-800 hover:text-orange-500">
+                <Link
+                to="/events"
+                className="no-underline hover:underline text-gray-800 hover:text-orange-500"
+              > 
+               Events
+              </Link> 
+              </span> 
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <a 

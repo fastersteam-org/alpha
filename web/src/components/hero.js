@@ -2,6 +2,9 @@ import React from "react";
 import PortableText from "./portableText";
 import clientConfig from "../../client-config";
 import CTALink from "./CTALink";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import GoogleForm from "./GoogleForm.js"
+import GoogleCalendar from "./GoogleCalendar.js"
 
 import { getGatsbyImageData } from "gatsby-source-sanity";
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -31,6 +34,22 @@ function Hero(props) {
   return (
     <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       {/* Left col */}
+      <BrowserRouter>
+        <Switch>
+        <Route exact path="/education">
+        <GoogleForm/>
+          </Route>
+         
+        </Switch>
+      </ BrowserRouter>
+      <BrowserRouter>
+        <Switch>
+        <Route exact path="/events">
+        <GoogleCalendar/>
+          </Route>
+         
+        </Switch>
+      </ BrowserRouter>
       <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
         <p className="uppercase tracking-loose w-full">{props.label}</p>
         <h1 className="my-4 text-5xl font-bold leading-tight">{props.heading}</h1>
