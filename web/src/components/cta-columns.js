@@ -6,9 +6,12 @@ const CTAColumn = ({ width, label, title, body, ctas = [] }) => {
 
   const actions = ctas
     .filter(c => c.title)
-    .map(c => {
+    .map((c, i) => {
       return (
-        <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+        <div
+          key={`${c.title}-${i}`}
+          className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+        >
           <div className="flex items-center justify-start">
             <button className="mx-auto hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">
               {c.title}
@@ -37,7 +40,7 @@ const CTAColumn = ({ width, label, title, body, ctas = [] }) => {
 const CTAColumns = ({ title, columns }) => {
   const cols = columns
     .filter(c => !c.disabled)
-    .map((c, i) => {
+    .map(c => {
       return <CTAColumn width={columns.length} key={c._key} {...c} />;
     });
 

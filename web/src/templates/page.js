@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { graphql } from "gatsby";
 
 import Hero from "../components/hero";
@@ -65,7 +65,7 @@ const Page = props => {
 
   const content = (page._rawContent || [])
     .filter(c => !c.disabled)
-    .map((c, i) => {
+    .map(c => {
       let el = null;
       switch (c._type) {
         case "pricing":

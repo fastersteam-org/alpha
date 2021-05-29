@@ -24,7 +24,7 @@ const Footer = ({ siteTitle }) => (
                 </span>
               </a>
             </li>
-          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <a href="http://bit.ly/FASTERPROS21J">
                 <span className="hover:underline text-gray-800 hover:text-orange-500">
                   FASTER PROS
@@ -43,25 +43,25 @@ const Footer = ({ siteTitle }) => (
         <div className="flex-1">
           <p className="uppercase text-gray-500 md:mb-6">Archive</p>
           <ul className="list-reset mb-6">
-          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a 
-              href=""><span className="no-underline hover:underline text-gray-800 hover:text-orange-500">
-                Speakers
-              </span>
-              </a>
-            </li>
-          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a 
-              href="https://bit.ly/FASTERGCalendarPub"><span className="no-underline hover:underline text-gray-800 hover:text-orange-500">
-                Events
-              </span>
+            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="">
+                <span className="no-underline hover:underline text-gray-800 hover:text-orange-500">
+                  Speakers
+                </span>
               </a>
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a 
-              href="https://github.com/fastersteam/fastersv.github.io/tree/master/archive"><span className="no-underline hover:underline text-gray-800 hover:text-orange-500">
-                Past FASTERCONs
-              </span>
+              <a href="https://bit.ly/FASTERGCalendarPub">
+                <span className="no-underline hover:underline text-gray-800 hover:text-orange-500">
+                  Events
+                </span>
+              </a>
+            </li>
+            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://github.com/fastersteam/fastersv.github.io/tree/master/archive">
+                <span className="no-underline hover:underline text-gray-800 hover:text-orange-500">
+                  Past FASTERCONs
+                </span>
               </a>
             </li>
           </ul>

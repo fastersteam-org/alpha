@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react'
+/* eslint-disable-next-line no-unused-vars */
 import { useDocumentOperation } from '@sanity/react-hooks'
 import { PublishAction } from 'part:@sanity/base/document-actions'
 import client from 'part:@sanity/base/client'
@@ -9,6 +10,7 @@ async function workflowStatus(draft) {
   if (!draft) return null
 
   return client.fetch('* [_id == $id][0]{_rev}', { id: draft._id }).then(doc => {
+    /* eslint-disable-next-line no-console */
     console.log('draft', draft, doc)
     return client.fetch(
       " *[_type == 'workflow.status' && draft == $id && revision == $revision] | order(_updatedAt desc)[0]",
@@ -35,6 +37,7 @@ export function PublishApprovedAction(props) {
   return PublishAction(props)
 }
 
+/* eslint-disable-next-line no-unused-vars */
 export function RejectAction({ id, type, published, draft, onComplete }) {
   if (!draft) return null
   const [reason, setReason] = React.useState('')
@@ -88,6 +91,7 @@ export function RejectAction({ id, type, published, draft, onComplete }) {
   */
 }
 
+/* eslint-disable-next-line no-unused-vars */
 export function Approve({ id, type, published, draft, onComplete }) {
   if (!draft) return null
   const [status, setStatus] = React.useState(null)
@@ -107,6 +111,7 @@ export function Approve({ id, type, published, draft, onComplete }) {
   }
 }
 
+/* eslint-disable-next-line no-unused-vars */
 export function RequestReview({ id, type, draft, onComplete }) {
   if (!draft) return null
   const [status, setStatus] = React.useState(null)

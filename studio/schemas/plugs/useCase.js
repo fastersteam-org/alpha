@@ -6,15 +6,17 @@ export default {
     {
       name: 'useCase',
       type: 'reference',
-      to: [{type: 'useCase'}]
+      to: [{ type: 'useCase' }]
     },
     {
       name: 'caseStudies',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: [{type: 'caseStudy'}]
-      }]
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'caseStudy' }]
+        }
+      ]
     }
   ],
   preview: {
@@ -22,7 +24,8 @@ export default {
       title: 'title',
       useCase: 'useCase.name'
     },
-    prepare({title, useCase}) {
+    /* eslint-disable-next-line no-unused-vars */
+    prepare({ title, useCase }) {
       return {
         title: 'Use case',
         subtitle: useCase

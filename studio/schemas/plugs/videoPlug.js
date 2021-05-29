@@ -19,7 +19,7 @@ export default {
       title: 'title',
       media: 'posterFrame'
     },
-    prepare({title, media}) {
+    prepare({ title, media }) {
       return {
         title: 'Video Plug',
         media,
@@ -119,9 +119,8 @@ export default {
               prepare(selection) {
                 return {
                   title: selection.file,
-                  subtitle: `${Math.round(
-                    selection.size / 1024 / 1024
-                  )}Mb ${selection.type || ''} ${selection.media || ''}`
+                  subtitle: `${Math.round(selection.size / 1024 / 1024)}Mb ${selection.type ||
+                    ''} ${selection.media || ''}`
                 }
               }
             }

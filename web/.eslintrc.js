@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   parser: "@babel/eslint-parser",
   parserOptions: {
@@ -7,15 +9,16 @@ module.exports = {
       jsx: true
     },
     babelOptions: {
-      config: "configFile"
-    },
+      configFile: path.resolve(__dirname, "../babel.config.json")
+    }
   },
   env: {
     node: true,
     browser: true
   },
   rules: {
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "import/no-unresolved": [2, { ignore: ["^(all|part):"] }]
   },
   extends: [
     "eslint:recommended",

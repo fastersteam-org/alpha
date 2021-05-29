@@ -32,7 +32,7 @@ import variation from './objects/variation'
 import openGraph from './objects/openGraph'
 import latex from './latex'
 
-const allPlugs = Object.values(plugs).map((plug) => {
+const allPlugs = Object.values(plugs).map(plug => {
   return { ...plug, fields: plugDefaultFields.concat(plug.fields) }
 })
 
@@ -61,7 +61,7 @@ export default createSchema({
       instagram,
       videoEmbed,
       bodyPortableText,
-      excerptPortableText,
+      excerptPortableText
     ])
-    .concat(allPlugs),
+    .concat(allPlugs)
 })

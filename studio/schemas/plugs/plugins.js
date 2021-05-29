@@ -6,14 +6,11 @@ export default {
     {
       name: 'title',
       type: 'string'
-
     },
     {
       name: 'subtitle',
       type: 'simpleBlockContent'
-
     },
-
     {
       name: 'items',
       type: 'array',
@@ -21,9 +18,11 @@ export default {
         {
           title: 'Plugins',
           type: 'reference',
-          to: [{
-            type: 'plugin'
-          }]
+          to: [
+            {
+              type: 'plugin'
+            }
+          ]
         }
       ]
     }
@@ -31,9 +30,10 @@ export default {
   preview: {
     select: {
       title: 'title',
-      subtitle: 'subtitle',
+      subtitle: 'subtitle'
     },
-    prepare({title, subtitle, media}) {
+    /* eslint-disable-next-line no-unused-vars */
+    prepare({ title, subtitle, media }) {
       return {
         title: 'Plugins',
         subtitle: title

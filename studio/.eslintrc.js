@@ -1,16 +1,40 @@
 const path = require('path')
 
 module.exports = {
-  extends: ['standard', 'standard-react'],
-  parser: 'babel-eslint',
-  rules: {
-    'react/prop-types': 0,
-    'object-curly-spacing': ['error', 'never']
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 2020,
+    ecmaFeatures: {
+      jsx: true
+    },
+    babelOptions: {
+      configFile: path.resolve(__dirname, '../babel.config.json')
+    }
   },
+  env: {
+    node: true,
+    browser: true
+  },
+  rules: {
+    'react/prop-types': 'off',
+    'import/no-unresolved': [
+      2,
+      {
+        ignore: ['^(all|part):', 'katex', '@sanity', 'react-twitter-embed']
+      }
+    ]
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:import/errors',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended'
+  ],
   settings: {
     react: {
       pragma: 'React',
-      version: '16.2.0'
+      version: 'detect'
     }
   }
 }

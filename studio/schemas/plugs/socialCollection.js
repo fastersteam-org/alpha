@@ -7,14 +7,14 @@ export default {
       name: 'items',
       type: 'array',
       validation: Rule => Rule.unique(),
-      of: [{type: 'social'}]
+      of: [{ type: 'social' }]
     }
   ],
   preview: {
     select: {
       items: 'items'
     },
-    prepare: ({items}) => ({
+    prepare: ({ items }) => ({
       title: 'Social testimoinal collection',
       subtitle: `${items.length} tweet(s)`
     })

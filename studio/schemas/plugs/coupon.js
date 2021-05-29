@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default {
   type: 'object',
   name: 'coupon',
@@ -22,7 +20,7 @@ export default {
       title: 'title',
       coupon: 'coupon'
     },
-    prepare({title, coupon}) {
+    prepare({ title, coupon }) {
       return {
         title: `Coupon: ${title}`,
         subtitle: coupon

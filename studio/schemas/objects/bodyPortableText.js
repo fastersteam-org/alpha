@@ -1,10 +1,8 @@
-import React from 'react'
-
 import {
   mathInlineIcon,
   mathIcon,
   highlightIcon,
-  highlightRender,
+  highlightRender
 } from '../components/PortableTextEditorComponents'
 
 export default {

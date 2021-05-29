@@ -1,3 +1,4 @@
+/* eslint-disable-next-line no-unused-vars */
 import defaultResolve, { DraftStatusBadge } from 'part:@sanity/base/document-badges'
 import { WorkflowBadge } from './actions/workflow'
 

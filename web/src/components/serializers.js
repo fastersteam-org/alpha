@@ -1,5 +1,5 @@
+/* eslint-disable react/display-name */
 import React from "react";
-import Figure from "./Figure";
 import MainImage from "./MainImage";
 import ReactPlayer from "react-player";
 import InstagramEmbed from "react-instagram-embed";
