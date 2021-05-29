@@ -40,6 +40,9 @@
     "sanity-plugin-mux-input": "^0.2.1"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.14.4",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-react": "^7.13.13",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^12.0.0",
@@ -50,10 +53,6 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-standard": "^4.0.0",
-    "prettier-eslint-cli": "^4.7.1",
-    "@babel/eslint-parser": "^7.14.4",
-    "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@babel/preset-react": "^7.13.13"
-
+    "prettier-eslint-cli": "^4.7.1"
   }
 }
