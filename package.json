@@ -12,14 +12,18 @@
     "lint": "lerna run lint",
     "postinstall": "lerna bootstrap",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "node  lock-node-version.js"
+    "preinstall": "node  lock-node-version.js",
+    "prepare": "husky install"
   },
   "engineStrict": true,
   "engines": {
     "node": "14"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
     "@sanity/cli": "^2.1.0",
+    "husky": "^6.0.0",
     "lerna": "^3.22.1"
   }
 }
