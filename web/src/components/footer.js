@@ -8,7 +8,7 @@ const Footer = ({ siteTitle }) => (
         <div className="flex-1 mb-6">
           <a
             className="text-blue-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-            href="#"
+            href="/"
           >
             {siteTitle}
           </a>
