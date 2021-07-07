@@ -13,7 +13,6 @@ const Footer = ({ siteTitle }) => (
             {siteTitle}
           </a>
         </div>
-
         <div className="flex-1">
           <p className="uppercase text-gray-500 md:mb-6">Join</p>
           <ul className="list-reset mb-6">

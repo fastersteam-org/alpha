@@ -1,0 +1,14 @@
+.Positioning {
+    padding-left: 250px;
+    padding-top: 100px;
+    
+}
+.video-container{
+    width:100%;
+    margin:0 auto;
+    padding:20px 0;
+    text-align:center;
+    background:red;
+    height:auto;
+}
+
