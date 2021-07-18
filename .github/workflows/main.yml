@@ -28,16 +28,6 @@ jobs:
       # Install root dependencies
       - name: Root Install
         run: npm ci
-      
-      # Install web dependencies
-      - name: Web Install
-        run: npm ci
-        working-directory: ./web
-        
-      # Install studio dependencies
-      - name: Studio Install
-        run: npm ci
-        working-directory: ./studio
 
       # Runs a single command using the runners shell
       - name: ESLint
