@@ -24,10 +24,10 @@
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-react": "^7.13.13",
     "@sanity/cli": "^2.13.0",
-    "eslint": "^7.27.0",
-    "husky": "^6.0.0"
+    "eslint": "^7.27.0"
   },
   "dependencies": {
+    "husky": "^6.0.0",
     "lerna": "^3.22.1"
   }
 }
