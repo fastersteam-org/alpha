@@ -12,7 +12,7 @@
     "lint": "lerna run lint",
     "postinstall": "lerna bootstrap",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "node  lock-node-version.js",
+    "preinstall": "node lock-node-version.js",
     "prepare": "husky install"
   },
   "engineStrict": true,
@@ -25,8 +25,9 @@
     "@babel/preset-react": "^7.13.13",
     "@sanity/cli": "^2.13.0",
     "eslint": "^7.27.0",
-    "husky": "^6.0.0",
-    "i": "^0.3.6",
+    "husky": "^6.0.0"
+  },
+  "dependencies": {
     "lerna": "^3.22.1"
   }
 }
