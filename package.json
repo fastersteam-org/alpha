@@ -18,7 +18,7 @@
   "engines": {
     "node": "14"
   },
-  "devDependencies": {
+  "dependencies": {
     "@sanity/cli": "^2.1.0",
     "lerna": "^3.22.1"
   }
