@@ -2,11 +2,6 @@ import React from "react";
 import PortableText from "./portableText";
 import clientConfig from "../../client-config";
 import CTALink from "./CTALink";
-// import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Link } from 'gatsby';
-import GoogleForm from "./GoogleForm.js"
-import GoogleCalendar from "./GoogleCalendar.js"
-
 import { getGatsbyImageData } from "gatsby-source-sanity";
 import { GatsbyImage } from "gatsby-plugin-image";
 import "./header.module.css"
@@ -34,6 +29,7 @@ function Hero(props) {
   const img = maybeImage(props.illustration);
   return (
     <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      {/* Left col */}
       <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
         <p className="uppercase tracking-loose w-full">{props.label}</p>
         <h1 className="my-4 text-5xl font-bold leading-tight">{props.heading}</h1>

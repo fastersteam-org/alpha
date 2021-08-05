@@ -29,6 +29,7 @@ export default {
         { type: 'ctaColumns' },
         { type: 'ctaPlug' },
         { type: 'googleForm' },
+        { type: 'googleCalendar' },
       ],
     },
   ],

@@ -7,6 +7,7 @@ export {default as ctaPlug} from './ctaPlug'
 export {default as uiComponentRef} from './uiComponent'
 export {default as pricing} from './pricing'
 export {default as googleForm} from './googleForm'
+export {default as googleCalendar} from './googleCalendar'
 /*
 export { default as cta } from './cta'
 export { default as generalArticle } from './article'
