@@ -4,7 +4,6 @@
 .root {
   background-color: white;
   position: relative;
-  z-index: 100;
 }
 
 .wrapper {
@@ -112,8 +111,4 @@
 
 .showNav {
   display: block;
-}
-
-.z-index{
-  z-index: -1;
 }

@@ -13,7 +13,6 @@ import GoogleCalendar from "../components/GoogleCalendar";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
-import "./page.css";
 
 export const query = graphql`
   query PageTemplateQuery($id: String!) {
@@ -78,7 +77,7 @@ const Page = props => {
           el = <InfoRows key={c._key} {...c} />;
           break;
         case "hero":
-          el = <Hero className="z-index" key={c._key} {...c} />;
+          el = <Hero key={c._key} {...c} />;
           break;
         case "ctaColumns":
           el = <CTAColumns key={c._key} {...c} />;
