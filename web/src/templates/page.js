@@ -7,6 +7,7 @@ import CTAColumns from "../components/cta-columns";
 import CTA from "../components/cta";
 import Pricing from "../components/pricing";
 import { TopWave, BottomWave } from "../components/wave";
+import GoogleForm from "../components/GoogleForm";
 
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
@@ -96,9 +97,13 @@ const Page = props => {
               break;
           }
           break;
+        case "googleForm":
+          el = <GoogleForm {...c} />
+          break;
         default:
           el = null;
       }
+
       return el;
     });
 

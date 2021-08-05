@@ -18,16 +18,16 @@ const Footer = ({ siteTitle }) => (
           <p className="uppercase text-gray-500 md:mb-6">Join</p>
           <ul className="list-reset mb-6">
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="http://bit.ly/FASTERFUNK21">
-                <span className="hover:underline text-gray-800 hover:text-orange-500">
-                <Link
+              {/* <a href="http://bit.ly/FASTERFUNK21"> */}
+                {/* <span className="hover:underline text-gray-800 hover:text-orange-500"> */}
+              <Link
                 to="/education"
                 className="no-underline hover:underline text-gray-800 hover:text-orange-500"
               >
                FASTER Education 
               </Link>  
-                </span>
-              </a>
+                {/* </span> */}
+              {/* </a> */}
             </li>
           <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <a href="http://bit.ly/FASTERPROS21J">
@@ -67,9 +67,11 @@ const Footer = ({ siteTitle }) => (
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <a 
-              href="https://github.com/fastersteam/fastersv.github.io/tree/master/archive"><span className="no-underline hover:underline text-gray-800 hover:text-orange-500">
-                Past FASTERCONs
-              </span>
+                href="https://github.com/fastersteam/fastersv.github.io/tree/master/archive"
+              >
+                <span className="no-underline hover:underline text-gray-800 hover:text-orange-500">
+                  Past FASTERCONs
+                </span>
               </a>
             </li>
           </ul>
