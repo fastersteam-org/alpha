@@ -13,7 +13,7 @@ const teamBiography = (props) => {
       company: 'Forbes',
       education: 'NJIT',
       biography: `
-      hristopher De Leon is a NYC based Senior Software Engineer at Forbes who values collaborative team culture, enjoys architecting 
+       is a NYC based Senior Software Engineer at Forbes who values collaborative team culture, enjoys architecting 
       solutions, and sets his team up for success. He is an NJIT alumni with both a Computer Science and Biology B.S. degree. 
       Over his 4 year tenure at Forbes, he has worked on a multitude of front end frameworks, such as React.js and Angular, utilizing 
       the best tools for the project at hand. He is currently leading a team of 4 developers on the core forbes.com team, delivering 
