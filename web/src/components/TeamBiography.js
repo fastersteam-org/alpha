@@ -45,7 +45,7 @@ const teamBiography = (props) => {
       company: 'Forbes',
       education: 'NJIT',
       biography: `
-      Ardees Rabang Ardees Rabang is a production professional with over 20 years experience in the film and television industry. Her expertise spans all areas of production, from pre-production through post-production, marketing and publicity, release to distribution. 
+       is a production professional with over 20 years experience in the film and television industry. Her expertise spans all areas of production, from pre-production through post-production, marketing and publicity, release to distribution. 
       From June 1996 to August 2012, Ardees worked closely with Producer Rick McCallum and Director/Visionary George Lucas at Lucasfilm Ltd on some of the highest grossing movies of all time: the Star Wars Trilogy Special Editions, Star Wars Episode I: The Phantom Menace, Star Wars Episode II: Attack of the Clones, Star Wars Episode III: Revenge of the Sith, and Red Tails. On the television side, she has worked on The Young Indiana Jones Chronicles and the Star Wars live-action television series. 
       From August 2012 to June 2015, Ardees oversaw and managed Director/Writer/Producer Brad Bird’s production company. She assisted Mr. Bird in both public and private professional spheres as well as on location during development, pre-production, production, principal photography, and post-production of his film Tomorrowland. 
       Since 2015, Ardees is the President of Colorful Media (formerly Infidea Studios) and is a Producer for all of their projects. She oversees their feature films, television production, streaming series and microfilms. Colorful Media’s mission is producing content (films, series and biopic micro-stories) in traditional and new mediums with a global view truly reflective of our world. Ardees’ passion for diversity and minority communities goes back to her days as a UC Berkeley student and seeing the lack of diversity and inclusion in the entertainment industry.  She is the Executive Producer of the series GOOD VIBES, an original comedy series that follows four San Francisco Bay Area cannabis female aficionados who are rooted in their sisterhood, their Filipino communities, and their love for medicinal marijuana. 
@@ -141,7 +141,7 @@ const teamBiography = (props) => {
                   </div>
                 </div>
                 <div className={aboutBlurb}>
-                  <p><b>{person.fullName}</b> {person.biography}</p>
+                  <p><span>{person.fullName}</span> {person.biography}</p>
                 </div>
               </section>
             </>
