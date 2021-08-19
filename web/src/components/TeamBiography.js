@@ -2,7 +2,7 @@ import React from 'react';
 import { teamBio_chris, teamBio_Ardees, teamBio_Aldrin, teamBio_Charity, teamBio_Erin, teamBio_Ian, teamBio_Jamie } from '../images/images';
 import * as classes from './TeamBiography.module.css';
 
-const { teamBiographyHeader, teamBiographyContainer, teamBiographyLeft, aboutContainer, aboutQuickInfoHeader, aboutQuickInfo, aboutQuickInfoCell, aboutBlurb } = classes;
+const { teamBiographyHeader, teamBiographyContainer, teamBiographyLeft, aboutContainer, aboutQuickInfoHeader, aboutQuickInfoCell, aboutBlurb } = classes;
 
 const teamBiography = (props) => {
   const MOCK_DATA = [
@@ -125,19 +125,19 @@ const teamBiography = (props) => {
             <>
               <section className={aboutContainer}>
                 <div className={teamBiographyLeft}>
-                  <img src={person.image} alt="headshot image of {person.name}" />
+                  <img src={person.image} className="mr-12" alt="headshot image of {person.name}" />
                   <h3>{person.fullName}</h3>
                   <div className={aboutQuickInfoCell}>
                     <h3 className={aboutQuickInfoHeader}>Roles</h3>
-                    <p className={aboutQuickInfo}>{person.role}</p>
+                    <p className="text-base">{person.role}</p>
                   </div>
                   <div className={aboutQuickInfoCell}>
                     <h3 className={aboutQuickInfoHeader}>Companies</h3>
-                    <p className={aboutQuickInfo}>{person.company}</p>
+                    <p className="text-base">{person.company}</p>
                   </div>
                   <div className={aboutQuickInfoCell}>
                     <h3 className={aboutQuickInfoHeader}>Education</h3>
-                    <p className={aboutQuickInfo}>{person.education}</p>
+                    <p className="text-base">{person.education}</p>
                   </div>
                 </div>
                 <div className={aboutBlurb}>
