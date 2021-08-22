@@ -18,11 +18,11 @@
       }
     },
     {
-      "name": "staging",
-      "title": "Staging",
+      "name": "preview",
+      "title": "Preview",
       "api": {
         "projectId": "3a85zpjt",
-        "dataset": "staging"
+        "dataset": "preview"
       }
     }
   ],
