@@ -2,9 +2,9 @@ import React from "react";
 import PortableText from "./portableText";
 import clientConfig from "../../client-config";
 import CTALink from "./CTALink";
-
 import { getGatsbyImageData } from "gatsby-source-sanity";
 import { GatsbyImage } from "gatsby-plugin-image";
+import "./header.module.css"
 const maybeImage = illustration => {
   let img = null;
   if (illustration && illustration.image && illustration.image.asset && !illustration.disabled) {
@@ -16,7 +16,7 @@ const maybeImage = illustration => {
 
     img = (
       <GatsbyImage
-        className="w-full md:w-4/5 z-50"
+        className="w-full md:w-4/5"
         image={imageData}
         alt={illustration.image.alt}
       />

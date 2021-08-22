@@ -28,6 +28,8 @@ export default {
         { type: 'infoRows' },
         { type: 'ctaColumns' },
         { type: 'ctaPlug' },
+        { type: 'googleForm' },
+        { type: 'googleCalendar' },
       ],
     },
   ],
