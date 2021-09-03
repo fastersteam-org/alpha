@@ -114,6 +114,18 @@ const teamBiography = (props) => {
       finibus metus, nec vestibulum ipsum laoreet nec.
       `
     },
+    {
+      fullName: 'Therese Pamplona',
+      image: '/',
+      role: 'Software Engineer',
+      company: 'Forbes',
+      education: 'NJIT',
+      biography: `
+      is a blank year at UC Berkeley who is majoring in Data Science and minor in Computer Science. 
+      She serves at representative liason to FASTER serving as the External Vice President of undergraduate student organization, 
+      PASAE - Pilipino Association of Scientists Architects and Engineers.
+      `
+    },
   ]
 
   return (
@@ -123,9 +135,9 @@ const teamBiography = (props) => {
         {MOCK_DATA.map((person, index) => {
           return (
             <>
-              <section className={aboutContainer}>
+              <section key={index} className={aboutContainer}>
                 <div className={teamBiographyLeft}>
-                  <img src={person.image} className="mr-12" alt="headshot image of {person.name}" />
+                  <img src={person.image} className="mr-12" alt={person.fullName} />
                   <h3>{person.fullName}</h3>
                   <div className={aboutQuickInfoCell}>
                     <h3 className={aboutQuickInfoHeader}>Roles</h3>
