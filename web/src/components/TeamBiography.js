@@ -7,7 +7,82 @@ const { teamBiographyHeader, teamBiographyContainer, teamBiographyLeft, aboutCon
 const teamBiography = (props) => {
   const MOCK_DATA = [
     {
-      fullName: 'Christopher De Leon',
+      Name: 'Erin Pañgilinan',
+      image: teamBio_Erin,
+      role: 'Software Engineer',
+      company: 'FASTER',
+      education: 'UC Berkeley',
+      biography: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dui non purus pretium,
+      et euismod urna gravida. Donec vitae ipsum nisl. Phasellus turpis quam, ornare ut quam ac, lacinia
+      accumsan augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse congue metus
+      et aliquam hendrerit. Maecenas vel vestibulum metus, a iaculis turpis. Duis non enim sed mi ornare
+      sodales. Sed sed tristique dui, in maximus mi. Ut interdum tincidunt mauris at luctus. Fusce tempus
+      finibus metus, nec vestibulum ipsum laoreet nec.
+      `
+    },
+    {
+      Name: 'Charity Nicholas',
+      image: teamBio_Charity,
+      role: 'Software Engineer',
+      company: 'Forbes',
+      education: 'NJIT',
+      biography: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dui non purus pretium,
+      et euismod urna gravida. Donec vitae ipsum nisl. Phasellus turpis quam, ornare ut quam ac, lacinia
+      accumsan augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse congue metus
+      et aliquam hendrerit. Maecenas vel vestibulum metus, a iaculis turpis. Duis non enim sed mi ornare
+      sodales. Sed sed tristique dui, in maximus mi. Ut interdum tincidunt mauris at luctus. Fusce tempus
+      finibus metus, nec vestibulum ipsum laoreet nec.
+      `
+    },
+    {
+      Name: 'Ian Gomez',
+      image: teamBio_Ian,
+      role: 'Software Engineer',
+      company: 'Forbes',
+      education: 'NJIT',
+      biography: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dui non purus pretium,
+      et euismod urna gravida. Donec vitae ipsum nisl. Phasellus turpis quam, ornare ut quam ac, lacinia
+      accumsan augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse congue metus
+      et aliquam hendrerit. Maecenas vel vestibulum metus, a iaculis turpis. Duis non enim sed mi ornare
+      sodales. Sed sed tristique dui, in maximus mi. Ut interdum tincidunt mauris at luctus. Fusce tempus
+      finibus metus, nec vestibulum ipsum laoreet nec.
+      `
+    },
+    {
+      Name: 'Jamie Cristal',
+      image: teamBio_Jamie,
+      role: 'Software Engineer',
+      company: 'Forbes',
+      education: 'NJIT',
+      biography: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dui non purus pretium,
+      et euismod urna gravida. Donec vitae ipsum nisl. Phasellus turpis quam, ornare ut quam ac, lacinia
+      accumsan augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse congue metus
+      et aliquam hendrerit. Maecenas vel vestibulum metus, a iaculis turpis. Duis non enim sed mi ornare
+      sodales. Sed sed tristique dui, in maximus mi. Ut interdum tincidunt mauris at luctus. Fusce tempus
+      finibus metus, nec vestibulum ipsum laoreet nec.
+      `
+    },
+    {
+      Name: 'Aldrin Montana',
+      image: teamBio_Aldrin,
+      role: 'Software Engineer',
+      company: 'Forbes',
+      education: 'NJIT',
+      biography: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dui non purus pretium,
+      et euismod urna gravida. Donec vitae ipsum nisl. Phasellus turpis quam, ornare ut quam ac, lacinia
+      accumsan augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse congue metus
+      et aliquam hendrerit. Maecenas vel vestibulum metus, a iaculis turpis. Duis non enim sed mi ornare
+      sodales. Sed sed tristique dui, in maximus mi. Ut interdum tincidunt mauris at luctus. Fusce tempus
+      finibus metus, nec vestibulum ipsum laoreet nec.
+      `
+    },
+    {
+      Name: 'Christopher De Leon',
       image: teamBio_chris,
       role: 'Software Engineer',
       company: 'Forbes',
@@ -24,22 +99,7 @@ const teamBiography = (props) => {
       `
     },
     {
-      fullName: 'Erin Pañgilinan',
-      image: teamBio_Erin,
-      role: 'Software Engineer',
-      company: 'FASTER',
-      education: 'UC Berkeley',
-      biography: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dui non purus pretium,
-      et euismod urna gravida. Donec vitae ipsum nisl. Phasellus turpis quam, ornare ut quam ac, lacinia
-      accumsan augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse congue metus
-      et aliquam hendrerit. Maecenas vel vestibulum metus, a iaculis turpis. Duis non enim sed mi ornare
-      sodales. Sed sed tristique dui, in maximus mi. Ut interdum tincidunt mauris at luctus. Fusce tempus
-      finibus metus, nec vestibulum ipsum laoreet nec.
-      `
-    },
-    {
-      fullName: 'Ardees Rabang',
+      Name: 'Ardees Rabang',
       image: teamBio_Ardees,
       role: 'Software Engineer',
       company: 'Forbes',
@@ -55,67 +115,7 @@ const teamBiography = (props) => {
       `
     },
     {
-      fullName: 'Charity Nicholas',
-      image: teamBio_Charity,
-      role: 'Software Engineer',
-      company: 'Forbes',
-      education: 'NJIT',
-      biography: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dui non purus pretium,
-      et euismod urna gravida. Donec vitae ipsum nisl. Phasellus turpis quam, ornare ut quam ac, lacinia
-      accumsan augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse congue metus
-      et aliquam hendrerit. Maecenas vel vestibulum metus, a iaculis turpis. Duis non enim sed mi ornare
-      sodales. Sed sed tristique dui, in maximus mi. Ut interdum tincidunt mauris at luctus. Fusce tempus
-      finibus metus, nec vestibulum ipsum laoreet nec.
-      `
-    },
-    {
-      fullName: 'Ian Gomez',
-      image: teamBio_Ian,
-      role: 'Software Engineer',
-      company: 'Forbes',
-      education: 'NJIT',
-      biography: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dui non purus pretium,
-      et euismod urna gravida. Donec vitae ipsum nisl. Phasellus turpis quam, ornare ut quam ac, lacinia
-      accumsan augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse congue metus
-      et aliquam hendrerit. Maecenas vel vestibulum metus, a iaculis turpis. Duis non enim sed mi ornare
-      sodales. Sed sed tristique dui, in maximus mi. Ut interdum tincidunt mauris at luctus. Fusce tempus
-      finibus metus, nec vestibulum ipsum laoreet nec.
-      `
-    },
-    {
-      fullName: 'Jamie Cristal',
-      image: teamBio_Jamie,
-      role: 'Software Engineer',
-      company: 'Forbes',
-      education: 'NJIT',
-      biography: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dui non purus pretium,
-      et euismod urna gravida. Donec vitae ipsum nisl. Phasellus turpis quam, ornare ut quam ac, lacinia
-      accumsan augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse congue metus
-      et aliquam hendrerit. Maecenas vel vestibulum metus, a iaculis turpis. Duis non enim sed mi ornare
-      sodales. Sed sed tristique dui, in maximus mi. Ut interdum tincidunt mauris at luctus. Fusce tempus
-      finibus metus, nec vestibulum ipsum laoreet nec.
-      `
-    },
-    {
-      fullName: 'Aldrin',
-      image: teamBio_Aldrin,
-      role: 'Software Engineer',
-      company: 'Forbes',
-      education: 'NJIT',
-      biography: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dui non purus pretium,
-      et euismod urna gravida. Donec vitae ipsum nisl. Phasellus turpis quam, ornare ut quam ac, lacinia
-      accumsan augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse congue metus
-      et aliquam hendrerit. Maecenas vel vestibulum metus, a iaculis turpis. Duis non enim sed mi ornare
-      sodales. Sed sed tristique dui, in maximus mi. Ut interdum tincidunt mauris at luctus. Fusce tempus
-      finibus metus, nec vestibulum ipsum laoreet nec.
-      `
-    },
-    {
-      fullName: 'Therese Pamplona',
+      Name: 'Therese Pamplona',
       image: '/',
       role: 'Software Engineer',
       company: 'Forbes',
@@ -137,8 +137,8 @@ const teamBiography = (props) => {
             <>
               <section key={index} className={aboutContainer}>
                 <div className={teamBiographyLeft}>
-                  <img src={person.image} className="mr-12" alt={person.fullName} />
-                  <h3>{person.fullName}</h3>
+                  <img src={person.image} className="mr-12" alt={person.Name} />
+                  <h3>{person.Name}</h3>
                   <div className={aboutQuickInfoCell}>
                     <h3 className={aboutQuickInfoHeader}>Roles</h3>
                     <p className="text-base">{person.role}</p>
@@ -153,7 +153,7 @@ const teamBiography = (props) => {
                   </div>
                 </div>
                 <div className={aboutBlurb}>
-                  <p><span>{person.fullName}</span> {person.biography}</p>
+                  <p><span>{person.Name}</span> {person.biography}</p>
                 </div>
               </section>
             </>
