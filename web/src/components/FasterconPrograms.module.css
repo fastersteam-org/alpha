@@ -1,14 +1,9 @@
-.Speaker1{
+.Speaker{
   display: flex;
   flex-direction: row;
   margin-top:25px;
 }
 
-.Speaker2{
-  display: flex;
-  flex-direction: row;
-  margin-top: 75px;
-}
 
 .Date{
 font-family: Roboto;
@@ -41,4 +36,7 @@ color: grey;
 }
 
 
+hr.solid {
+  border-top: 3px solid #bbb;
+}
 
