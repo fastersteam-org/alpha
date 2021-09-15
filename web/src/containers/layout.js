@@ -10,6 +10,7 @@ const query = graphql`
   }
 `;
 
+
 function LayoutContainer(props) {
   const [showNav, setShowNav] = useState(true);
   function handleShowNav() {
