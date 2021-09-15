@@ -1,6 +1,9 @@
 ## Jira Ticket
 Please include the JIRA ticket this pull request is addressing.
 
+## Test Links
+Please include any relevant URLs for reviewers to test.
+
 ## Please check all that apply
 - [ ] Bug Fix
 - [ ] New Feature
