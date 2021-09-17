@@ -4,7 +4,7 @@
   "version": "1.0.4",
   "scripts": {
     "build": "lerna run build --parallel",
-    "dev": "GATSBY_SANITY_DATASET=preview lerna run dev --parallel",
+    "dev": "cross-env GATSBY_SANITY_DATASET=preview lerna run dev --parallel",
     "format": "lerna run format",
     "build-studio": "lerna bootstrap && (cd studio && npm run build)",
     "build-web": "lerna bootstrap && (cd studio && SANITY_AUTH_TOKEN=$SANITY_DEPLOY_STUDIO_TOKEN npm run graphql-deploy) && (cd web && npm run build)",
@@ -21,5 +21,8 @@
   "dependencies": {
     "@sanity/cli": "^2.1.0",
     "lerna": "^3.22.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
