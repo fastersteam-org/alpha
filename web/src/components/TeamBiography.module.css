@@ -1,0 +1,82 @@
+.teamBiographyHeader {
+  color: var(--color-black);
+  font-size: 36px;
+  padding: 1rem 3rem;
+  background-color: var(--color-white);
+}
+
+.teamBiographyContainer {
+  background-color: var(--color-very-light-gray);
+  color: var(--color-black);
+  padding-top: 2rem;
+}
+
+.teamBiographyLeft img {
+  width: 50%;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 769px) {
+  .teamBiographyLeft img {
+      width: 350px;
+    }
+}
+
+.teamBiographyLeft h3 {
+  font-weight: bold;
+  line-height: 1;
+  margin: .5rem 0;
+}
+
+.aboutContainer {
+  display: block;
+}
+
+@media only screen and (min-width: 769px) {
+  .aboutContainer {
+    display: flex;
+    padding: 1rem 4rem;
+    padding-bottom: 0;  
+  }
+}
+
+.aboutContainer > div:first-of-type {
+    text-align: center;
+}
+
+.aboutContainer img {
+      margin: 0 auto;
+  }
+
+
+.aboutBlurb {
+  margin-left: 3rem;
+}
+
+.aboutQuickInfoCell {
+  margin-bottom: 1rem;
+}
+
+.aboutQuickInfoCell p, h3 {
+  margin: 0;
+}
+
+.aboutQuickInfoHeader {
+  color: var(--color-teal);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div.aboutBlurb {
+  padding: 0 2rem;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+@media only screen and (min-width: 769px) {
+  div.aboutBlurb p > span {
+    color: var(--color-teal);
+    font-weight: bold;
+  }
+
+} 

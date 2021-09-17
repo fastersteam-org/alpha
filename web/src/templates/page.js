@@ -9,6 +9,7 @@ import Pricing from "../components/pricing";
 import { TopWave, BottomWave } from "../components/wave";
 import GoogleForm from "../components/GoogleForm";
 import GoogleCalendar from "../components/GoogleCalendar";
+import teamBiography from "../components/TeamBiography";
 
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
@@ -129,6 +130,7 @@ const Page = props => {
         }}
         gradient={gradient}
       />
+      <teamBiography />
       <div className="pt-24">{content}</div>
     </Layout>
   );
