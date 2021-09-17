@@ -164,7 +164,7 @@ const teamBiography = ({props}) => {
                   <h3>{person.Name}</h3>
                   <span>{person.FASTER_Leadership_Position}</span>
                   <div className={aboutQuickInfoCell}>
-                    <h3 className={aboutQuickInfoHeader}>Roles</h3>
+                    <h3 className={aboutQuickInfoHeader}>WEROJKKL;WEJRKLEWJR</h3>
                     <p className="text-base">{person.Professional_Job_Role}</p>
                   </div>
                   <div className={aboutQuickInfoCell}>
