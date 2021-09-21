@@ -1,12 +1,14 @@
 .aboutSection {
-  background-color: #F9F9F9;
+  /* background-color: #F9F9F9; */
+  background-color: var(--color-very-light-gray);
   padding: 1.5rem;
 }
 
 .informationSlice h3 {
   text-transform: capitalize;
   font-weight: bold;
-  color: #4FC9BA;
+  /* color: #4FC9BA; */
+  color: var(--color-teal);
 }
 
 .informationSlice {
