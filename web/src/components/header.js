@@ -59,7 +59,7 @@ const Header = ({ showNav, siteTitle, scrolled, navMenuItems = [], textWhite = t
           <div className="mt-2 text-black z-20">
             <ul className="flex">
               {navMenuItems.map((menuItem, index) => (
-                <li key={`cta-${index}`} className="mr-3">
+                <li key={`cta-${index}`} className="mr-4 last:mr-0">
                   <CTALink {...menuItem} buttonActionClass="uppercase font-bold text-base"></CTALink>
                 </li>
               ))}
