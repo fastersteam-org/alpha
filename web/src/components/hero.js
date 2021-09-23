@@ -10,7 +10,7 @@ const maybeImage = illustration => {
   if (illustration && illustration.image && illustration.image.asset && !illustration.disabled) {
     const imageData = getGatsbyImageData(
       illustration.image,
-      { maxWidth: 960 },
+      // { maxWidth: 960 },
       clientConfig.sanity
     );
 

@@ -3,7 +3,8 @@ module.exports = {
     extend: {}
   },
   variants: {
-    margin: ['last']
+    margin: ['last'],
+    padding: ['last'],
   },
   plugins: []
 };
