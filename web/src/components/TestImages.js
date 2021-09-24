@@ -10,6 +10,7 @@ const testImages = (props) => {
         return (
         <div>
           {person.Name}
+          <img src={person.image} />
         </div>)
       })}
     </>

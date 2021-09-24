@@ -7,6 +7,11 @@ const { teamBiographyHeader, teamBiographyContainer } = classes;
 
 const TeamBios = ({ props }) => {
 
+/*
+PROBLEM: When passing it to NationalBoard component as
+props. This works fine if omit NationalBoard and just
+have person.Name etc.
+*/
   return (
     <>
       <h2 className={teamBiographyHeader}>FASTER National Board of Directors</h2>
@@ -16,7 +21,6 @@ const TeamBios = ({ props }) => {
             <>
               <NationalBoard
                 Name={person.name}
-                image={person.image}
                 FASTER_Leadership_Position={person.FASTER_Leadership_Position}
                 Professional_Job_Role={person.Professional_Job_Role}
                 Professional_Job_Company={person.Professional_Job_Role}
