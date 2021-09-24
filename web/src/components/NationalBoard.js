@@ -1,15 +1,15 @@
 import React from 'react';
-import classes from './NationalBoard.module.css';
+import * as classes from './NationalBoard.module.css';
 
 const { aboutContainer, teamBiographyLeft, aboutQuickInfoCell, aboutQuickInfoHeader, aboutBlurb } = classes;
 
-const NationalBoard = ({ Name, FASTER_Leadership_Position, Professional_Job_Role,
+const NationalBoard = ({ Name, image, FASTER_Leadership_Position, Professional_Job_Role,
   Professional_Job_Company, Education, biography }) => {
 
   return (
-    <section key={index} className={aboutContainer}>
+    <section className={aboutContainer}>
       <div className={teamBiographyLeft}>
-        {/* <img src={image} className="mr-12" alt={Name} /> */}
+        <img src={image} className="mr-12" alt={Name} />
         <h3>{Name}</h3>
         <span>{FASTER_Leadership_Position}</span>
         <div className={aboutQuickInfoCell}>
