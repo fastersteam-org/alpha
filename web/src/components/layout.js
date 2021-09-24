@@ -3,6 +3,8 @@ import Header from "./header";
 import Footer from "./footer";
 import "../styles/layout.css";
 
+import TeamBios from "./TeamBios";
+
 class Layout extends React.Component {
   constructor(props) {
     super(props);
@@ -51,6 +53,7 @@ class Layout extends React.Component {
           textWhite={textWhite}
         />
         <>{children}</>
+        <TeamBios />
         <Footer siteTitle={siteTitle} />
       </>
     );
