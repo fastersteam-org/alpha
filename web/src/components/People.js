@@ -1,6 +1,6 @@
 import { headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris } from '../images/index';
 
-const FASTER_BOARD = [
+export const nationalBoard = [
   {
     Name: 'Erin Pañgilinan',
     FASTER_Leadership_Position: 'FASTER Founder and National Board President',
@@ -119,4 +119,4 @@ const FASTER_BOARD = [
 
 ]
 
-export { FASTER_BOARD };
+// export { BOARD };

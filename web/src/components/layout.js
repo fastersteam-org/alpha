@@ -3,6 +3,7 @@ import Header from "./header";
 import Footer from "./footer";
 import "../styles/layout.css";
 
+// import TestImages from "./TestImages";
 import TeamBios from "./TeamBios";
 
 class Layout extends React.Component {
@@ -54,6 +55,7 @@ class Layout extends React.Component {
         />
         <>{children}</>
         <TeamBios />
+        {/* <TestImages /> */}
         <Footer siteTitle={siteTitle} />
       </>
     );

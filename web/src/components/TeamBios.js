@@ -1,6 +1,6 @@
 import React from 'react';
 import NationalBoard from './NationalBoard';
-import { FASTER_BOARD } from './People';
+import { nationalBoard } from './People';
 import * as classes from './TeamBios.module.css';
 
 const { teamBiographyHeader, teamBiographyContainer } = classes;
@@ -11,7 +11,7 @@ const TeamBios = ({ props }) => {
     <>
       <h2 className={teamBiographyHeader}>FASTER National Board of Directors</h2>
       <div className={teamBiographyContainer}>
-        {FASTER_BOARD.map((person, index) => {
+        {nationalBoard.map((person, index) => {
           return (
             <>
               <NationalBoard
