@@ -41,6 +41,10 @@
   margin-left: 3rem;
 }
 
+.aboutBlurb span {
+  color: var(--color-teal);
+}
+
 .aboutQuickInfoCell {
   margin-bottom: 1rem;
 }
