@@ -1,4 +1,7 @@
-import { headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris } from '../images/index';
+import {
+  headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris,
+  headshot_Angelica, headshot_BrianPang, headshot_JimmyHua
+} from '../images/index';
 
 export const nationalBoard = [
   {
@@ -119,4 +122,42 @@ export const nationalBoard = [
 
 ]
 
-// export { BOARD };
+export const FASTERCON21_SPEAKERS = [
+  {
+    headshot: headshot_Angelica,
+    Name: 'Angelica Gel Cortez',
+    Roles: 'Founder and Executive Director',
+    Organization: 'Lead Filipino',
+    Education: 'edD University of Southern California',
+    linkedIn: `https://www.linkedin.com/in/angelicamcortez/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: ``
+  },
+  {
+    headshot: headshot_JimmyHua,
+    Name: 'Jimmy Hua',
+    Roles: 'ALA Founder and President, Lead Engineers',
+    Organization: 'Salesforce',
+    Education: 'MS, Comp Sci UCalifornia Polytechnic State University-San Luis Obispo',
+    linkedIn: 'https://www.linkedin.com/in/jimmyhuaus/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6',
+    biography: ``
+  },
+  {
+    headshot: headshot_BrianPang,
+    Name: 'Brian Pang',
+    Roles: `Development Director, & Global Board Chair for ASPIRE`,
+    Organization: `Electronic Arts (EA) Sports`,
+    Education: `BA, Psychology, minor in commerce, The University of British Columbia`,
+    linkedIn: `https://www.linkedin.com/in/brianpang33/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: ``,
+    Roles: ``,
+    Organization: ``,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+
+]

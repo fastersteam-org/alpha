@@ -19,7 +19,7 @@ const TeamBios = ({ props }) => {
                 image={person.image}
                 FASTER_Leadership_Position={person.FASTER_Leadership_Position}
                 Professional_Job_Role={person.Professional_Job_Role}
-                Professional_Job_Company={person.Professional_Job_Role}
+                Professional_Job_Company={person.Professional_Job_Company}
                 Education={person.Education}
                 biography={person.biography} />
             </>
