@@ -1,0 +1,11 @@
+.speakerContainer {
+  background-color: var(--color-light-gray);
+  padding: 2rem;
+}
+
+.speakerInformationFlex {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 2rem;
+
+}
