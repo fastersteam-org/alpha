@@ -1,5 +1,5 @@
 .speakerContainer {
-  background-color: var(--color-light-gray);
+  background-color: #f9f9f9;
   padding: 2rem;
 }
 
@@ -7,5 +7,20 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin-bottom: 2rem;
+  color: var(--color-black);
 
+}
+
+.speakerStats h2 {
+  color: var(--color-teal);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.speakerStats {
+  color: var(--color-black);
+}
+
+.speakerStats > div {
+  margin: 1.5rem auto;
 }
