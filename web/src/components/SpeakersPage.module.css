@@ -1,0 +1,7 @@
+.speakersHeader {
+  color: var(--color-black);
+  font-size: 36px;
+  padding: 1rem 3rem;
+  background-color: var(--color-white);
+  text-align: center;
+}
