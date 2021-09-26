@@ -15,6 +15,7 @@ const TeamBios = ({ props }) => {
           return (
             <>
               <NationalBoard
+                key={index}
                 Name={person.Name}
                 image={person.image}
                 FASTER_Leadership_Position={person.FASTER_Leadership_Position}

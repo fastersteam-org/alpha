@@ -13,7 +13,9 @@ const SpeakersPage = (props) => {
       {FASTERCON21_SPEAKERS.map((speaker, idx) => {
         return (
           <SpeakerProfile
+            key={idx}
             name={speaker.Name}
+            link={speaker.linkedIn}
             headshot={speaker.headshot}
             role={speaker.Roles}
             organization={speaker.Organization}

@@ -22,12 +22,41 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     text-align: left;
-    /* margin-bottom: 2rem; */
+    padding-bottom: 1rem;
   }
 }
 
 .speakerTag {
   width: 100%;
+}
+
+.speakerTag > div {
+  display: flex;
+  justify-content: center;
+}
+
+.speakerTag a {
+  display: block;
+  margin: 0 auto;
+  width: 0;
+}
+
+@media only screen and (min-width: 769px) {
+  .speakerTag a {
+    display: block;
+    width: 10%;
+    margin-left: 0;
+  }
+}
+
+
+.speakerTag svg {
+  fill: rgb(10,102,194);
+}
+
+.speakerTag svg:hover {
+  opacity: .75;
+  cursor: pointer;
 }
 
 .speakerTag img {
