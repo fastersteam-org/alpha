@@ -130,16 +130,19 @@ export const FASTERCON21_SPEAKERS = [
     Organization: 'Lead Filipino',
     Education: 'edD University of Southern California',
     linkedIn: `https://www.linkedin.com/in/angelicamcortez/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: ``
+    biography: `Lorem Ipsum`
   },
   {
     headshot: headshot_JimmyHua,
     Name: 'Jimmy Hua',
     Roles: 'ALA Founder and President, Lead Engineers',
     Organization: 'Salesforce',
-    Education: 'MS, Comp Sci UCalifornia Polytechnic State University-San Luis Obispo',
+    Education: 'MS, Comp Sci California Polytechnic State University-San Luis Obispo',
     linkedIn: 'https://www.linkedin.com/in/jimmyhuaus/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6',
-    biography: ``
+    biography: `
+    By day, Jimmy is a Lead Software Engineer at Salesforce. He has been in the tech industry for over a decade and has almost a dozen patents under his belt. He also has a strong passion for Equality. He was one of the founders of Asiapacforce (Asian Equality Group, ERG) at Salesforce. With over 7 years of experience, the leadership team grew from just a few members to a few thousand members. With his relationship with Salesforce's Office of Equality and his passion for scale; he developed Equality Network for Salesforce. Equality Network is a platform and tool whose mission is "To empower ERGs in their vision, measure their impact to stakeholders, and engage with the community and employees".
+Jimmy has spoken at many conferences over the years, from tech to D&I related. He met many peers of like mind around the of area equality, equity, diversity, and inclusion. And realized that there was not a common community for Asian ERGs. ERG leaders were always looking for advice and others to look to as mentors and leaders in the space. However, they didn't realize, that they themselves are those leaders and mentors that they are looking for. With Samantha Lee and other founding members, they founded the Asian Leaders Alliance.
+    `
   },
   {
     headshot: headshot_BrianPang,
@@ -148,7 +151,7 @@ export const FASTERCON21_SPEAKERS = [
     Organization: `Electronic Arts (EA) Sports`,
     Education: `BA, Psychology, minor in commerce, The University of British Columbia`,
     linkedIn: `https://www.linkedin.com/in/brianpang33/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: ``
+    biography: `Lorem Ipsum`
   },
   {
     headshot: null,

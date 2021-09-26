@@ -39,7 +39,6 @@
   
 .aboutBlurb {
   margin-left: 3rem;
-  margin-top: 0;
 }
 
 .aboutBlurb span {
@@ -64,6 +63,7 @@ div.aboutBlurb {
   padding: 0 2rem;
   width: 100%;
   margin: 2rem auto;
+  margin-top: 0;
 }
 
 @media only screen and (min-width: 769px) {
@@ -71,5 +71,4 @@ div.aboutBlurb {
     color: var(--color-teal);
     font-weight: bold;
   }
- 
 }

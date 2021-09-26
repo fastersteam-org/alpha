@@ -5,7 +5,7 @@ import "../styles/layout.css";
 
 // import TestImages from "./TestImages";
 import TeamBios from "./TeamBios";
-import SpeakerProfile from "./SpeakerProfile";
+import SpeakersPage from "./SpeakersPage";
 
 class Layout extends React.Component {
   constructor(props) {
@@ -56,7 +56,7 @@ class Layout extends React.Component {
         />
         <>{children}</>
         <TeamBios />
-        <SpeakerProfile />
+        <SpeakersPage />
         {/* <TestImages /> */}
         <Footer siteTitle={siteTitle} />
       </>

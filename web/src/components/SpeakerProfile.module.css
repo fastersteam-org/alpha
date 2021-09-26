@@ -1,14 +1,49 @@
 .speakerContainer {
   background-color: #f9f9f9;
-  padding: 2rem;
+}
+
+@media only screen and (min-width: 769px) {
+  .speakerContainer {
+    padding: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    
+  }
 }
 
 .speakerInformationFlex {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin-bottom: 2rem;
   color: var(--color-black);
+  padding: 2rem;
+  text-align: center;
+}
 
+@media only screen and (min-width: 769px) {
+  .speakerInformationFlex {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align: left;
+    /* margin-bottom: 2rem; */
+  }
+}
+
+.speakerTag {
+  width: 100%;
+}
+
+.speakerTag img {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.speakerTag h2 {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 769px) {
+  .speakerTag img {
+    width: 75%;
+    margin: 0 0;
+  }
 }
 
 .speakerStats h2 {
@@ -19,8 +54,29 @@
 
 .speakerStats {
   color: var(--color-black);
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+  .speakerStats  {
+    text-align: left;
+    padding-left: 2rem;
+  }
 }
 
 .speakerStats > div {
   margin: 1.5rem auto;
+  padding: 0 1rem;
 }
+
+@media only screen and (min-width: 769px) {
+  .speakerStats > div {
+    padding: 0;
+  }
+}
+
+
+.speakerStats div:first-child {
+  margin: 0;
+}
+
