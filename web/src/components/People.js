@@ -1,6 +1,6 @@
 import {
   headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris,
-  headshot_Angelica, headshot_BrianPang, headshot_JimmyHua
+  headshot_Angelica, headshot_BrianPang, headshot_JimmyHua, headshot_Ardees, headshot_RonnieDC
 } from '../images/index';
 
 export const nationalBoard = [
@@ -124,6 +124,49 @@ export const nationalBoard = [
 
 export const FASTERCON21_SPEAKERS = [
   {
+    headshot: headshot_Erin,
+    Name: 'Erin Pañgilinan',
+    Roles: 'FASTER Founder and National Board President',
+    Organization: 'GitCoin Kernel Block 4, ALA Leadership Team',
+    Education: 'University of San Francisco',
+    linkedIn: `https://www.linkedin.com/in/erinjerri/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: `
+    Erin is a software engineer, computational designer hybrid, internationally acclaimed author and award-winning 
+    journalist, educator, startup adviser, entrepreneur, investor, and proud UC Berkeley alumnus serving on the first 
+    steering committee of its Asian American Pacific Islander Alumni Association. 
+
+    Erin is founder of 501(c)(3) non-profit, FASTER - Filipinx Americans in STEAM - Science Technology Engineering Arts 
+    and Math and serves as National Board President.
+    
+    She works at the intersections AR VR XR, AI, Data Science, High Performance Computing, biotech, and blockchain, 
+    cryptocurrency, games, and eSports. Her announcements for new ventures (entrepreneurial and in investing funds) 
+    are TBA. 
+    
+    Erin is also widely known as lead author and editor of the O’Reilly Media book: Creating Augmented + Virtual 
+    Realities circulating over 2 dozen countries and translated into Chinese and Korean. 
+    
+    She was selected as a Diversity Fellow in Oculus Launch Pad and University of San Francisco Deep Learning 
+    Program and Data Ethics’ Inaugural Program, and Alley, the diverse entrepreneur program housed at Verizon Ventures. 
+    
+    Early in her career, Erin worked as official electoral campaign staff for Obama For America (2012) 
+    and Ro Khanna (former U.S. Deputy Secretary of Commerce) for Congress (2014). 
+    She was also known as a prolific writer, as a journalist for Philippine News, Hyphen magazine, Change.org. 
+    Her next creative project to be released this fall is her long-awaited chapbook of poetry, where portions of 
+    the proceeds will be donated to the Asian American Journalists Association (AAJA) in memory of her friend, 
+    the late Corky Lee, NYC Chinatown photographer, and Kearny Street Workshop. She is currently writing and 
+    producing a hip hop documentary television series.
+    `
+  },
+  {
+    headshot: headshot_Charity,
+    Name: `Charity Nicolas`,
+    Roles: `ERM, Principal Consultant`,
+    Organization: ` FASTER National Board Secretary, ALA Leadership Team, Lumitala Founder`,
+    Education: `UC-Berkeley`,
+    linkedIn: `https://www.linkedin.com/in/charity-nicolas-mph-a92944116/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: ``
+  },
+  {
     headshot: headshot_Angelica,
     Name: 'Angelica Gel Cortez',
     Roles: 'Founder and Executive Director',
@@ -155,6 +198,65 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
   },
   {
     headshot: null,
+    Name: `Jeamarie marien de Paz`,
+    Roles: `AlphaInsights, Senior Associate `,
+    Organization: `Demand Generation, ALA Leadership Team`,
+    Education: `Baruch College`,
+    linkedIn: `https://www.linkedin.com/in/jeamarie-marien-de-paz/`,
+    biography: ``
+  },
+  {
+    headshot: headshot_Jamie,
+    Name: `Jamie Cristal`,
+    Roles: `Airbnb, Lead Design Systems`,
+    Organization: `FASTER Creative Director`,
+    Education: ``,
+    linkedIn: `https://www.linkedin.com/in/jamiecristal/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: ``
+  },
+  {
+    headshot: headshot_Ardees,
+    Name: `Ardees Rabang `,
+    Roles: `Fenix TLS, Head of Production at Fenix TLS, (Formerly Lucasfilm - first Pinay in production at Lucasfilm)`,
+    Organization: `FASTER Creative Adviser`,
+    Education: `UC-Berkeley`,
+    linkedIn: `https://www.linkedin.com/in/ardees-rabang/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: ``
+  },
+  {
+    headshot: headshot_RonnieDC,
+    Name: `Ronnie del Carmen `,
+    Roles: `Writer and Director`,
+    Organization: `Netflix`,
+    Education: `University of Santo Tomas`,
+    linkedIn: `https://www.linkedin.com/in/ronnie-del-carmen-59261a3/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Giovanni Nakpil`,
+    Roles: `Senior Design Evangelist and Creative Director`,
+    Organization: `Adobe`,
+    Education: `Seneca College`,
+    linkedIn: `https://www.linkedin.com/in/giovanni-nakpil-bb94151/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Anthony Francisco`,
+    Roles: `Senior Visual Development Artist`,
+    Organization: `Marvel Studios`,
+    Education: `University of Santo Tomas`,
+    linkedIn: `https://www.linkedin.com/in/anthony-francisco-2236861/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: ``
+  },
+
+]
+
+/* Copy and paste to add
+
+  {
+    headshot: null,
     Name: ``,
     Roles: ``,
     Organization: ``,
@@ -163,4 +265,4 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     biography: ``
   },
 
-]
+  */
