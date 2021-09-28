@@ -174,7 +174,7 @@ export const FASTERCON21_SPEAKERS = [
     Organization: 'Lead Filipino',
     Education: 'edD University of Southern California',
     linkedIn: `https://www.linkedin.com/in/angelicamcortez/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: `Lorem Ipsum`
+    biography: ``
   },
   {
     headshot: headshot_JimmyHua,
@@ -222,7 +222,39 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     Organization: `FASTER Creative Adviser`,
     Education: `UC-Berkeley`,
     linkedIn: `https://www.linkedin.com/in/ardees-rabang/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: ``
+    biography: `
+    Ardees Rabang is a production professional with over 25 years experience in the film and television
+industry. Her expertise spans all areas of production, from pre-production through post-production,
+marketing and publicity, release to distribution.
+From June 1996 to August 2012, Ardees worked closely with Producer Rick McCallum and
+Director/Visionary George Lucas at Lucasfilm Ltd on some of the highest grossing movies of all
+time: the Star Wars Trilogy Special Editions, Star Wars Episode I: The Phantom Menace, Star
+Wars Episode II: Attack of the Clones, Star Wars Episode III: Revenge of the Sith, and Red Tails.
+On the television side, she has worked on The Young Indiana Jones Chronicles and the Star Wars
+live-action television series.
+From August 2012 to June 2015, Ardees oversaw and managed Director/Writer/Producer Brad
+Bird’s production company. She assisted Mr. Bird in both public and private professional spheres as
+well as on location during development, pre-production, production, principal photography, and
+post-production of his film Tomorrowland.
+From June 2015 to January 2019, Ardees was the President of Colorful Media (formerly Infidea
+Studios) and was a Producer for all of their projects. She oversaw their feature films, television
+production, streaming series and microfilms. Colorful Media’s mission is producing content (films,
+series and biopic micro-stories) in traditional and new mediums with a global view truly reflective of
+our world. Ardees’ passion for diversity and minority communities goes back to her days as a UC
+Berkeley student and seeing the lack of diversity and inclusion in the entertainment industry. She is
+the Executive Producer of the series GOOD VIBES, an original comedy series that follows four San
+Francisco Bay Area cannabis female aficionados who are rooted in their sisterhood, their Filipino
+communities, and their love for medicinal marijuana.
+From April 2017 to August 2018, Ardees worked as Creative Project Manager in the
+Media+Marketing Department for Science 37, Inc. and oversaw the delivery of 300+ short form
+videos.
+Since January 2019, Ardees is the Head of Production for Fenix TLS, a language technology and
+media company based in Hong Kong, and MINEO, a fintech company based in Hong Kong.
+Since September 2019, Ardees has been working with Evergrain Studios as an Executive
+Producer/Producer.
+Ardees is currently developing and producing various feature films and series.
+    
+    `
   },
   {
     headshot: headshot_RonnieDC,
@@ -245,7 +277,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
   {
     headshot: null,
     Name: `Anthony Francisco`,
-    Roles: `Senior Visual Development Artist`,
+    Roles: `former Senior Visual Development Artist aka Father of Baby Groot`,
     Organization: `Marvel Studios`,
     Education: `University of Santo Tomas`,
     linkedIn: `https://www.linkedin.com/in/anthony-francisco-2236861/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
@@ -288,20 +320,14 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
   {
     headshot: headshot_Ian,
     Name: `Ian Gomez`,
-    Roles: `Head of Customer Programs`,
-    Organization: ``,
-    Education: ``,
+    Roles: `Head of Marketing Programs FASTER Marketing Director - Sponsorships`,
+    Organization: `Grid.ai`,
+    Education: `UCSB`,
     linkedIn: `https://www.linkedin.com/in/ianwaltergomez/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: ``
-  },
-  {
-    headshot: null,
-    Name: `Jarett Bato`,
-    Roles: ``,
-    Organization: ``,
-    Education: ``,
-    linkedIn: null,
-    biography: ``
+    biography: `Ian's inspirational story transitioning from a job at Gucci, to HP and scaling marketing at H20.ai to 
+    becoming Head of Marketing at Grid.ai proves that raw grit and an unparalleled sense of style and taste, 
+    rising to high levels of success in the tech industry is possible. Ian is our main chair for FASTERCON sponsorships. 
+    Ian graduated from UCSB and is originally from Union City, California.`
   },
   {
     headshot: headshot_JeremyJoachim,
@@ -341,8 +367,8 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
   },
   {
     headshot: null,
-    Name: `Stephanie Deo`,
-    Roles: `Senior Technical Data Analys`,
+    Name: `Stefanie Deo`,
+    Roles: `Senior Technical Data Analyst`,
     Organization: `GoFundMe`,
     Education: ``,
     linkedIn: null,
