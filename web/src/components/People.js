@@ -1,6 +1,7 @@
 import {
   headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris,
-  headshot_Angelica, headshot_BrianPang, headshot_JimmyHua, headshot_Ardees, headshot_RonnieDC
+  headshot_Angelica, headshot_BrianPang, headshot_JimmyHua, headshot_Ardees, headshot_RonnieDC, headshot_NickAbasolo, 
+  headshot_LisaMaione
 } from '../images/index';
 
 export const nationalBoard = [
@@ -234,7 +235,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
   },
   {
     headshot: null,
-    Name: `Giovanni Nakpil`,
+    Name: `Gio Nakpil`,
     Roles: `Senior Design Evangelist and Creative Director`,
     Organization: `Adobe`,
     Education: `Seneca College`,
@@ -250,7 +251,150 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     linkedIn: `https://www.linkedin.com/in/anthony-francisco-2236861/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
     biography: ``
   },
-
+  {
+    headshot: headshot_NickAbasolo,
+    Name: `Nick Abasolo`,
+    Roles: `Product Designer`,
+    Organization: `DiaPad`,
+    Education: ``,
+    linkedIn: `https://www.linkedin.com/in/nickabasolo/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Eric Cruz`,
+    Roles: `Executive Creative Director Design`,
+    Organization: `Digital Kitchen | Innovation.Story.Xperience Ex - W+K | AKQA | Leo Burnett | Sid Lee |`,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: headshot_LisaMaione,
+    Name: `Lisa Maione`,
+    Roles: `Executive Creative Director Design`,
+    Organization: `Digital Kitchen | Innovation.Story.Xperience Ex - W+K | AKQA | Leo Burnett | Sid Lee |`,
+    Education: ``,
+    linkedIn: `https://www.linkedin.com/in/lmaione/`,
+    biography: ``
+  },
+  {
+    headshot: headshot_Ian,
+    Name: `Ian Gomez`,
+    Roles: `Head of Customer Programs`,
+    Organization: ``,
+    Education: ``,
+    linkedIn: `https://www.linkedin.com/in/ianwaltergomez/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Jarett Bato`,
+    Roles: ``,
+    Organization: ``,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Jeremy Joachim`,
+    Roles: ``,
+    Organization: ``,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Emilio Passi`,
+    Roles: `Director of Design Technology `,
+    Organization: `Punchcut`,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Noelle Saldana`,
+    Roles: ``,
+    Organization: ``,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Liezl Puzon`,
+    Roles: ``,
+    Organization: ``,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Stephanie Deo`,
+    Roles: `Senior Technical Data Analys`,
+    Organization: `GoFundMe`,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Claudine Hernandez`,
+    Roles: ` Senior Data Scientist`,
+    Organization: `Claritas`,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Jennifer Oliveros Manilay`,
+    Roles: `Professor`,
+    Organization: `UC Merced`,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Dani Carino`,
+    Roles: ``,
+    Organization: ``,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Rev. Fr. Nicanor Pier Giorgo Austriaco `,
+    Roles: ``,
+    Organization: ``,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Jannelle So`,
+    Roles: ``,
+    Organization: ``,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
+  {
+    headshot: null,
+    Name: `Leezel Tanglao`,
+    Roles: `VP, COVID19 TaskForce Co-Chair, FASTER Adviser`,
+    Organization: `FYLPRO`,
+    Education: ``,
+    linkedIn: null,
+    biography: ``
+  },
 ]
 
 /* Copy and paste to add

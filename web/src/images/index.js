@@ -11,7 +11,9 @@ import headshot_Angelica from './speakers-2021/headshot_Angelica.jpg';
 import headshot_BrianPang from './speakers-2021/headshot_BrianPang.jpg';
 import headshot_JimmyHua from './speakers-2021/headshot_JimmyHua.jpg';
 import headshot_RonnieDC from './speakers-2021/headshot_RonnieDelCarmen.png';
+import headshot_NickAbasolo from './speakers-2021/headshot_NickAbasolo.jpg';
+import headshot_LisaMaione from './speakers-2021/headshot_LisaMaione.jpg';
 
 export { headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris, headshot_Ardees, headshot_RonnieDC }
 
-export { headshot_Angelica, headshot_BrianPang, headshot_JimmyHua }
+export { headshot_Angelica, headshot_BrianPang, headshot_JimmyHua, headshot_NickAbasolo, headshot_LisaMaione }
