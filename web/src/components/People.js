@@ -1,7 +1,7 @@
 import {
   headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris,
-  headshot_Angelica, headshot_BrianPang, headshot_JimmyHua, headshot_Ardees, headshot_RonnieDC, headshot_NickAbasolo, 
-  headshot_LisaMaione
+  headshot_Angelica, headshot_BrianPang, headshot_JimmyHua, headshot_Ardees, headshot_RonnieDC, headshot_NickAbasolo,
+  headshot_LisaMaione, headshot_JenniferOManilay, headshot_JeamarieDePaz, headshot_JannelleSo
 } from '../images/index';
 
 export const nationalBoard = [
@@ -198,8 +198,8 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     biography: `Lorem Ipsum`
   },
   {
-    headshot: null,
-    Name: `Jeamarie marien de Paz`,
+    headshot: headshot_JeamarieDePaz,
+    Name: `Jeamarie Marien De Paz`,
     Roles: `AlphaInsights, Senior Associate `,
     Organization: `Demand Generation, ALA Leadership Team`,
     Education: `Baruch College`,
@@ -276,7 +276,14 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     Organization: `Digital Kitchen | Innovation.Story.Xperience Ex - W+K | AKQA | Leo Burnett | Sid Lee |`,
     Education: ``,
     linkedIn: `https://www.linkedin.com/in/lmaione/`,
-    biography: ``
+    biography: `
+    Lisa Maione is a designer, artist and educator. She is an Assistant Professor of Graphic Design program at Kansas 
+    City Art Institute and serves as an active member of AIGA-KC, UXPA-KC and genEquality working boards. Through her 
+    independent design studio For Instance, she designs publications, strategies and experiences for a range of clients 
+    including artists, architects and cultural institutions. Her ongoing research interrogates the screen as a raw material
+    of perception, seeks expansive language and encouraging modes of imagination in design/creative practices, and tracks 
+    down and connects design histories.
+    `
   },
   {
     headshot: headshot_Ian,
@@ -351,13 +358,26 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     biography: ``
   },
   {
-    headshot: null,
+    headshot: headshot_JenniferOManilay,
     Name: `Jennifer Oliveros Manilay`,
     Roles: `Professor`,
     Organization: `UC Merced`,
     Education: ``,
-    linkedIn: null,
-    biography: ``
+    linkedIn: `https://www.linkedin.com/in/jennifer-o-manilay-she-her-hers-a2b55513/`,
+    biography: `
+    Jennifer is a Professor and Chair of the Molecular and Cell Biology Department (http://mcb.ucmerced.edu/) at 
+    the University of California, Merced, and Jennifer joined UC Merced as one of the founding faculty in 2005.  
+    Jennifer is a research scientist, educator, mentor, administrative chair and advisor to undergraduates, graduate students 
+    and faculty. The Manilay Laboratory studies questions at the crossroads for developmental biology, stem 
+    cell biology and immunology.  
+    Our laboratory investigates the development of mouse hematopoietic cells as they mature from the hematopoietic stem 
+    cells to myeloid and lymphoid cell types. Stem cells interact closely with their microenvironmental niche resulting in 
+    stem cell self-renewal and differentiation. We have been particularly focused on comparing the development of bone marrow 
+    niche and thymic microenvironments at the fetal and adult stages, as well as the signal transduction pathways and
+    specific genes that are important in the regulation of the development of the diverse cell types in each 
+    microenvironment.  In recent years, we have joined the field of osteoimmunology, which studies the interactions 
+    between the skeletal and immune systems.  
+    `
   },
   {
     headshot: null,
@@ -378,13 +398,18 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     biography: ``
   },
   {
-    headshot: null,
+    headshot: headshot_JannelleSo,
     Name: `Jannelle So`,
-    Roles: ``,
-    Organization: ``,
-    Education: ``,
-    linkedIn: null,
-    biography: ``
+    Roles: `Host / Executive Producer`,
+    Organization: `TFC (The Filipino Channel)`,
+    Education: `University of California, Los Angeles`,
+    linkedIn: `https://www.linkedin.com/in/jannelle-so-perkins-6746b52a/`,
+    biography: `
+    Jannelle So is a Filipino-American media pioneer, who made a name for herself as the creator, original host, and producer of “Kababayan TODAY” on KSCI-TV LA18. The show that ran for 8 and a half years under Jannelle's leadership, was also the longest-running Filipino daily talk show outside of the Philippines. 
+    In 2015, Jannelle launched her own company, Jannelle So Productions, Inc., and started a new weekly magazine/lifestyle show in 2017 called, “SO Jannelle.” The magazine-style talk show features stories of inspiring Filipinos, and airs every Sunday 4:30pm PT on The Filipino Channel (TFC). It replays on ABS-CBN News Channel (ANC) and over-the-air distribution on KNET Channel 25.5 in Southern CA. Jannelle and her team also produce videos for corporate clients. 
+    Committed to uplifting the Filipino American community, Jannelle also serves as Director of Strategic Partnerships of the National Federation of Filipino American Associations (NaFFAA) and on the Board of NaFFAA Greater Los Angeles Region. In 2012, Jannelle was the youngest person elected to the Board of Directors for Gawad Kalinga-USA, a non-profit group aiming to eradicate poverty in the Philippines. 
+    Jannelle enjoys life in LA with her husband Lester Perkins, and their children Lilly and Leo. 
+    `
   },
   {
     headshot: null,
