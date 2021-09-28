@@ -1,7 +1,7 @@
 import {
   headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris,
   headshot_Angelica, headshot_BrianPang, headshot_JimmyHua, headshot_Ardees, headshot_RonnieDC, headshot_NickAbasolo,
-  headshot_LisaMaione, headshot_JenniferOManilay, headshot_JeamarieDePaz, headshot_JannelleSo
+  headshot_LisaMaione, headshot_JenniferOManilay, headshot_EmilioPassi, headshot_EricCruz, headshot_JeremyJoachim, headshot_NoelleSaldana, headshot_Claudine, headshot_JeamarieDePaz, headshot_JannelleSo
 } from '../images/index';
 
 export const nationalBoard = [
@@ -261,7 +261,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     biography: ``
   },
   {
-    headshot: null,
+    headshot: headshot_EricCruz,
     Name: `Eric Cruz`,
     Roles: `Executive Creative Director Design`,
     Organization: `Digital Kitchen | Innovation.Story.Xperience Ex - W+K | AKQA | Leo Burnett | Sid Lee |`,
@@ -304,7 +304,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     biography: ``
   },
   {
-    headshot: null,
+    headshot: headshot_JeremyJoachim,
     Name: `Jeremy Joachim`,
     Roles: ``,
     Organization: ``,
@@ -313,7 +313,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     biography: ``
   },
   {
-    headshot: null,
+    headshot: headshot_EmilioPassi,
     Name: `Emilio Passi`,
     Roles: `Director of Design Technology `,
     Organization: `Punchcut`,
@@ -322,7 +322,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     biography: ``
   },
   {
-    headshot: null,
+    headshot: headshot_NoelleSaldana,
     Name: `Noelle Saldana`,
     Roles: ``,
     Organization: ``,
@@ -349,7 +349,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     biography: ``
   },
   {
-    headshot: null,
+    headshot: headshot_Claudine,
     Name: `Claudine Hernandez`,
     Roles: ` Senior Data Scientist`,
     Organization: `Claritas`,
