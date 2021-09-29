@@ -1,7 +1,7 @@
 import {
   headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris,
   headshot_Angelica, headshot_BrianPang, headshot_JimmyHua, headshot_Ardees, headshot_RonnieDC, headshot_NickAbasolo,
-  headshot_LisaMaione, headshot_JenniferOManilay, headshot_EmilioPassi, headshot_EricCruz, headshot_JeremyJoachim, headshot_NoelleSaldana, headshot_Claudine, headshot_JeamarieDePaz, headshot_JannelleSo
+  headshot_LisaMaione, headshot_JenniferOManilay, headshot_EmilioPassi, headshot_GioNakpil, headshot_AnthonyFrancisco, headshot_EricCruz, headshot_JeremyJoachim, headshot_NoelleSaldana, headshot_Claudine, headshot_JeamarieDePaz, headshot_JannelleSo
 } from '../images/index';
 
 export const nationalBoard = [
@@ -75,7 +75,7 @@ export const nationalBoard = [
     image: headshot_Jamie,
     Professional_Job_Company: 'Airbnb',
     Professional_Job_Role: 'Design Leader',
-    Education: 'NJIT',
+    Education: `Visual Communication Design, CSUN`,
     biography: `
     is a San Francisco based creative focused on inclusive design within the digital technology space. 
     After working at a boutique Los Angeles design studio, she pivoted into tech and has spent majority of her design 
@@ -159,27 +159,34 @@ export const FASTERCON21_SPEAKERS = [
     `
   },
   {
-    headshot: headshot_Charity,
-    Name: `Charity Nicolas`,
-    Roles: `ERM, Principal Consultant`,
-    Organization: ` FASTER National Board Secretary, ALA Leadership Team, Lumitala Founder`,
-    Education: `UC-Berkeley`,
-    linkedIn: `https://www.linkedin.com/in/charity-nicolas-mph-a92944116/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: ``
-  },
-  {
     headshot: headshot_Angelica,
     Name: 'Angelica Gel Cortez',
-    Roles: 'Founder and Executive Director',
-    Organization: 'Lead Filipino',
-    Education: 'edD University of Southern California',
+    Roles: 'Founder and Executive Director, Vice President',
+    Organization: 'Lead Filipino,  Justice, Equity, Diversity & Inclusion at Uplift Family',
+    Education: 'edD University of Southern California, BA Political Science San Jose State University',
     linkedIn: `https://www.linkedin.com/in/angelicamcortez/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: ``
+    biography: `
+    Dr. Angelica Cortez’s professional background blends legislative advocacy, nonprofit development, and community 
+    organizing. She has worked for the California State Assembly and advocacy organizations in San Jose and Los Angeles, 
+    focused on civil rights and economic competitiveness. In 2015, she founded San Jose-based nonprofit, LEAD Filipino, 
+    which has grown to serve hundreds of local and regional community members each year. Under her leadership, 
+    the organization has been recognized by state legislators and most recently, embarked in a partnership with 
+    Stanford Cancer Institute to study Cancer prevention in Filipinx communities. She frequently guest speaks and writes 
+    on issues of Queer identity, race and politics, and civics in Asian American communities.
+
+    Dr. Cortez is currently the Vice President of Justice, Equity, Diversity and Inclusion for Uplift Family Services, 
+    the most comprehensive mental and behavioral health services provider in California. She is active in several 
+    political and nonprofit groups in San Jose. She currently serves on the Boards for the Bulosan Center for Filipino 
+    Studies at UC Davis and the City of San Jose's Reimagining Public Safety Committee.
+
+    She holds a BA in Political Science from San Jose State University, a Master of Public Administration (MPA) from the 
+    University of San Francisco, and a Doctor of Education (EdD) from the University of Southern California
+    `
   },
   {
     headshot: headshot_JimmyHua,
     Name: 'Jimmy Hua',
-    Roles: 'ALA Founder and President, Lead Engineers',
+    Roles: `Engineer, Innovator, Entrepreneur, Investor and Philanthropist ALA Founder and President, Lead Engineers`,
     Organization: 'Salesforce',
     Education: 'MS, Comp Sci California Polytechnic State University-San Luis Obispo',
     linkedIn: 'https://www.linkedin.com/in/jimmyhuaus/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6',
@@ -195,25 +202,73 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     Organization: `Electronic Arts (EA) Sports`,
     Education: `BA, Psychology, minor in commerce, The University of British Columbia`,
     linkedIn: `https://www.linkedin.com/in/brianpang33/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: `Lorem Ipsum`
+    biography: `
+    𝙈𝙮 𝙈𝙞𝙨𝙨𝙞𝙤𝙣: I advocate, uplift, and help advance the underrepresented, underserved, and marginalized in the workplace & beyond, through community development and driving DEIB causes.
+    I am a highly self-motivated and results-driven professional committed to servant leadership, supporting teams 
+    and organizations to success, while developing talent.
+    I have 17 years of games industry experience, a proven track record demonstrating strong analytical and problem 
+    solving skills, a relentless drive to help others, high proficiency in leading medium sized teams, strategic planning, 
+    and execution.
+    I enjoy working with high calibre people towards common, high stakes goals, while helping each other grow and succeed, 
+    in a fast-paced and demanding environment.
+
+    Products I've worked on:
+    - NBA Live (multiple iterations)
+    - NHL (multiple iterations)
+    - FIFA (multiple iterations)
+    - Madden (multiple iterations)
+    - NCAA Football (multiple iterations)
+    - Tiger Woods (multiple iterations)
+    - Fight Night (multiple iterations)
+    - Euro 2008
+    - MVP Baseball
+    - Champions League
+    - World Cup 2010
+    - EA SPORTS MMA
+    - EA Sports World
+    - Core technology for Gen3 and Gen4 consoles (OSDK), for Web (WebSDK, Content Engine, QE / Automation)
+    - EA SPORTS Season Ticket
+    - EA SPORTS Arena
+    - EASPORTS.com
+    - EA.com
+    - Star Wars: Battlefront
+    - EA SPORTS UFC 4
+    I am the Global Board Chair for EA's Asian, Native Hawai'ian & Pacific Islander ERG.
+    #StopTheHate #StopAAPIHate #StopAsianHate #StandWithAsians #AsiansAreVisible #BlackLivesMatter #HateIsAVirus
+    `
   },
   {
     headshot: headshot_JeamarieDePaz,
     Name: `Jeamarie Marien De Paz`,
-    Roles: `AlphaInsights, Senior Associate `,
+    Roles: `Manager, Demand Generation & President, AKIN@AlphaSights `,
     Organization: `Demand Generation, ALA Leadership Team`,
     Education: `Baruch College`,
     linkedIn: `https://www.linkedin.com/in/jeamarie-marien-de-paz/`,
-    biography: ``
+    biography: `
+    I enjoy curating experiences that evoke feeling and emotion. Focused on marketing and demand generation at AlphaSights, 
+    I create impactful and relevant narratives that tap into people’s interests and passions with the goal to make their
+    work-life more holistically them. I enjoy defining personas and the values that would best allow a brand to visually 
+    and creatively relate to its audience.
+    Passionate about design, diversity, color theory, story-telling, and service––I consistently strive to give back to 
+    my communities and narrate their experiences in ways that best represents the people in them. I enjoy thinking of ways 
+    to create spaces where people are comfortable and able to share their experiences with the ultimate goal of helping each other.
+
+    AlphaSights is the global leader in knowledge on-demand. We connect investment and business leaders with a dynamic network of industry professionals whose informed perspectives help our clients make superior investment and business decisions. With 1200+ employees and nine offices across the US, Europe, Middle East, and Asia, AlphaSights regularly ranks as one of the fastest-growing companies in the world. Learn more at alphasights.com.
+    
+    `
   },
   {
     headshot: headshot_Jamie,
     Name: `Jamie Cristal`,
     Roles: `Airbnb, Lead Design Systems`,
     Organization: `FASTER Creative Director`,
-    Education: ``,
+    Education: `Visual Communication Design, Pre-med Bio California State University-Northridge | University of Southern California Peer Mediation, Behavioral Sciences | UCLA Extension Fine Arts / Illustration | ArtCenter Collegfe of Design Graphic Design & Digital Illustration`,
     linkedIn: `https://www.linkedin.com/in/jamiecristal/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: ``
+    biography: `
+    Jamie Cristal is a San Francisco based creative focused on inclusive design within the digital technology space.
+     After working at a boutique Los Angeles design studio, she pivoted into tech and has spent majority of her design 
+     career working in Silicon Valley trailblazing new roles like being one of Yahoo’s first Design Associates, scaling programs as a Design Operations Manager at Facebook, and driving inclusive design practices as a Design Leader at Airbnb. Jamie continues to blaze new trails in the design industry while honing her craft, lifting her community as she climbs, and working on her eccentric personal projects.
+    `
   },
   {
     headshot: headshot_Ardees,
@@ -224,36 +279,35 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     linkedIn: `https://www.linkedin.com/in/ardees-rabang/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
     biography: `
     Ardees Rabang is a production professional with over 25 years experience in the film and television
-industry. Her expertise spans all areas of production, from pre-production through post-production,
-marketing and publicity, release to distribution.
-From June 1996 to August 2012, Ardees worked closely with Producer Rick McCallum and
-Director/Visionary George Lucas at Lucasfilm Ltd on some of the highest grossing movies of all
-time: the Star Wars Trilogy Special Editions, Star Wars Episode I: The Phantom Menace, Star
-Wars Episode II: Attack of the Clones, Star Wars Episode III: Revenge of the Sith, and Red Tails.
-On the television side, she has worked on The Young Indiana Jones Chronicles and the Star Wars
-live-action television series.
-From August 2012 to June 2015, Ardees oversaw and managed Director/Writer/Producer Brad
-Bird’s production company. She assisted Mr. Bird in both public and private professional spheres as
-well as on location during development, pre-production, production, principal photography, and
-post-production of his film Tomorrowland.
-From June 2015 to January 2019, Ardees was the President of Colorful Media (formerly Infidea
-Studios) and was a Producer for all of their projects. She oversaw their feature films, television
-production, streaming series and microfilms. Colorful Media’s mission is producing content (films,
-series and biopic micro-stories) in traditional and new mediums with a global view truly reflective of
-our world. Ardees’ passion for diversity and minority communities goes back to her days as a UC
-Berkeley student and seeing the lack of diversity and inclusion in the entertainment industry. She is
-the Executive Producer of the series GOOD VIBES, an original comedy series that follows four San
-Francisco Bay Area cannabis female aficionados who are rooted in their sisterhood, their Filipino
-communities, and their love for medicinal marijuana.
-From April 2017 to August 2018, Ardees worked as Creative Project Manager in the
-Media+Marketing Department for Science 37, Inc. and oversaw the delivery of 300+ short form
-videos.
-Since January 2019, Ardees is the Head of Production for Fenix TLS, a language technology and
-media company based in Hong Kong, and MINEO, a fintech company based in Hong Kong.
-Since September 2019, Ardees has been working with Evergrain Studios as an Executive
-Producer/Producer.
-Ardees is currently developing and producing various feature films and series.
-    
+    industry. Her expertise spans all areas of production, from pre-production through post-production,
+    marketing and publicity, release to distribution.
+    From June 1996 to August 2012, Ardees worked closely with Producer Rick McCallum and
+    Director/Visionary George Lucas at Lucasfilm Ltd on some of the highest grossing movies of all
+    time: the Star Wars Trilogy Special Editions, Star Wars Episode I: The Phantom Menace, Star
+    Wars Episode II: Attack of the Clones, Star Wars Episode III: Revenge of the Sith, and Red Tails.
+    On the television side, she has worked on The Young Indiana Jones Chronicles and the Star Wars
+    live-action television series.
+    From August 2012 to June 2015, Ardees oversaw and managed Director/Writer/Producer Brad
+    Bird’s production company. She assisted Mr. Bird in both public and private professional spheres as
+    well as on location during development, pre-production, production, principal photography, and
+    post-production of his film Tomorrowland.
+    From June 2015 to January 2019, Ardees was the President of Colorful Media (formerly Infidea
+    Studios) and was a Producer for all of their projects. She oversaw their feature films, television
+    production, streaming series and microfilms. Colorful Media’s mission is producing content (films,
+    series and biopic micro-stories) in traditional and new mediums with a global view truly reflective of
+    our world. Ardees’ passion for diversity and minority communities goes back to her days as a UC
+    Berkeley student and seeing the lack of diversity and inclusion in the entertainment industry. She is
+    the Executive Producer of the series GOOD VIBES, an original comedy series that follows four San
+    Francisco Bay Area cannabis female aficionados who are rooted in their sisterhood, their Filipino
+    communities, and their love for medicinal marijuana.
+    From April 2017 to August 2018, Ardees worked as Creative Project Manager in the
+    Media+Marketing Department for Science 37, Inc. and oversaw the delivery of 300+ short form
+    videos.
+    Since January 2019, Ardees is the Head of Production for Fenix TLS, a language technology and
+    media company based in Hong Kong, and MINEO, a fintech company based in Hong Kong.
+    Since September 2019, Ardees has been working with Evergrain Studios as an Executive
+    Producer/Producer.
+    Ardees is currently developing and producing various feature films and series.
     `
   },
   {
@@ -263,10 +317,12 @@ Ardees is currently developing and producing various feature films and series.
     Organization: `Netflix`,
     Education: `University of Santo Tomas`,
     linkedIn: `https://www.linkedin.com/in/ronnie-del-carmen-59261a3/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: ``
+    biography: `I watched a lot of cartoons and movies. I draw incessantly and carry a sketchbook everywhere. I work in animation and self-publish my books. There are monsters in the streets, don't wear red. Mad bulls and monsters hate that color. I still watch cartoons.
+
+    `
   },
   {
-    headshot: null,
+    headshot: headshot_GioNakpil,
     Name: `Gio Nakpil`,
     Roles: `Senior Design Evangelist and Creative Director`,
     Organization: `Adobe`,
@@ -275,38 +331,62 @@ Ardees is currently developing and producing various feature films and series.
     biography: ``
   },
   {
-    headshot: null,
+    headshot: headshot_AnthonyFrancisco,
     Name: `Anthony Francisco`,
-    Roles: `former Senior Visual Development Artist aka Father of Baby Groot`,
+    Roles: `Former Senior Visual Development Artist aka Father of Baby Groot`,
     Organization: `Marvel Studios`,
     Education: `University of Santo Tomas`,
     linkedIn: `https://www.linkedin.com/in/anthony-francisco-2236861/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: ``
+    biography: `
+    Anthony Francisco, Concept Aritst/Art Director designing for film and video games for 18 years. He is currently a
+    Marvel Studios Senior Visual Development Artist . He works with a team of amazing artist that design super heroes 
+    for the MCU . He is best known for designing one of Marvels cutest characters , Baby Groot! Other iconic characters 
+    include Loki for Thor:Ragnarok and the costumes for the Dora Milaje (Okoye and Nakia) for Black Panther. 
+    Here are a few Marvel Movies he has worked on . Guardians of the Galaxy Vol.3, Captain Marvel, Avengers: Infinity War ,
+    Antman and the Wasp, GOTG Vol2, Doctor Strange, Antman, Guardians of the Galaxy Vol.1 and END GAME!
+    `
   },
   {
     headshot: headshot_NickAbasolo,
     Name: `Nick Abasolo`,
     Roles: `Product Designer`,
     Organization: `DiaPad`,
-    Education: ``,
+    Education: `BA International Economic Development, Simon Fraser University`,
     linkedIn: `https://www.linkedin.com/in/nickabasolo/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: ``
+    biography: `
+    I'm a Product Designer with over 6 years of design experience, including 2 years in product design at a SaaS company.
+    If my life journey were a design problem, then I've gone through a lot of stages of ideation and testing. These include plenty of seemingly unrelated activities, such as:
+    obtaining an economics degree, volunteering as a Korean language teacher, co-founding the province's first Red Cross student association,
+    bathing elephants at an ethical sanctuary in Chiang Mai, and interning as a federal policy analyst in Ottawa, Canada’s capital city.
+    I love talking about design, economics, or anything in between -- let's chat over messages or connect over a coffee!
+    `
   },
   {
     headshot: headshot_EricCruz,
     Name: `Eric Cruz`,
     Roles: `Executive Creative Director Design`,
     Organization: `Digital Kitchen | Innovation.Story.Xperience Ex - W+K | AKQA | Leo Burnett | Sid Lee |`,
-    Education: ``,
-    linkedIn: null,
-    biography: ``
+    Education: `
+      ArtCenter College of Design
+      Degree NameBFAField Of StudyGraphic & Packaging Design
+      Dates attended or expected graduation
+    `,
+    linkedIn: `https://www.linkedin.com/in/eric-cruz-aa984/?mc_cid=1d12da56b3&mc_eid=e0e72d6e5d`,
+    biography: `
+    Eric Cruz is a creative leader, director, designer and educator who brings with him 23+ years of industry experience. He is a ‘hybrid creative’ – fusing design, film, moving image, music, art, technology, and innovation to bring a unique perspective to storytelling and design transformation in the connected age.
+    With a broad international experience, Eric has held various leadership positions in agencies worldwide, developing a model for the creative network of the future and exploring how creativity can help invent tomorrow today.
+    Most recently as Sid Lee USA’s ECD for Innovation & Design, he led the charge to exploring The New, Now and Not Yet, finding ways of seeing and applying technology into stories, products, platforms and experiences for such clients as Facebook, Tubi, Journi, The LA Rams and Warner Brothers.
+    Previously, as AKQA Shanghai’s ECD, +cruz led the Greater China team, helping co-create the future through innovative brand storytelling for Nike, Jordan, Converse, Apple, Airbnb, Fendi, NBA, Diageo, J&J, GoreTex, Lycra, The City of Shanghai and Hong Kong.
+    During his tenure as Leo Burnett Malaysia’s creative leader, he helped lead, evolve, and grow a traditional agency of 90 into a forward-thinking agency of 320.
+
+    `
   },
   {
     headshot: headshot_LisaMaione,
     Name: `Lisa Maione`,
     Roles: `Executive Creative Director Design`,
     Organization: `Digital Kitchen | Innovation.Story.Xperience Ex - W+K | AKQA | Leo Burnett | Sid Lee |`,
-    Education: ``,
+    Education: `Rhode Island School of Design Degree NameMaster's DegreeField Of StudyMFA in Graphic Design`,
     linkedIn: `https://www.linkedin.com/in/lmaione/`,
     biography: `
     Lisa Maione is a designer, artist and educator. She is an Assistant Professor of Graphic Design program at Kansas 
