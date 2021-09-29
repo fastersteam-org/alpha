@@ -1,7 +1,7 @@
 import {
   headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris,
   headshot_Angelica, headshot_BrianPang, headshot_JimmyHua, headshot_Ardees, headshot_RonnieDC, headshot_NickAbasolo,
-  headshot_LisaMaione, headshot_JenniferOManilay, headshot_EmilioPassi, headshot_GioNakpil, headshot_AnthonyFrancisco, headshot_EricCruz, headshot_JeremyJoachim, headshot_NoelleSaldana, headshot_Claudine, headshot_JeamarieDePaz, headshot_JannelleSo
+  headshot_LisaMaione, headshot_JenniferOManilay, headshot_EmilioPassi, headshot_GioNakpil, headshot_StefanieJacintoDeo, headshot_AnthonyFrancisco, headshot_EricCruz, headshot_JeremyJoachim, headshot_NoelleSaldana, headshot_Claudine, headshot_JeamarieDePaz, headshot_JannelleSo
 } from '../images/index';
 
 export const nationalBoard = [
@@ -367,9 +367,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     Roles: `Executive Creative Director Design`,
     Organization: `Digital Kitchen | Innovation.Story.Xperience Ex - W+K | AKQA | Leo Burnett | Sid Lee |`,
     Education: `
-      ArtCenter College of Design
-      Degree NameBFAField Of StudyGraphic & Packaging Design
-      Dates attended or expected graduation
+      ArtCenter College of Design BFAField Of StudyGraphic & Packaging Design
     `,
     linkedIn: `https://www.linkedin.com/in/eric-cruz-aa984/?mc_cid=1d12da56b3&mc_eid=e0e72d6e5d`,
     biography: `
@@ -386,7 +384,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     Name: `Lisa Maione`,
     Roles: `Executive Creative Director Design`,
     Organization: `Digital Kitchen | Innovation.Story.Xperience Ex - W+K | AKQA | Leo Burnett | Sid Lee |`,
-    Education: `Rhode Island School of Design Degree NameMaster's DegreeField Of StudyMFA in Graphic Design`,
+    Education: `Rhode Island School of Design aDegree NameMaster's DegreeField Of StudyMFA in Graphic Design`,
     linkedIn: `https://www.linkedin.com/in/lmaione/`,
     biography: `
     Lisa Maione is a designer, artist and educator. She is an Assistant Professor of Graphic Design program at Kansas 
@@ -446,13 +444,20 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     biography: ``
   },
   {
-    headshot: null,
+    headshot: headshot_StefanieJacintoDeo,
     Name: `Stefanie Deo`,
     Roles: `Senior Technical Data Analyst`,
     Organization: `GoFundMe`,
-    Education: ``,
-    linkedIn: null,
-    biography: ``
+    Education: `BA Psychology, Ateneo de Manila University | MS Statistics, San Jose State University`,
+    linkedIn: `https://www.linkedin.com/in/stefdeo/`,
+    biography: `
+    Stefanie is currently a Senior Technical Data Analyst at GoFundMe. As part of the Data Insights team, she works to 
+    ensure that everyone at GoFundMe has what they need to make smart, data-driven decisions. 
+    Stefanie has a diverse background from working in various domains such as market research, online performance marketing, 
+    machine learning research, and even education. She is an advocate for underrepresented groups in tech, particularly 
+    data science. Stefanie holds a BA in Psychology from Ateneo de Manila University and an MS in Statistics from 
+    San Jose State University.
+    `
   },
   {
     headshot: headshot_Claudine,
