@@ -559,9 +559,17 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     Name: `Leezel Tanglao`,
     Roles: `VP, COVID19 TaskForce Co-Chair, FASTER Adviser`,
     Organization: `FYLPRO`,
-    Education: ``,
+    Education: `MA Asian American Studies, UCLA | BA English, Loyola Marymount University`,
     linkedIn: `https://www.linkedin.com/in/leezeltanglao/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
-    biography: ``
+    biography: `
+    Leezel is a data-driven bridge journalist at the intersection of editorial, product, audience development, business development, 
+    marketing, and sales. She goes deep into a niche but can also see the whole picture from idea to product development to 
+    revenue opportunities to go to market execution. She is mission-driven to tell the best stories of our time.
+    Names are important. If you’re wondering how to say her name, it’s pronounced LEE-ZEL (not Liesel from the “Sound of Music”). 
+    Currently,  Leezel is the Director of Audience Insights and Innovation at The Points Guy, a Red Ventures company. 
+    Prior to this she was the Senior Editor for Membership and Innovation at HuffPost. She consults with media companies 
+    through her company, StatFury. 
+    `
   },
 ]
 
