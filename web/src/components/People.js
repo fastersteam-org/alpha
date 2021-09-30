@@ -1,7 +1,10 @@
 import {
   headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris,
   headshot_Angelica, headshot_BrianPang, headshot_JimmyHua, headshot_Ardees, headshot_RonnieDC, headshot_NickAbasolo,
-  headshot_LisaMaione, headshot_JenniferOManilay, headshot_EmilioPassi, headshot_GioNakpil, headshot_StefanieJacintoDeo, headshot_AnthonyFrancisco, headshot_EricCruz, headshot_JeremyJoachim, headshot_NoelleSaldana, headshot_Claudine, headshot_JeamarieDePaz, headshot_JannelleSo
+  headshot_LisaMaione, headshot_JenniferOManilay, headshot_EmilioPassi, headshot_GioNakpil, headshot_LiezlPuzon, headshot_DaniCarino,
+  headshot_RevFrNicanorPierGiorgoAustriaco, headshot_StefanieJacintoDeo, headshot_AnthonyFrancisco, headshot_EricCruz, 
+  headshot_JeremyJoachim, headshot_NoelleSaldana, headshot_Claudine, headshot_JeamarieDePaz, headshot_JannelleSo, 
+  headshot_LeezelTangalo
 } from '../images/index';
 
 export const nationalBoard = [
@@ -367,7 +370,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     Roles: `Executive Creative Director Design`,
     Organization: `Digital Kitchen | Innovation.Story.Xperience Ex - W+K | AKQA | Leo Burnett | Sid Lee |`,
     Education: `
-      ArtCenter College of Design BFAField Of StudyGraphic & Packaging Design
+      ArtCenter College of Design BFA Graphic & Packaging Design
     `,
     linkedIn: `https://www.linkedin.com/in/eric-cruz-aa984/?mc_cid=1d12da56b3&mc_eid=e0e72d6e5d`,
     biography: `
@@ -384,7 +387,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     Name: `Lisa Maione`,
     Roles: `Executive Creative Director Design`,
     Organization: `Digital Kitchen | Innovation.Story.Xperience Ex - W+K | AKQA | Leo Burnett | Sid Lee |`,
-    Education: `Rhode Island School of Design aDegree NameMaster's DegreeField Of StudyMFA in Graphic Design`,
+    Education: `Rhode Island School of Design Master's Degree MFA in Graphic Design`,
     linkedIn: `https://www.linkedin.com/in/lmaione/`,
     biography: `
     Lisa Maione is a designer, artist and educator. She is an Assistant Professor of Graphic Design program at Kansas 
@@ -400,7 +403,7 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     Name: `Ian Gomez`,
     Roles: `Head of Marketing Programs FASTER Marketing Director - Sponsorships`,
     Organization: `Grid.ai`,
-    Education: `UCSB`,
+    Education: `University of California Santa Barbara`,
     linkedIn: `https://www.linkedin.com/in/ianwaltergomez/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
     biography: `Ian's inspirational story transitioning from a job at Gucci, to HP and scaling marketing at H20.ai to 
     becoming Head of Marketing at Grid.ai proves that raw grit and an unparalleled sense of style and taste, 
@@ -410,37 +413,66 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
   {
     headshot: headshot_JeremyJoachim,
     Name: `Jeremy Joachim`,
-    Roles: ``,
-    Organization: ``,
-    Education: ``,
-    linkedIn: null,
-    biography: ``
+    Roles: `Experience Developer, Machine Intelligence Design `,
+    Organization: `Adobe, AI`,
+    Education: `BS Mechanical Engineering, Brown University`,
+    linkedIn: `https://www.linkedin.com/in/jeremy-joachim/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: `
+    My name is Jeremy, and I'm a Creative Technology Designer. After graduating with a B.S. in Mechanical Engineering from Brown 
+    University, I joined Tellart, an experience design firm that uses emerging technology to tell stories in refreshing and 
+    engaging ways. I spent my time there working through the design process end-to-end from concept to install and improving 
+    my prototyping and production technologist skills. I now work as a Creative Technologist on Gensler’s Digital Experience 
+    Design team, using my technology background not only as a way to build and produce projects but also to design them from 
+    the concept phase, taking the role of a Designer first with my tech knowledge as a support.
+    I'm a tinkerer and a problem solver, bringing in knowledge of how things work (and don't work) to create solutions that 
+    address why things work (and don't work). Ultimately, my goal is to get a better understanding of the relationships between
+    people and the physical and digital architectures that surround them.
+    I'm inspired by work that's interdisciplinary across fields we've been taught were never supposed to harmonize. Currently 
+    interested in robots, expressive technology, design empathy, beatboxing, and super smash bros.
+    `
   },
   {
     headshot: headshot_EmilioPassi,
     Name: `Emilio Passi`,
     Roles: `Director of Design Technology `,
     Organization: `Punchcut`,
-    Education: ``,
-    linkedIn: null,
-    biography: ``
+    Education: `BS Computer Science, California Polytechnic State University-San Luis Obispo | Graphic Design, UC Berkeley Extension`,
+    linkedIn: `https://www.linkedin.com/in/passi/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
+    biography: `
+      Emilio leads the Design Technology team at Punchcut, a digital product design and innovation consulting firm. 
+      With a background in computer science and design, he’s made a career out of helping teams build the right thing, 
+      the right way. He thrives on emerging technology projects that need a blend of technical research, interaction design, 
+      high-fidelity prototypes, and custom tools.
+    `
   },
   {
     headshot: headshot_NoelleSaldana,
     Name: `Noelle Saldana`,
-    Roles: ``,
-    Organization: ``,
-    Education: ``,
-    linkedIn: null,
-    biography: ``
+    Roles: `Director of Product Management, Data Science & Analytics`,
+    Organization: `Salesforce`,
+    Education: `M.S. Applied Mathematics, California State Polytechnic University-Pomona
+    | A.B. Applied Mathematics and Physical Anthropology, Washington University in St. Louis    
+    `,
+    linkedIn: `https://www.linkedin.com/in/noellesio/`,
+    biography: `
+    Noelle is currently the Director of Product Analytics and Data Science at Salesforce, where she is driving how Heroku
+    captures, analyzes, and leverages data throughout the organization including Product, Marketing, and Design. She was 
+    previously a leader for Pivotal’s Data Science team, where she worked with numerous enterprise and startup companies 
+    planning and executing their analytics initiatives.
+    She is passionate about the power of Math and making it more accessible; she enjoys collaborating with other disciplines 
+    and being creative about using analytics, doing pro bono Data Science work through DataKind, and doing her part to
+    encourage students in underrepresented groups to pursue STEM careers.
+    Noelle holds an A.B. From Washington University in St. Louis in Applied Mathematics and Physical Anthropology and a M.S. 
+    in Applied Mathematics from Cal Poly Pomona.
+    `
   },
   {
-    headshot: null,
+    headshot: headshot_LiezlPuzon,
     Name: `Liezl Puzon`,
-    Roles: ``,
-    Organization: ``,
-    Education: ``,
-    linkedIn: null,
+    Roles: `Genetics & Machine Learning, NLP & Speech`,
+    Organization: `Orchid, Facebook AI`,
+    Education: `BS Computer Science, Stanford University`,
+    linkedIn: `https://www.linkedin.com/in/liezlpuzon/`,
     biography: ``
   },
   {
@@ -464,16 +496,16 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     Name: `Claudine Hernandez`,
     Roles: ` Senior Data Scientist`,
     Organization: `Claritas`,
-    Education: ``,
-    linkedIn: null,
+    Education: `Doctor of Philosophy (phD), Mathematics University of the Philippines`,
+    linkedIn: `https://www.linkedin.com/in/klodindin/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
     biography: ``
   },
   {
     headshot: headshot_JenniferOManilay,
     Name: `Jennifer Oliveros Manilay`,
-    Roles: `Professor`,
+    Roles: `Professor and Department Chair`,
     Organization: `UC Merced`,
-    Education: ``,
+    Education: `PhD Immunology, Harvard University | BS Molecular and Cell Biology, University of California Berkeley`,
     linkedIn: `https://www.linkedin.com/in/jennifer-o-manilay-she-her-hers-a2b55513/`,
     biography: `
     Jennifer is a Professor and Chair of the Molecular and Cell Biology Department (http://mcb.ucmerced.edu/) at 
@@ -491,21 +523,21 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     `
   },
   {
-    headshot: null,
+    headshot: headshot_DaniCarino,
     Name: `Dani Carino`,
-    Roles: ``,
-    Organization: ``,
-    Education: ``,
-    linkedIn: null,
+    Roles: `Research Associate 1`,
+    Organization: `Natera`,
+    Education: `BS Chemical Biology, University of California-Berkeley`,
+    linkedIn: `https://www.linkedin.com/in/daniellecarino/`,
     biography: ``
   },
   {
-    headshot: null,
+    headshot: headshot_RevFrNicanorPierGiorgoAustriaco,
     Name: `Rev. Fr. Nicanor Pier Giorgo Austriaco `,
     Roles: ``,
     Organization: ``,
     Education: ``,
-    linkedIn: null,
+    linkedIn: `https://filipinotimes.net/latest-news/2021/02/03/fil-am-priest-also-a-molecular-biologist-developing-yakult-like-covid-19-oral-vaccine/`,
     biography: ``
   },
   {
@@ -523,12 +555,12 @@ Jimmy has spoken at many conferences over the years, from tech to D&I related. H
     `
   },
   {
-    headshot: null,
+    headshot: headshot_LeezelTangalo,
     Name: `Leezel Tanglao`,
     Roles: `VP, COVID19 TaskForce Co-Chair, FASTER Adviser`,
     Organization: `FYLPRO`,
     Education: ``,
-    linkedIn: null,
+    linkedIn: `https://www.linkedin.com/in/leezeltanglao/?mc_cid=1d12da56b3&mc_eid=52a3b5f4d6`,
     biography: ``
   },
 ]

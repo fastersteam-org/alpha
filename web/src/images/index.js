@@ -19,18 +19,21 @@ import headshot_Claudine from './speakers-2021/headshot_Claudine.jpg';
 import headshot_EricCruz from './speakers-2021/headshot_EricCruz.jpg';
 import headshot_GioNakpil from './speakers-2021/headshot_GioNakpil.jpg';
 import headshot_AnthonyFrancisco from './speakers-2021/headshot_AnthonyFrancisco.jpg';
-
 import headshot_EmilioPassi from './speakers-2021/headshot_EmilioPassi.jpg';
 import headshot_JeremyJoachim from './speakers-2021/headshot_JeremyJoachim.jpg';
+import headshot_LiezlPuzon from './speakers-2021/headshot_LiezlPuzon.jpg';
+import headshot_DaniCarino from './speakers-2021/headshot_DaniCarino.jpg';
+import headshot_RevFrNicanorPierGiorgoAustriaco from './speakers-2021/headshot_RevFrNicanorPierGiorgoAustriaco.jpg';
 import headshot_NoelleSaldana from './speakers-2021/headshot_NoelleSaldana.jpg';
 import headshot_JenniferOManilay from './speakers-2021/headshot_JenniferOManilay.jpg';
 import headshot_JannelleSo from './speakers-2021/headshot_JannelleSo.jpeg';
+import headshot_LeezelTangalo from './speakers-2021/headshot_LeezelTanglao.jpg';
 
 export { headshot_Erin, headshot_Charity, headshot_Ian, headshot_Jamie, headshot_Aldrin, headshot_Chris, headshot_Ardees, headshot_RonnieDC }
 
 export {
   headshot_Angelica, headshot_BrianPang, headshot_JimmyHua, headshot_NickAbasolo, headshot_LisaMaione, headshot_JeamarieDePaz,
-  headshot_Claudine, headshot_JenniferOManilay, headshot_EricCruz, headshot_GioNakpil, headshot_StefanieJacintoDeo, headshot_AnthonyFrancisco, headshot_EmilioPassi, headshot_JeremyJoachim,
-  headshot_NoelleSaldana, headshot_JannelleSo
+  headshot_Claudine, headshot_JenniferOManilay, headshot_EricCruz, headshot_GioNakpil, headshot_LiezlPuzon, headshot_StefanieJacintoDeo, headshot_AnthonyFrancisco, headshot_EmilioPassi, headshot_JeremyJoachim,
+  headshot_NoelleSaldana, headshot_DaniCarino, headshot_RevFrNicanorPierGiorgoAustriaco, headshot_JannelleSo, headshot_LeezelTangalo
 }
 
