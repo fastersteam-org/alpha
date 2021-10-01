@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './About.module.css';
+import * as classes from './About.module.css';
 
 const { aboutSection, informationSlice } = classes;
 

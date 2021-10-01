@@ -2,6 +2,7 @@
   /* background-color: #F9F9F9; */
   background-color: var(--color-very-light-gray);
   padding: 1.5rem;
+  color: #000;
 }
 
 .informationSlice h3 {
