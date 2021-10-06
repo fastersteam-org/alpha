@@ -5,14 +5,14 @@ const Footer = ({ siteTitle }) => (
   <footer className="bg-white">
     <div className="container mx-auto  px-8">
       <div className="w-full flex flex-col md:flex-row py-6">
-        <div className="flex-1 mb-6">
+        {/* <div className="flex-1 mb-6">
           <a
             className="text-blue-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             href="#"
           >
             {siteTitle}
           </a>
-        </div>
+        </div> */}
 
         <div className="flex-1">
           <p className="uppercase text-gray-500 md:mb-6">Join</p>
