@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./header";
 import Footer from "./footer";
-// import About from './About';
 import "../styles/layout.css";
 
 class Layout extends React.Component {
@@ -52,7 +51,6 @@ class Layout extends React.Component {
           textWhite={textWhite}
         />
         <>{children}</>
-        {/* <About /> */}
         <Footer siteTitle={siteTitle} />
       </>
     );
