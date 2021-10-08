@@ -9,6 +9,7 @@ import Pricing from "../components/pricing";
 import { TopWave, BottomWave } from "../components/wave";
 import GoogleForm from "../components/GoogleForm";
 import GoogleCalendar from "../components/GoogleCalendar";
+import About from '../components/About';
 
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
@@ -65,7 +66,7 @@ const Page = props => {
 
   const page = data.page || data.route.page;
 
-  const content = (page._rawContent || [])
+  let content = (page._rawContent || [])
     .filter(c => !c.disabled)
     .map((c, i) => {
       let el = null;
@@ -109,6 +110,13 @@ const Page = props => {
 
       return el;
     });
+
+    console.log('data.route', data.route);
+    console.log('data.page', data.page);
+  
+  if (((data.route || {}).slug || {}).current === 'about') {
+    content = [<About />];
+  }
 
   const gradient = {
     from: (site.primaryColor && site.primaryColor.hex) || "#d53369",
