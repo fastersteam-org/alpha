@@ -1,9 +1,12 @@
 import React from 'react';
+import Events from './Events.js'
+import FasterConFlyer21 from './FasterConFlyer21.js'
 
 const GoogleCalendar = ({ url }) => {
   return (
-    <div className="flex justify-center mb-8">
-      <iframe src={url} style={{border: 0}} width="800" height="600" frameBorder="0" scrolling="no" />
+    <div>
+    <Events/>
+
     </div>
   );  
 };
