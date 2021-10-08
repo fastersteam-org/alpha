@@ -7,6 +7,12 @@ module.exports = {
         red: '#de3618',
         FasterGreen: '#51B19E'
       },
+      backgroundColor: {
+        indigo: '#5c6ac4',
+        blue: '#007ace',
+        red: '#de3618',
+        FasterGreen: '#51B19E'
+      },
     },  
   },
   variants: {
