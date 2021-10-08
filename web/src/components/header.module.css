@@ -112,3 +112,8 @@
 .showNav {
   display: block;
 }
+
+.headerWrapper,
+.navSubmenu {
+  background-color: var(--color-very-light-gray);
+}

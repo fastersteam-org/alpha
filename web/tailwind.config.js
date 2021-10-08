@@ -9,6 +9,9 @@ module.exports = {
       },
     },  
   },
-  variants: {},
+  variants: {
+    margin: ['last'],
+    padding: ['last'],
+  },
   plugins: []
 };
