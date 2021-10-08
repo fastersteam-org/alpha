@@ -4,22 +4,20 @@ import clientConfig from "../../client-config";
 import CTALink from "./CTALink";
 import { getGatsbyImageData } from "gatsby-source-sanity";
 import { GatsbyImage } from "gatsby-plugin-image";
+import FasterLogoWhite from "./icon/faster-logo-white";
+
 import "./header.module.css"
 const maybeImage = illustration => {
   let img = null;
   if (illustration && illustration.image && illustration.image.asset && !illustration.disabled) {
     const imageData = getGatsbyImageData(
       illustration.image,
-      { maxWidth: 960 },
+      { maxWidth: 675 },
       clientConfig.sanity
     );
 
     img = (
-      <GatsbyImage
-        className="w-full md:w-4/5"
-        image={imageData}
-        alt={illustration.image.alt}
-      />
+      <FasterLogoWhite />
     );
   }
   return img;
