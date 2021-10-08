@@ -122,5 +122,4 @@ async function createAboutPage(pathPrefix = "/about", graphql, actions, reporter
 exports.createPages = async ({ graphql, actions, reporter }) => {
   await createLandingPages("/", graphql, actions, reporter);
   await createBlogPostPages("/blog", graphql, actions, reporter);
-  await createAboutPage("/about", graphql, actions, reporter);
 };
