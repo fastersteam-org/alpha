@@ -22,7 +22,7 @@ const About = (props) => {
           <p>
             FASTER was founded in 2015 by Erin Pangilinan through hosting its signature annual conference, 
             FASTERCON celebrating the Silicon Valley’s history of Filipinx American contributions during Filipinx American HXStory Month 
-            in October. Working closely with FASTER National Board Secretary, Charity Nicola our organization has grown into a one time 
+            in October. Working closely with FASTER National Board Secretary, Charity Nicolas our organization has grown into a one time 
             event and annual conference, to a non-profit serving Filipinx Americans from all walks of life, across backgrounds, 
             ages and a growing number of sectors where Filipinx Americans are representing, pioneering, and liberating our communities. 
             FASTER helps illuminate the stories of the Filipinx American community and their contributions to technology and continues to grow with its 

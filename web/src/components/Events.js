@@ -37,8 +37,8 @@ const Events = ({ url }) => {
         <strong>MAIN CONFERENCE:</strong> Friday, October 8-Sunday, October 10th.
       </p>
       
-      <div className="flex justify-center p-2 pb-3">
-        <img id="FasterConBanner" src={FasterConBanner} style={{height: "500px" }} />
+      <div className="flex justify-center p-2 pb-3 mx-auto">
+        <img id="FasterConBanner" className="mx-auto" src={FasterConBanner} style={{height: "500px" }} />
       </div>
     </div>
   );  
