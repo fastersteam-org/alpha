@@ -3,6 +3,10 @@ import Header from "./header";
 import Footer from "./footer";
 import "../styles/layout.css";
 
+// import TestImages from "./TestImages";
+import TeamBios from "./TeamBios";
+import SpeakersPage from "./SpeakersPage";
+
 class Layout extends React.Component {
   constructor(props) {
     super(props);

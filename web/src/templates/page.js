@@ -14,6 +14,8 @@ import About from '../components/About';
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
+import TeamBios from "../components/TeamBios";
+import SpeakersPage from "../components/SpeakersPage";
 
 export const query = graphql`
   query PageTemplateQuery($id: String!) {
@@ -116,6 +118,8 @@ const Page = props => {
   
   if (((data.route || {}).slug || {}).current === 'about') {
     content = [<About />];
+  } else if (((data.route || {}).slug || {}).current === 'bios') {
+    content = [<TeamBios />, <SpeakersPage />];
   }
 
   const gradient = {
