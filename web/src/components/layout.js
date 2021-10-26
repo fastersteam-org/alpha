@@ -55,9 +55,6 @@ class Layout extends React.Component {
           textWhite={textWhite}
         />
         <>{children}</>
-        <TeamBios />
-        <SpeakersPage />
-        {/* <TestImages /> */}
         <Footer siteTitle={siteTitle} />
       </>
     );
