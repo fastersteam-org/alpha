@@ -9,7 +9,7 @@ module.exports = {
       "accessToken": "gOvrgzU11lL72gv9xRt9d27CPm1QrinNfk-mQcqMRzc",
       "spaceId": "mmdje39fg5u0"
     }
-  }, "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, "gatsby-plugin-postcss", "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -23,5 +23,5 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  },]
 };
