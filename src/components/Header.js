@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 const links = [
     'home',
@@ -7,9 +8,9 @@ const links = [
 ];
 
 const Header = () => (
-    <div>
-        This is the header div.
-    </div>
+    <header>
+        {links.map(link => (<Link to={`/${link}`} />))}
+    </header>
 );
 
 Header.displayName = 'Header';
