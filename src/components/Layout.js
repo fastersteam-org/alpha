@@ -1,17 +1,19 @@
-import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
+import React from "react"
+import PropTypes from "prop-types"
+import Header from "./Header"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => (
     <>
         <Header />
-        <main>
-            {children}
-        </main>
+        <main>{children}</main>
         <Footer />
     </>
-);
+)
 
+Layout.propTypes = {
+    children: PropTypes.node.isRequired,
+}
 
-Layout.displayName = 'Layout';
-export default Layout;
+Layout.displayName = "Layout"
+export default Layout

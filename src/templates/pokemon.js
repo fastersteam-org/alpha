@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react"
+import PropTypes from "prop-types"
 
 const Pokemon = ({ pageContext: { pokemon } }) => {
     return (
@@ -8,4 +9,12 @@ const Pokemon = ({ pageContext: { pokemon } }) => {
     )
 }
 
-export default Pokemon;
+Pokemon.propTypes = {
+    pageContext: PropTypes.shape({
+        pokemon: PropTypes.shape({
+            name: PropTypes.string,
+        }),
+    }),
+}
+
+export default Pokemon
