@@ -1,54 +1,24 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Faster Website V2
 
-## 🚀 Quick start
+Updated Faster Website with new stack and redesign
 
-1.  **Create a Gatsby site.**
+## Installation
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+-   Pull down the repository
+-   run `npm install`
+-   run `npm prepare` to install Husky and add precommit hooks
+-   run `npm run develop` to start your server in watch mode and access the page on http://localhost:8000/
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Configuring Your Dev Environment
 
-2.  **Start developing.**
+VSCode is the preferred IDE of choice to take advantge of the .vscode settings file. In this file we set prettier to auto format your files for you so you do not have to think about styling while you code.
 
-    Navigate into your new site’s directory and start it up.
+NOTE: If you do not like to use VSCode (totally okay :smile:) `Prettier` will run on your changed/staged files for you using `lint-staged`.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## GraphiQL IDE
 
-3.  **Open the code and start customizing!**
+You can test your graphql queries and debug them using this IDE provided by Gatsby. It uses graphql syntax. Refer to [this](https://www.gatsbyjs.com/docs/how-to/querying-data/running-queries-with-graphiql/) for more information
 
-    Your site is now running at http://localhost:8000!
+## CSS Framework
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    -   [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    -   [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    -   [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    -   [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    -   [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    -   [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+We are utilizing Tailwind.css which should remove the need for us to write a lot of custom CSS. Check [this](https://tailwindcss.com/) out for more information.
