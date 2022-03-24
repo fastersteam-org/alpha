@@ -6,17 +6,17 @@ module.exports = {
     },
     settings: {
         react: {
-            version: "detect",
+            version: 'detect',
         },
     },
-    extends: ["eslint:recommended", "plugin:react/recommended", "prettier"],
+    extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
         },
         ecmaVersion: 12,
-        sourceType: "module",
+        sourceType: 'module',
     },
-    plugins: ["react"],
+    plugins: ['react'],
     rules: {},
-}
+};

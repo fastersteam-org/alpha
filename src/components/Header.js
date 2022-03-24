@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-const links = ["home", "about", "blog"]
+const links = ['home', 'about', 'blog'];
 
 const Header = () => (
     <header>
@@ -9,7 +9,7 @@ const Header = () => (
             <Link key={index} to={`/${link}`} />
         ))}
     </header>
-)
+);
 
-Header.displayName = "Header"
-export default Header
+Header.displayName = 'Header';
+export default Header;
