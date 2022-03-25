@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Layout from '../components/Layout';
 
 const BlogPost = ({ pageContext: { blogPost } }) => {
     return (
-        <main>
+        <Layout>
             <h1>{blogPost.title}</h1>
-        </main>
+        </Layout>
     );
 };
 

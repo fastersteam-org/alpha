@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Layout from '../components/Layout';
 
 const Pokemon = ({ pageContext: { pokemon } }) => {
     return (
-        <main>
+        <Layout>
             <h1>{pokemon.name}</h1>
-        </main>
+        </Layout>
     );
 };
 
