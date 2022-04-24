@@ -4,7 +4,11 @@ module.exports = {
         colors: {
             'faster-blue': 'rgba(60, 100, 177, 0.06)',
         },
-        extend: {},
+        extend: {
+            fontFamily: {
+                montserrat: ['montserrat', 'sans-serif'],
+            },
+        },
     },
     plugins: [],
 };

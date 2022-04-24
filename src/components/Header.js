@@ -19,12 +19,12 @@ const Header = () => (
         <div className="header-left">
             <FasterLogo className="w-44" />
         </div>
-        <nav className="header-right">
+        <nav className="header-right flex items-center">
             {links.map((link, index) => (
                 <Link
                     key={`${index}-${link.text}`}
                     to={link.uri}
-                    className="uppercase ml-14"
+                    className="uppercase ml-14 font-montserrat font-bold"
                 >
                     {link.text}
                 </Link>
