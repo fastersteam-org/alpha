@@ -7,6 +7,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 montserrat: ['montserrat', 'sans-serif'],
+                roboto: ['roboto', 'sans-serif'],
             },
         },
     },
