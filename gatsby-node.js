@@ -53,7 +53,6 @@ exports.createPages = async ({ actions, graphql }) => {
     `);
 
     data.allContentfulBlogPost.edges.forEach((blogPost) => {
-        console.log('here is the slug', blogPost.node.slug);
         const { slug } = blogPost.node;
         actions.createPage({
             path: slug,
@@ -74,4 +73,13 @@ exports.createPages = async ({ actions, graphql }) => {
             component: require.resolve('./src/templates/pokemon.js'),
         });
     });
+
+    // Non-data reliant pages that need creation: [events, about]
+    ['events', 'about'].forEach((pageName) => ({
+        path: pageName,
+        context: {
+            title: pageName,
+        },
+        component: require.resolve(`./src/templates/${pageName}`),
+    }));
 };
