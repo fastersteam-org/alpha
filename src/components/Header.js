@@ -15,13 +15,17 @@ const links = [
 ];
 
 const Header = () => (
-    <header className="flex justify-between px-8 py-4 bg-slate-900">
+    <header className="flex justify-between px-8 py-4 bg-faster-blue opacity-6">
         <div className="header-left">
             <FasterLogo className="w-44" />
         </div>
         <nav className="header-right">
             {links.map((link, index) => (
-                <Link key={`${index}-${link.text}`} to={link.uri}>
+                <Link
+                    key={`${index}-${link.text}`}
+                    to={link.uri}
+                    className="uppercase ml-14"
+                >
                     {link.text}
                 </Link>
             ))}
