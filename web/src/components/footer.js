@@ -19,7 +19,7 @@ const Footer = ({ siteTitle }) => (
           <ul className="list-reset mb-6">
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <Link
-                to="/education"
+                to="http://bit.ly/FASTERFUNK21"
                 className="no-underline hover:underline text-gray-800 hover:text-FasterGreen"
               >
                FASTER Education 
