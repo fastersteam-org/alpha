@@ -7,7 +7,8 @@ module.exports = {
     resolve: 'gatsby-source-contentful',
     options: {
       "accessToken": "M8PQlTYcsoFbLKSu2DoaWZcDrlLla3wzaLPfDdB_p3M",
-      "spaceId": "w05unrqtrsj4"
+      "spaceId": "w05unrqtrsj4",
+      "environment": "Staging",
     }
   }, "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',

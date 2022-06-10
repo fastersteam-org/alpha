@@ -29,6 +29,14 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => 
 exports.createPages = async ({ actions, graphql }) => {
     const { data } = await graphql(`
         query {
+            allContentfulBlogPost {
+                edges {
+                    node {
+                        title
+                        slug
+                    }
+                }
+            }
             allPokemon {
                 edges {
                     node {
@@ -40,17 +48,17 @@ exports.createPages = async ({ actions, graphql }) => {
         }
     `);
 
-    // data.allContentfulBlogPost.edges.forEach((blogPost) => {
-    //     console.log('here is the slug', blogPost.node.slug);
-    //     const { title, id, slug } = blogPost.node;
-    //     actions.createPage({
-    //         path: slug,
-    //         context: {
-    //             blogPost: blogPost.node,
-    //         },
-    //         component: require.resolve('./src/templates/blog-post.js'),
-    //     })
-    // });
+    data.allContentfulBlogPost.edges.forEach((blogPost) => {
+        console.log('here is the slug', blogPost.node.slug);
+        const { title, id, slug } = blogPost.node;
+        actions.createPage({
+            path: slug,
+            context: {
+                blogPost: blogPost.node,
+            },
+            component: require.resolve('./src/templates/blog-post.js'),
+        })
+    });
 
     data.allPokemon.edges.forEach((pokemon) => {
         const { name, id } = pokemon.node;
