@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'gatsby';
 import { Popover, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import { classNames } from '../utilities';
@@ -6,9 +7,9 @@ import PropTypes from 'prop-types';
 
 const renderDropdownLinks = (navItems = []) =>
     navItems.map((item) => (
-        <a
+        <Link
             key={item.name}
-            href={item.href}
+            to={item.href}
             className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
         >
             <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-faster-green text-white sm:h-12 sm:w-12">
@@ -20,7 +21,7 @@ const renderDropdownLinks = (navItems = []) =>
                 </p>
                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
             </div>
-        </a>
+        </Link>
     ));
 
 const HeaderDropdownLink = ({ linkData }) => (

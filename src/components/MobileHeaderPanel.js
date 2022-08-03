@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'gatsby';
 import { Popover, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
 import FasterLogo from '../assets/svgs/faster-logo.svg';
@@ -6,9 +7,9 @@ import PropTypes from 'prop-types';
 
 const renderInnerItems = (mobileItems = []) =>
     mobileItems.map((item) => (
-        <a
+        <Link
             key={item.name}
-            href={item.href}
+            to={item.href}
             className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
         >
             <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-faster-green text-white">
@@ -17,7 +18,7 @@ const renderInnerItems = (mobileItems = []) =>
             <div className="ml-4 text-base font-medium text-gray-900">
                 {item.name}
             </div>
-        </a>
+        </Link>
     ));
 
 const renderMobileLinks = (links) =>
@@ -65,17 +66,24 @@ const MobileHeaderPanel = ({ navItems }) => (
                 </div>
                 <div className="py-6 px-5">
                     <div>
-                        <a
-                            href="#"
+                        <Link
+                            href="/members"
                             className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-faster-green"
                         >
                             Join
-                        </a>
+                        </Link>
                         <p className="mt-6 text-center text-base font-medium text-gray-500">
                             Existing member?{' '}
-                            <a href="#" className="text-faster-green">
+                            {/* @TODO Remove for actual authentication implementation */}
+                            <span
+                                to="/members"
+                                className="text-faster-green cursor-pointer"
+                                onClick={() =>
+                                    alert('Sign in will be implemented later')
+                                }
+                            >
                                 Sign in
-                            </a>
+                            </span>
                         </p>
                     </div>
                 </div>

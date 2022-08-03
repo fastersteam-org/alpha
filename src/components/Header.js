@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import React from 'react';
+import { Link } from 'gatsby';
 import { Popover } from '@headlessui/react';
 import { MenuIcon } from '@heroicons/react/outline';
 import HeaderDropdownLink from './HeaderDropdownLink';
@@ -28,15 +29,10 @@ const Header = () => (
     <Popover className="relative bg-white">
         <div className="flex justify-between items-center px-4 py-6 md:px-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1 h-12 md:h-14">
-                <a href="#">
+                <Link to="/">
                     <span className="sr-only">Workflow</span>
-                    {/* <img
-                        className="h-8 w-auto md:h-10"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                        alt=""
-                    /> */}
                     <FasterLogo />
-                </a>
+                </Link>
             </div>
 
             {/* Desktop Links */}
@@ -46,18 +42,20 @@ const Header = () => (
 
             {/* Desktop auth flow buttons */}
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <a
-                    href="#"
-                    className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+                {/* @TODO Add actual authentication functionality */}
+                <span
+                    // to="/members"
+                    onClick={() => alert('Sign in will be implemented later')}
+                    className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
                 >
                     Sign in
-                </a>
-                <a
-                    href="#"
+                </span>
+                <Link
+                    to="/members"
                     className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-faster-green"
                 >
                     Join
-                </a>
+                </Link>
             </div>
 
             {/* Mobile Menu Icon */}

@@ -13,20 +13,20 @@ export const navData = [
                 name: 'About',
                 description:
                     'Get a better understanding of where your traffic is coming from.',
-                href: '#',
+                href: '/about',
                 icon: ChartBarIcon,
             },
             {
                 name: 'Blog',
                 description:
                     'Speak directly to your customers in a more meaningful way.',
-                href: '#',
+                href: '/blog',
                 icon: CursorClickIcon,
             },
             {
                 name: 'Events',
                 description: "Your customers' data will be safe and secure.",
-                href: '#',
+                href: '/events',
                 icon: ShieldCheckIcon,
             },
         ],
@@ -34,5 +34,6 @@ export const navData = [
     {
         name: 'Membership',
         navType: 'link',
+        href: '/members',
     },
 ];

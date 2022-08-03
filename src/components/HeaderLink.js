@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
 const HeaderLink = ({ linkData }) => (
-    <a
-        href="#"
+    <Link
+        to={linkData.href}
         className="text-base font-medium text-gray-500 hover:text-gray-900"
     >
         {linkData.name}
-    </a>
+    </Link>
 );
 
 HeaderLink.propTypes = {
