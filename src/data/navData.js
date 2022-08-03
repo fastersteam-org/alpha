@@ -1,7 +1,7 @@
 import {
-    ChartBarIcon,
-    ShieldCheckIcon,
-    CursorClickIcon,
+    CalendarIcon,
+    InformationCircleIcon,
+    BookOpenIcon,
 } from '@heroicons/react/outline';
 
 export const navData = [
@@ -14,20 +14,20 @@ export const navData = [
                 description:
                     'Get a better understanding of where your traffic is coming from.',
                 href: '/about',
-                icon: ChartBarIcon,
+                icon: InformationCircleIcon,
             },
             {
                 name: 'Blog',
                 description:
                     'Speak directly to your customers in a more meaningful way.',
                 href: '/blog',
-                icon: CursorClickIcon,
+                icon: BookOpenIcon,
             },
             {
                 name: 'Events',
                 description: "Your customers' data will be safe and secure.",
                 href: '/events',
-                icon: ShieldCheckIcon,
+                icon: CalendarIcon,
             },
         ],
     },
