@@ -10,7 +10,7 @@ const renderInnerItems = (mobileItems = []) =>
             href={item.href}
             className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
         >
-            <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
+            <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-faster-green text-white">
                 <item.icon className="h-6 w-6" aria-hidden="true" />
             </div>
             <div className="ml-4 text-base font-medium text-gray-900">
@@ -58,7 +58,7 @@ const MobileHeaderPanel = ({ navItems }) => (
                             />
                         </div>
                         <div className="-mr-2">
-                            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-faster-green">
                                 <span className="sr-only">Close menu</span>
                                 <XIcon className="h-6 w-6" aria-hidden="true" />
                             </Popover.Button>
@@ -70,16 +70,13 @@ const MobileHeaderPanel = ({ navItems }) => (
                     <div>
                         <a
                             href="#"
-                            className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                            className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-faster-green"
                         >
                             Join
                         </a>
                         <p className="mt-6 text-center text-base font-medium text-gray-500">
                             Existing member?{' '}
-                            <a
-                                href="#"
-                                className="text-indigo-600 hover:text-indigo-500"
-                            >
+                            <a href="#" className="text-faster-green">
                                 Sign in
                             </a>
                         </p>

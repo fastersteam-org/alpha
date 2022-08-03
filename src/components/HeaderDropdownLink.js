@@ -11,7 +11,7 @@ const renderDropdownLinks = (navItems = []) =>
             href={item.href}
             className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
         >
-            <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+            <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-faster-green text-white sm:h-12 sm:w-12">
                 <item.icon className="h-6 w-6" aria-hidden="true" />
             </div>
             <div className="ml-4">
@@ -30,7 +30,7 @@ const HeaderDropdownLink = ({ linkData }) => (
                 <Popover.Button
                     className={classNames(
                         open ? 'text-gray-900' : 'text-gray-500',
-                        'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                        'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-faster-green'
                     )}
                 >
                     <span>{linkData.name}</span>
