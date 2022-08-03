@@ -6,6 +6,7 @@ import HeaderDropdownLink from './HeaderDropdownLink';
 import HeaderLink from './HeaderLink';
 import MobileHeaderPanel from './MobileHeaderPanel';
 import { navData } from '../data/navData';
+import FasterLogo from '../assets/svgs/faster-logo.svg';
 
 const renderDesktopLinks = (links) => {
     return links.map((link, index) => {
@@ -26,14 +27,15 @@ const renderDesktopLinks = (links) => {
 const Header = () => (
     <Popover className="relative bg-white">
         <div className="flex justify-between items-center px-4 py-6 md:px-6 md:justify-start md:space-x-10">
-            <div className="flex justify-start lg:w-0 lg:flex-1">
+            <div className="flex justify-start lg:w-0 lg:flex-1 h-12 md:h-14">
                 <a href="#">
                     <span className="sr-only">Workflow</span>
-                    <img
+                    {/* <img
                         className="h-8 w-auto md:h-10"
                         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                         alt=""
-                    />
+                    /> */}
+                    <FasterLogo />
                 </a>
             </div>
 
