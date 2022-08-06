@@ -44,7 +44,7 @@ const DonatePage = () => {
                         practitioners,and other organizations that teach,
                         inspire, and support you and the rest of the community.
                     </p>
-                    <div className="mx-auto">
+                    <div className="mx-auto py-8">
                         <form
                             action="https://www.paypal.com/donate"
                             method="post"
@@ -57,7 +57,7 @@ const DonatePage = () => {
                             />
                             <input
                                 type="image"
-                                src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                                src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
                                 border="0"
                                 name="submit"
                                 title="PayPal - The safer, easier way to pay online!"
