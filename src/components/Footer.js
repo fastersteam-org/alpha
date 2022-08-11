@@ -69,7 +69,7 @@ const Footer = () => (
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
                                 {navigation.join.map((item) => (
-                                    <li key={item.name}>
+                                    <li key="${item.name}-${index}">
                                         <a
                                             href={item.href}
                                             className="text-base text-gray-300 hover:text-white"
@@ -86,7 +86,7 @@ const Footer = () => (
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
                                 {navigation.archive.map((item) => (
-                                    <li key={item.name}>
+                                    <li key="${item.name}-${index}">
                                         <a
                                             href={item.href}
                                             className="text-base text-gray-300 hover:text-white"
@@ -105,7 +105,7 @@ const Footer = () => (
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
                                 {navigation.follow.map((item) => (
-                                    <li key={item.name}>
+                                    <li key="${item.name}-${index}">
                                         <a
                                             href={item.href}
                                             className="text-base text-gray-300 hover:text-white"
@@ -122,7 +122,7 @@ const Footer = () => (
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
                                 {navigation.about.map((item) => (
-                                    <li key={item.name}>
+                                    <li key="${item.name}-${index}">
                                         <a
                                             href={item.href}
                                             className="text-base text-gray-300 hover:text-white"
