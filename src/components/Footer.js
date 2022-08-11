@@ -21,8 +21,8 @@ const navigation = {
             { name: 'Past FASTERCONs', href: '#' },
         ],
     },
-    follow: {
-        name: 'Follow',
+    social: {
+        name: 'Social',
         items: [
             { name: 'Twitter', href: 'https://twitter.com/fastersteam' },
             { name: 'LinkedIn', href: '#' },
@@ -45,7 +45,7 @@ const navigation = {
             { name: 'Donate', href: '/donate' },
         ],
     },
-    social: [
+    socialIcons: [
         {
             name: 'Facebook',
             href: 'https://www.facebook.com/fastersteam',
@@ -116,10 +116,10 @@ const Footer = () => (
                     <div className="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                {navigation.follow.name}
+                                {navigation.social.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.follow.items.map((item) => (
+                                {navigation.social.items.map((item) => (
                                     <li key="${item.name}-${index}">
                                         <a
                                             href={item.href}
@@ -184,7 +184,7 @@ const Footer = () => (
             </div>
             <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
                 <div className="flex space-x-6 md:order-2">
-                    {navigation.social.map((item) => (
+                    {navigation.socialIcons.map((item) => (
                         <a
                             key={item.name}
                             href={item.href}
