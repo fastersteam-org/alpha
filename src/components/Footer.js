@@ -5,31 +5,46 @@ import TwitterLogo from '../assets/svgs/twitter-logo.svg';
 import GithubLogo from '../assets/svgs/github-logo.svg';
 
 const navigation = {
-    join: [
-        { name: 'FASTER Education', href: '#' },
-        { name: 'FASTER Pros', href: '#' },
-        { name: 'FASTER FRESH', href: '#' },
-    ],
-    archive: [
-        { name: 'Speakers', href: '#' },
-        { name: 'Events', href: '/events' },
-        { name: 'Past FASTERCONs', href: '#' },
-    ],
-    follow: [
-        { name: 'Twitter', href: '#' },
-        { name: 'LinkedIn', href: '#' },
-        { name: 'Facebook', href: '#' },
-        { name: 'Instagram', href: '#' },
-        { name: 'YouTube', href: '#' },
-        { name: 'Slack', href: '#' },
-        { name: 'Discord', href: '#' },
-    ],
-    about: [
-        { name: 'Blog', href: '/blog' },
-        { name: 'Media', href: '#' },
-        { name: 'Contact', href: '#' },
-        { name: 'Donate', href: '/donate' },
-    ],
+    join: {
+        name: 'Join',
+        items: [
+            { name: 'FASTER Education', href: '#' },
+            { name: 'FASTER Pros', href: '#' },
+            { name: 'FASTER FRESH', href: '#' },
+        ],
+    },
+    archive: {
+        name: 'Archive',
+        items: [
+            { name: 'Speakers', href: '#' },
+            { name: 'Events', href: '/events' },
+            { name: 'Past FASTERCONs', href: '#' },
+        ],
+    },
+    follow: {
+        name: 'Follow',
+        items: [
+            { name: 'Twitter', href: 'https://twitter.com/fastersteam' },
+            { name: 'LinkedIn', href: '#' },
+            { name: 'Facebook', href: 'https://www.facebook.com/fastersteam' },
+            {
+                name: 'Instagram',
+                href: 'https://www.instagram.com/fastersteam',
+            },
+            { name: 'YouTube', href: '#' },
+            { name: 'Slack', href: '#' },
+            { name: 'Discord', href: '#' },
+        ],
+    },
+    about: {
+        name: 'About',
+        items: [
+            { name: 'Blog', href: '/blog' },
+            { name: 'Media', href: '#' },
+            { name: 'Contact', href: '#' },
+            { name: 'Donate', href: '/donate' },
+        ],
+    },
     social: [
         {
             name: 'Facebook',
@@ -65,10 +80,10 @@ const Footer = () => (
                     <div className="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                Join
+                                {navigation.join.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.join.map((item) => (
+                                {navigation.join.items.map((item) => (
                                     <li key="${item.name}-${index}">
                                         <a
                                             href={item.href}
@@ -82,10 +97,10 @@ const Footer = () => (
                         </div>
                         <div className="mt-12 md:mt-0">
                             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                Archive
+                                {navigation.archive.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.archive.map((item) => (
+                                {navigation.archive.items.map((item) => (
                                     <li key="${item.name}-${index}">
                                         <a
                                             href={item.href}
@@ -101,10 +116,10 @@ const Footer = () => (
                     <div className="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                Follow
+                                {navigation.follow.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.follow.map((item) => (
+                                {navigation.follow.items.map((item) => (
                                     <li key="${item.name}-${index}">
                                         <a
                                             href={item.href}
@@ -118,10 +133,10 @@ const Footer = () => (
                         </div>
                         <div className="mt-12 md:mt-0">
                             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                About
+                                {navigation.about.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.about.map((item) => (
+                                {navigation.about.items.map((item) => (
                                     <li key="${item.name}-${index}">
                                         <a
                                             href={item.href}
