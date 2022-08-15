@@ -18,7 +18,6 @@ const navigation = {
         items: [
             { name: 'Speakers', href: '#' },
             { name: 'Events', href: '/events' },
-            { name: 'Past FASTERCONs', href: '#' },
         ],
     },
     social: {
@@ -32,17 +31,15 @@ const navigation = {
                 href: 'https://www.instagram.com/fastersteam',
             },
             { name: 'YouTube', href: '#' },
-            { name: 'Slack', href: '#' },
-            { name: 'Discord', href: '#' },
+            // { name: 'Slack', href: '#' },
+            // { name: 'Discord', href: '#' },
         ],
     },
     about: {
         name: 'About',
         items: [
-            { name: 'Blog', href: '/blog' },
-            { name: 'Media', href: '#' },
-            { name: 'Contact', href: '#' },
-            { name: 'Donate', href: '/donate' },
+            { name: 'Mission', href: '#' },
+            { name: 'Team', href: '#' },
         ],
     },
     socialIcons: [
