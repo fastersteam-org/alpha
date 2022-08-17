@@ -24,13 +24,16 @@ const navigation = {
         name: 'Social',
         items: [
             { name: 'Twitter', href: 'https://twitter.com/fastersteam' },
-            { name: 'LinkedIn', href: '#' },
+            { name: 'LinkedIn', href: 'https://bit.ly/FASTERLKND' },
             { name: 'Facebook', href: 'https://www.facebook.com/fastersteam' },
             {
                 name: 'Instagram',
                 href: 'https://www.instagram.com/fastersteam',
             },
-            { name: 'YouTube', href: '#' },
+            {
+                name: 'YouTube',
+                href: 'https://www.youtube.com/channel/UCVCx2UV-Ubkk2YJT0BQwhkw/featured',
+            },
             // { name: 'Slack', href: '#' },
             // { name: 'Discord', href: '#' },
         ],
