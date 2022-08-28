@@ -80,8 +80,8 @@ const Footer = () => (
                                 {navigation.join.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.join.items.map((item) => (
-                                    <li key="${item.name}-${index}">
+                                {navigation.join.items.map((item, index) => (
+                                    <li key={`${item.name}-${index}`}>
                                         <a
                                             href={item.href}
                                             className="text-base text-gray-300 hover:text-white"
@@ -97,8 +97,8 @@ const Footer = () => (
                                 {navigation.archive.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.archive.items.map((item) => (
-                                    <li key="${item.name}-${index}">
+                                {navigation.archive.items.map((item, index) => (
+                                    <li key={`${item.name}-${index}`}>
                                         <a
                                             href={item.href}
                                             className="text-base text-gray-300 hover:text-white"
@@ -116,8 +116,8 @@ const Footer = () => (
                                 {navigation.social.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.social.items.map((item) => (
-                                    <li key="${item.name}-${index}">
+                                {navigation.social.items.map((item, index) => (
+                                    <li key={`${item.name}-${index}`}>
                                         <a
                                             href={item.href}
                                             className="text-base text-gray-300 hover:text-white"
@@ -133,8 +133,8 @@ const Footer = () => (
                                 {navigation.about.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.about.items.map((item) => (
-                                    <li key="${item.name}-${index}">
+                                {navigation.about.items.map((item, index) => (
+                                    <li key={`${item.name}-${index}`}>
                                         <a
                                             href={item.href}
                                             className="text-base text-gray-300 hover:text-white"
@@ -181,9 +181,9 @@ const Footer = () => (
             </div>
             <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
                 <div className="flex space-x-6 md:order-2">
-                    {navigation.socialIcons.map((item) => (
+                    {navigation.socialIcons.map((item, index) => (
                         <a
-                            key={item.name}
+                            key={`${item.name}-${index}`}
                             href={item.href}
                             className="text-gray-400 hover:text-gray-300"
                         >
