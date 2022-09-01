@@ -377,6 +377,18 @@ export default function JoinForm() {
                         </div>
                     </div>
                 </div>
+
+                {/* buttons container */}
+                <div className="pt-5">
+                    <div className="flex justify-end">
+                        <button
+                            type="submit"
+                            className="ml-3 inline-flex justify-center rounded-md border border-transparent bg-faster-green py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                </div>
             </form>
         </>
     );

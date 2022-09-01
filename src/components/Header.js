@@ -27,7 +27,7 @@ const renderDesktopLinks = (links) => {
 
 const Header = () => (
     <Popover className="relative bg-white">
-        <div className="flex justify-between items-center px-4 py-6 md:px-6 md:justify-start md:space-x-10">
+        <div className="flex justify-between items-center px-4 py-6 md:px-6 md:justify-start md:space-x-10 max-w-7xl mx-auto">
             <div className="flex justify-start md:w-0 md:flex-1 h-12 md:h-14">
                 <Link to="/">
                     <span className="sr-only">Workflow</span>

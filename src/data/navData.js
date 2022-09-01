@@ -31,8 +31,8 @@ export const navData = [
         ],
     },
     {
-        name: 'Membership',
+        name: 'Join',
         navType: 'link',
-        href: '/members',
+        href: '/join',
     },
 ];
