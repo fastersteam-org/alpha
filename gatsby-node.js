@@ -79,6 +79,25 @@ exports.createPages = async ({ actions, graphql }) => {
         }
     `);
 
+    const { createRedirect } = actions;
+
+    // fastercon redirect
+    createRedirect({
+        fromPath: '/fastercon',
+        toPath: 'https://fastersteam.notion.site/fastersteam/FASTERCON21-e0655c8ee9b84c7fa9cf39859f7a2200',
+        isPermanent: true,
+        force: true,
+    });
+
+    // redirect for API backend
+    createRedirect({
+        fromPath: '/api/*',
+        toPath: 'http://128.199.9.189/:splat',
+        isPermanent: true,
+        force: true,
+        statusCode: 200,
+    });
+
     // Homepage Render
     const homePage = data.allContentfulHomePage.edges[0];
     actions.createPage({
