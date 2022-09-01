@@ -19,7 +19,11 @@ const renderDropdownLinks = (navItems = []) =>
                 <p className="text-base font-medium text-gray-900">
                     {item.name}
                 </p>
-                <p className="mt-1 text-sm text-gray-500">{item.description}</p>
+                {item.description ?? (
+                    <p className="mt-1 text-sm text-gray-500">
+                        {item.description}
+                    </p>
+                )}
             </div>
         </Link>
     ));
