@@ -65,6 +65,17 @@ exports.createPages = async ({ actions, graphql }) => {
                     }
                 }
             }
+
+            allContentfulAboutPage {
+                edges {
+                    node {
+                        id
+                        heroImage {
+                            gatsbyImageData
+                        }
+                    }
+                }
+            }
         }
     `);
 
@@ -76,6 +87,16 @@ exports.createPages = async ({ actions, graphql }) => {
             homePageData: homePage.node,
         },
         component: require.resolve('./src/templates/homepage.js'),
+    });
+
+    // About Page Render
+    const aboutPage = data.allContentfulAboutPage.edges[0];
+    actions.createPage({
+        path: '/about',
+        context: {
+            aboutPageData: aboutPage.node,
+        },
+        component: require.resolve('./src/templates/aboutpage.js'),
     });
 
     // Blog Post Render
