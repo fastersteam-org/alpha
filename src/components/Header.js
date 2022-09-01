@@ -41,10 +41,9 @@ const Header = () => (
             </Popover.Group>
 
             {/* Desktop auth flow buttons */}
-            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                {/* @TODO Add actual authentication functionality */}
-                <span
-                    // to="/members"
+            {/* <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0"> */}
+            {/* @TODO Add actual authentication functionality */}
+            {/* <span
                     onClick={() => alert('Sign in will be implemented later')}
                     className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
                 >
@@ -56,7 +55,7 @@ const Header = () => (
                 >
                     Join
                 </Link>
-            </div>
+            </div> */}
 
             {/* Mobile Menu Icon */}
             <div className="-mr-2 -my-2 md:hidden">
