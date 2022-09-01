@@ -1,7 +1,7 @@
 import {
     CalendarIcon,
     InformationCircleIcon,
-    BookOpenIcon,
+    // BookOpenIcon,
 } from '@heroicons/react/outline';
 
 export const navData = [
@@ -11,21 +11,20 @@ export const navData = [
         navItems: [
             {
                 name: 'About',
-                description:
-                    'Get a better understanding of where your traffic is coming from.',
+                description: 'Learn about our mission.',
                 href: '/about',
                 icon: InformationCircleIcon,
             },
-            {
-                name: 'Blog',
-                description:
-                    'Speak directly to your customers in a more meaningful way.',
-                href: '/blog',
-                icon: BookOpenIcon,
-            },
+            // {
+            //     name: 'Blog',
+            //     description:
+            //         'Speak directly to your customers in a more meaningful way.',
+            //     href: '/blog',
+            //     icon: BookOpenIcon,
+            // },
             {
                 name: 'Events',
-                description: "Your customers' data will be safe and secure.",
+                description: 'Check out upcoming events.',
                 href: '/events',
                 icon: CalendarIcon,
             },
