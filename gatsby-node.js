@@ -49,9 +49,36 @@ exports.createPages = async ({ actions, graphql }) => {
                     }
                 }
             }
+            allContentfulHomePage {
+                edges {
+                    node {
+                        subsections {
+                            raw
+                        }
+                        heroImage {
+                            gatsbyImageData(layout: FULL_WIDTH)
+                            description
+                        }
+                        header
+                        subheader
+                        contentHeader
+                    }
+                }
+            }
         }
     `);
 
+    // Homepage Render
+    const homePage = data.allContentfulHomePage.edges[0];
+    actions.createPage({
+        path: '/',
+        context: {
+            homePageData: homePage.node,
+        },
+        component: require.resolve('./src/templates/homepage.js'),
+    });
+
+    // Blog Post Render
     data.allContentfulBlogPost.edges.forEach((blogPost) => {
         console.log('here is the slug', blogPost.node.slug);
         const { slug } = blogPost.node;
@@ -64,6 +91,7 @@ exports.createPages = async ({ actions, graphql }) => {
         });
     });
 
+    // Pokemon Page Render
     data.allPokemon.edges.forEach((pokemon) => {
         const { name } = pokemon.node;
         actions.createPage({
