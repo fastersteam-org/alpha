@@ -1,4 +1,6 @@
 import React from 'react';
+import joinFields from '../data/join-fields.json';
+
 // import { useFormik } from 'formik';
 
 export default function JoinForm() {
@@ -39,13 +41,12 @@ export default function JoinForm() {
                         you grow.
                     </p>
                 </div>
-                <div className="divide-y space-y-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <div>
-                            <h2 className="text-faster-green text-2xl font-bold border-b-faster-green border-b-2 pb-0.5">
-                                General
-                            </h2>
-
+                <div className="space-y-8">
+                    <div>
+                        <h2 className="text-faster-green text-2xl font-bold border-b-faster-green border-b-2 pb-0.5">
+                            General
+                        </h2>
+                        <div className="grid grid-cols-2 gap-x-10 mt-0">
                             <div className="col-span-1 mt-3">
                                 <label
                                     htmlFor="first-name"
@@ -82,88 +83,77 @@ export default function JoinForm() {
                                 </div>
                             </div>
 
-                            <div className="col-span-1 mt-3">
-                                <label
-                                    htmlFor="ethnic-identity"
-                                    className="block text-base font-medium text-gray-700"
-                                >
-                                    Racial/Ethnic Identity
-                                </label>
-                                <div className="mt-1">
-                                    <input
-                                        type="text"
-                                        name="ethnic-identity"
-                                        id="ethnic-identity"
-                                        autoComplete="given-name"
-                                        className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                    />
-                                </div>
+                            <div className="col-span-2 mt-3">
+                                <fieldset>
+                                    <legend className="block text-base font-medium text-gray-700">
+                                        Racial/Ethnic Identity
+                                        {/* Philippine immigrant (born in the Philippines) */}
+                                        {/* 1.5 generation (born in the Philippines, immigrated before or around age 12 to the U.S.) */}
+                                    </legend>
+
+                                    {joinFields.ethnicIdentity.map(
+                                        (item, index) => (
+                                            <div
+                                                key={`${item.id}-${index}`}
+                                                className="relative flex items-start my-1 pl-4"
+                                            >
+                                                <div className="flex items-center h-5">
+                                                    <input
+                                                        id={`${item.id}`}
+                                                        aria-describedby="comments-description"
+                                                        name="comments"
+                                                        type="checkbox"
+                                                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                                    />
+                                                </div>
+                                                <div className="ml-3 text-sm">
+                                                    <label
+                                                        htmlFor={`${item.id}`}
+                                                        className="font-medium text-gray-700"
+                                                    >
+                                                        {item.value}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        )
+                                    )}
+                                </fieldset>
                             </div>
 
-                            <div className="col-span-1 mt-3">
+                            <div className="col-span-2 mt-3">
                                 <fieldset>
                                     <legend className="block text-base font-medium text-gray-700">
                                         Generation
                                         {/* Philippine immigrant (born in the Philippines) */}
                                         {/* 1.5 generation (born in the Philippines, immigrated before or around age 12 to the U.S.) */}
                                     </legend>
-                                    <div className="relative flex items-start my-1 pl-4">
-                                        <div className="flex items-center h-5">
-                                            <input
-                                                id="comments"
-                                                aria-describedby="comments-description"
-                                                name="comments"
-                                                type="checkbox"
-                                                className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
-                                            />
-                                        </div>
-                                        <div className="ml-3 text-sm">
-                                            <label
-                                                htmlFor="comments"
-                                                className="font-medium text-gray-700"
+
+                                    {joinFields.generation.map(
+                                        (item, index) => (
+                                            <div
+                                                key={`${item.id}-${index}`}
+                                                className="relative flex items-start my-1 pl-4"
                                             >
-                                                Value 1
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div className="relative flex items-start my-1 pl-4">
-                                        <div className="flex items-center h-5">
-                                            <input
-                                                id="candidates"
-                                                aria-describedby="candidates-description"
-                                                name="candidates"
-                                                type="checkbox"
-                                                className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
-                                            />
-                                        </div>
-                                        <div className="ml-3 text-sm">
-                                            <label
-                                                htmlFor="candidates"
-                                                className="font-medium text-gray-700"
-                                            >
-                                                Value 2
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div className="relative flex items-start my-1 pl-4">
-                                        <div className="flex items-center h-5">
-                                            <input
-                                                id="offers"
-                                                aria-describedby="offers-description"
-                                                name="offers"
-                                                type="checkbox"
-                                                className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
-                                            />
-                                        </div>
-                                        <div className="ml-3 text-sm">
-                                            <label
-                                                htmlFor="offers"
-                                                className="font-medium text-gray-700"
-                                            >
-                                                Value 3
-                                            </label>
-                                        </div>
-                                    </div>
+                                                <div className="flex items-center h-5">
+                                                    <input
+                                                        id={`${item.id}`}
+                                                        aria-describedby="comments-description"
+                                                        name="comments"
+                                                        type="checkbox"
+                                                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                                    />
+                                                </div>
+                                                <div className="ml-3 text-sm">
+                                                    <label
+                                                        htmlFor={`${item.id}`}
+                                                        className="font-medium text-gray-700"
+                                                    >
+                                                        {item.value}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        )
+                                    )}
                                 </fieldset>
                             </div>
 
@@ -190,21 +180,21 @@ export default function JoinForm() {
                                     htmlFor="location"
                                     className="block text-base font-medium text-gray-700"
                                 >
-                                    Location
+                                    Location (ex. San Jose, CA, USA)*
                                 </label>
-                                <select
-                                    id="location"
-                                    name="location"
-                                    className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
-                                    defaultValue="United States"
-                                >
-                                    <option>United States</option>
-                                    <option>Canada</option>
-                                    <option>Mexico</option>
-                                </select>
+                                <div className="mt-1">
+                                    <input
+                                        type="text"
+                                        name="location"
+                                        id="location"
+                                        autoComplete="given-name"
+                                        className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div>
+
+                            {/* Profile html for later */}
+                            {/* <div>
                             <h2 className="text-faster-green text-2xl font-bold border-b-faster-green border-b-2 pb-0.5">
                                 Profile Image
                             </h2>
@@ -255,6 +245,7 @@ export default function JoinForm() {
                                     </div>
                                 </div>
                             </div>
+                        </div> */}
                         </div>
                     </div>
 
@@ -264,7 +255,7 @@ export default function JoinForm() {
                             Education
                         </h2>
 
-                        <div className="grid md:grid-cols-2 gap-10">
+                        <div className="grid md:grid-cols-2 gap-x-10">
                             <div className="col-span-1 mt-3">
                                 <label
                                     htmlFor="first-name"
@@ -309,7 +300,7 @@ export default function JoinForm() {
                             Career
                         </h2>
 
-                        <div className="grid md:grid-cols-2 gap-10">
+                        <div className="grid md:grid-cols-2 gap-x-10">
                             <div className="col-span-1 mt-3">
                                 <label
                                     htmlFor="first-name"
@@ -347,7 +338,7 @@ export default function JoinForm() {
                             </div>
                         </div>
 
-                        <div classNam="grid md:grid-cols-2 gap-10">
+                        <div className="grid grid-cols-2 grid-rows-2 grid-flow-col gap-x-10">
                             <div className="col-span-1 mt-3">
                                 <label
                                     htmlFor="first-name"
