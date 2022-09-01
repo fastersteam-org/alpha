@@ -32,11 +32,8 @@ const HomePage = ({ pageContext: { homePageData } }) => (
 
         {/* main image Section */}
         <div className="max-w-7xl pt-8 sm:pt-10 lg:pt-14 w-screen mx-auto">
-            <div className="w-full mx-auto relative pb-[56.25%] bg-indigo-600">
-                <GatsbyImage
-                    className="h-full w-full absolute top-0 left-0"
-                    image={homePageData.heroImage.gatsbyImageData}
-                />
+            <div className="w-full mx-auto relative">
+                <GatsbyImage image={homePageData.heroImage.gatsbyImageData} />
             </div>
         </div>
 
