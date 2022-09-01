@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import FacebookLogo from '../assets/svgs/facebook-logo.svg';
 import InstagramLogo from '../assets/svgs/instagram-logo.svg';
 import TwitterLogo from '../assets/svgs/twitter-logo.svg';
@@ -16,27 +17,40 @@ const navigation = {
     archive: {
         name: 'Archive',
         items: [
-            { name: 'Speakers', href: '#' },
+            // To be coded
+            // { name: 'Speakers', href: '#' },
             { name: 'Events', href: '/events' },
         ],
     },
     social: {
         name: 'Social',
         items: [
-            { name: 'Twitter', href: 'https://twitter.com/fastersteam' },
-            { name: 'LinkedIn', href: '#' },
-            { name: 'Facebook', href: 'https://www.facebook.com/fastersteam' },
+            { name: 'Twitter', href: 'https://twitter.com/fastersteam/' },
+            // To be coded
+            {
+                name: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/faster-steam/',
+            },
+            { name: 'Facebook', href: 'https://www.facebook.com/fastersteam/' },
             {
                 name: 'Instagram',
-                href: 'https://www.instagram.com/fastersteam',
+                href: 'https://www.instagram.com/fastersteam/',
             },
-            { name: 'YouTube', href: '#' },
+            {
+                name: 'YouTube',
+                href: 'https://www.youtube.com/channel/UCVCx2UV-Ubkk2YJT0BQwhkw',
+            },
+            {
+                name: 'Meetup',
+                href: 'https://www.meetup.com/faster-bay-area/',
+            },
             // { name: 'Slack', href: '#' },
             // { name: 'Discord', href: '#' },
         ],
     },
     about: {
         name: 'About',
+        // Rip this out and just make this a link to /about
         items: [
             { name: 'Mission', href: '#' },
             { name: 'Team', href: '#' },
@@ -80,14 +94,14 @@ const Footer = () => (
                                 {navigation.join.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.join.items.map((item, index) => (
-                                    <li key={`${item.name}-${index}`}>
-                                        <a
-                                            href={item.href}
+                                {navigation.join.items.map((item) => (
+                                    <li key="${item.name}-${index}">
+                                        <Link
+                                            to={item.href}
                                             className="text-base text-gray-300 hover:text-white"
                                         >
                                             {item.name}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -97,14 +111,14 @@ const Footer = () => (
                                 {navigation.archive.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.archive.items.map((item, index) => (
-                                    <li key={`${item.name}-${index}`}>
-                                        <a
-                                            href={item.href}
+                                {navigation.archive.items.map((item) => (
+                                    <li key="${item.name}-${index}">
+                                        <Link
+                                            to={item.href}
                                             className="text-base text-gray-300 hover:text-white"
                                         >
                                             {item.name}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -116,14 +130,14 @@ const Footer = () => (
                                 {navigation.social.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.social.items.map((item, index) => (
-                                    <li key={`${item.name}-${index}`}>
-                                        <a
-                                            href={item.href}
+                                {navigation.social.items.map((item) => (
+                                    <li key="${item.name}-${index}">
+                                        <Link
+                                            to={item.href}
                                             className="text-base text-gray-300 hover:text-white"
                                         >
                                             {item.name}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -133,14 +147,14 @@ const Footer = () => (
                                 {navigation.about.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.about.items.map((item, index) => (
-                                    <li key={`${item.name}-${index}`}>
-                                        <a
-                                            href={item.href}
+                                {navigation.about.items.map((item) => (
+                                    <li key="${item.name}-${index}">
+                                        <Link
+                                            to={item.href}
                                             className="text-base text-gray-300 hover:text-white"
                                         >
                                             {item.name}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -181,15 +195,15 @@ const Footer = () => (
             </div>
             <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
                 <div className="flex space-x-6 md:order-2">
-                    {navigation.socialIcons.map((item, index) => (
-                        <a
-                            key={`${item.name}-${index}`}
-                            href={item.href}
+                    {navigation.socialIcons.map((item) => (
+                        <Link
+                            key={item.name}
+                            to={item.href}
                             className="text-gray-400 hover:text-gray-300"
                         >
                             <span className="sr-only">{item.name}</span>
                             <item.icon className="h-6 w-6" aria-hidden="true" />
-                        </a>
+                        </Link>
                     ))}
                 </div>
                 <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
