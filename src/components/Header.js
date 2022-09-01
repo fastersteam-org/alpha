@@ -28,7 +28,7 @@ const renderDesktopLinks = (links) => {
 const Header = () => (
     <Popover className="relative bg-white">
         <div className="flex justify-between items-center px-4 py-6 md:px-6 md:justify-start md:space-x-10">
-            <div className="flex justify-start lg:w-0 lg:flex-1 h-12 md:h-14">
+            <div className="flex justify-start md:w-0 md:flex-1 h-12 md:h-14">
                 <Link to="/">
                     <span className="sr-only">Workflow</span>
                     <FasterLogo />
@@ -41,9 +41,9 @@ const Header = () => (
             </Popover.Group>
 
             {/* Desktop auth flow buttons */}
-            {/* <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0"> */}
-            {/* @TODO Add actual authentication functionality */}
-            {/* <span
+            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                {/* @TODO Add actual authentication functionality */}
+                {/* <span
                     onClick={() => alert('Sign in will be implemented later')}
                     className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
                 >
@@ -54,8 +54,8 @@ const Header = () => (
                     className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-faster-green"
                 >
                     Join
-                </Link>
-            </div> */}
+                </Link> */}
+            </div>
 
             {/* Mobile Menu Icon */}
             <div className="-mr-2 -my-2 md:hidden">
