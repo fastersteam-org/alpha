@@ -1,6 +1,7 @@
 import React from 'react';
 import joinFields from '../data/join-fields.json';
 import { useFormik } from 'formik';
+import { handleJoinSubmit } from '../api';
 
 export default function JoinForm() {
     const formik = useFormik({
@@ -25,6 +26,7 @@ export default function JoinForm() {
         onSubmit: (values) => {
             console.log(values);
             console.log(JSON.stringify(values, null, 2));
+            handleJoinSubmit(values);
         },
     });
 
@@ -360,7 +362,7 @@ export default function JoinForm() {
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-2 grid-rows-2 grid-flow-col gap-x-10">
+                        <div className="grid md:grid-cols-2 grid-rows-2 grid-flow-col gap-x-10">
                             <div className="col-span-1 mt-3">
                                 <label
                                     htmlFor="industry"
