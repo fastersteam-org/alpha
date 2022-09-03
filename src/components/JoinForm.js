@@ -1,36 +1,36 @@
 import React from 'react';
 import joinFields from '../data/join-fields.json';
-
-// import { useFormik } from 'formik';
+import { useFormik } from 'formik';
 
 export default function JoinForm() {
-    // const formik = useFormik({
-    //     initialValues: {
-    //         firstName: '',
-    //         lastName: '',
-    //         pronouns: '',
-    //         birthDate: '',
-    //         ethnicity: '',
-    //         generation: '',
-    //         email: '',
-    //         location: '',
-    //         phone: '',
-    //         education: {
-    //             school: '',
-    //             field: '',
-    //         },
-    //         career: {
-    //             role: '',
-    //             company: '',
-    //             industry: [],
-    //             linkedinUrl: '',
-    //         },
-    //     },
-    // });
+    const formik = useFormik({
+        initialValues: {
+            firstName: '',
+            lastName: '',
+            ethnicity: '',
+            generation: '',
+            email: '',
+            location: '',
+            education: {
+                school: '',
+                discipline: '',
+            },
+            career: {
+                role: '',
+                company: '',
+                industry: [],
+                linkedinUrl: '',
+            },
+        },
+        onSubmit: (values) => {
+            console.log(values);
+            console.log(JSON.stringify(values, null, 2));
+        },
+    });
 
     return (
         <>
-            <form className="space-y-8">
+            <form onSubmit={formik.handleSubmit} className="space-y-8">
                 <div>
                     <h2 className="text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl">
                         Welcome! Tell Us About Yourself...
@@ -46,10 +46,10 @@ export default function JoinForm() {
                         <h2 className="text-faster-green text-2xl font-bold border-b-faster-green border-b-2 pb-0.5">
                             General
                         </h2>
-                        <div className="grid grid-cols-2 gap-x-10 mt-0">
+                        <div className="grid md:grid-cols-2 gap-x-10 mt-0">
                             <div className="col-span-1 mt-3">
                                 <label
-                                    htmlFor="first-name"
+                                    htmlFor="firstName"
                                     className="block text-base font-medium text-gray-700"
                                 >
                                     First Name*
@@ -57,8 +57,10 @@ export default function JoinForm() {
                                 <div className="mt-1">
                                     <input
                                         type="text"
-                                        name="first-name"
-                                        id="first-name"
+                                        name="firstName"
+                                        id="firstName"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.firstName}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
@@ -67,7 +69,7 @@ export default function JoinForm() {
 
                             <div className="col-span-1 mt-3">
                                 <label
-                                    htmlFor="last-name"
+                                    htmlFor="lastName"
                                     className="block text-base font-medium text-gray-700"
                                 >
                                     Last Name*
@@ -75,20 +77,20 @@ export default function JoinForm() {
                                 <div className="mt-1">
                                     <input
                                         type="text"
-                                        name="last-name"
-                                        id="last-name"
+                                        name="lastName"
+                                        id="lastName"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.lastName}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                 </div>
                             </div>
 
-                            <div className="col-span-2 mt-3">
+                            <div className="col-span-1 md:col-span-2 mt-3">
                                 <fieldset>
                                     <legend className="block text-base font-medium text-gray-700">
                                         Racial/Ethnic Identity
-                                        {/* Philippine immigrant (born in the Philippines) */}
-                                        {/* 1.5 generation (born in the Philippines, immigrated before or around age 12 to the U.S.) */}
                                     </legend>
 
                                     {joinFields.ethnicIdentity.map(
@@ -120,7 +122,7 @@ export default function JoinForm() {
                                 </fieldset>
                             </div>
 
-                            <div className="col-span-2 mt-3">
+                            <div className="col-span-1 md:col-span-2 mt-3">
                                 <fieldset>
                                     <legend className="block text-base font-medium text-gray-700">
                                         Generation
@@ -169,6 +171,8 @@ export default function JoinForm() {
                                         type="text"
                                         name="email"
                                         id="email"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.email}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
@@ -187,6 +191,8 @@ export default function JoinForm() {
                                         type="text"
                                         name="location"
                                         id="location"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.location}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
@@ -250,7 +256,7 @@ export default function JoinForm() {
                     </div>
 
                     {/* Education Portion of form */}
-                    <div className="">
+                    <div>
                         <h2 className="text-faster-green text-2xl font-bold border-b-faster-green border-b-2 pb-0.5">
                             Education
                         </h2>
@@ -258,7 +264,7 @@ export default function JoinForm() {
                         <div className="grid md:grid-cols-2 gap-x-10">
                             <div className="col-span-1 mt-3">
                                 <label
-                                    htmlFor="first-name"
+                                    htmlFor="school"
                                     className="block text-base font-medium text-gray-700"
                                 >
                                     School*
@@ -266,8 +272,10 @@ export default function JoinForm() {
                                 <div className="mt-1">
                                     <input
                                         type="text"
-                                        name="first-name"
-                                        id="first-name"
+                                        name="education.school"
+                                        id="school"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.education.school}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
@@ -276,7 +284,7 @@ export default function JoinForm() {
 
                             <div className="col-span-1 mt-3">
                                 <label
-                                    htmlFor="first-name"
+                                    htmlFor="discipline"
                                     className="block text-base font-medium text-gray-700"
                                 >
                                     Discipline/Field
@@ -284,8 +292,12 @@ export default function JoinForm() {
                                 <div className="mt-1">
                                     <input
                                         type="text"
-                                        name="first-name"
-                                        id="first-name"
+                                        name="education.discipline"
+                                        id="discipline"
+                                        onChange={formik.handleChange}
+                                        value={
+                                            formik.values.education.discipline
+                                        }
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
@@ -303,7 +315,7 @@ export default function JoinForm() {
                         <div className="grid md:grid-cols-2 gap-x-10">
                             <div className="col-span-1 mt-3">
                                 <label
-                                    htmlFor="first-name"
+                                    htmlFor="role"
                                     className="block text-base font-medium text-gray-700"
                                 >
                                     Role That Best Describes You
@@ -311,8 +323,10 @@ export default function JoinForm() {
                                 <div className="mt-1">
                                     <input
                                         type="text"
-                                        name="first-name"
-                                        id="first-name"
+                                        name="career.role"
+                                        id="role"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.career.role}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
@@ -321,7 +335,7 @@ export default function JoinForm() {
 
                             <div className="col-span-1 mt-3">
                                 <label
-                                    htmlFor="first-name"
+                                    htmlFor="company"
                                     className="block text-base font-medium text-gray-700"
                                 >
                                     Company
@@ -329,8 +343,10 @@ export default function JoinForm() {
                                 <div className="mt-1">
                                     <input
                                         type="text"
-                                        name="first-name"
-                                        id="first-name"
+                                        name="career.company"
+                                        id="company"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.career.company}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
@@ -341,7 +357,7 @@ export default function JoinForm() {
                         <div className="grid grid-cols-2 grid-rows-2 grid-flow-col gap-x-10">
                             <div className="col-span-1 mt-3">
                                 <label
-                                    htmlFor="first-name"
+                                    htmlFor="industry"
                                     className="block text-base font-medium text-gray-700"
                                 >
                                     Industry
@@ -349,8 +365,10 @@ export default function JoinForm() {
                                 <div className="mt-1">
                                     <input
                                         type="text"
-                                        name="first-name"
-                                        id="first-name"
+                                        name="career.industry"
+                                        id="industry"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.career.industry}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
@@ -359,7 +377,7 @@ export default function JoinForm() {
 
                             <div className="col-span-1 mt-3">
                                 <label
-                                    htmlFor="first-name"
+                                    htmlFor="linkedinUrl"
                                     className="block text-base font-medium text-gray-700"
                                 >
                                     Linkedin Profile URL
@@ -367,8 +385,10 @@ export default function JoinForm() {
                                 <div className="mt-1">
                                     <input
                                         type="text"
-                                        name="first-name"
-                                        id="first-name"
+                                        name="career.linkedinUrl"
+                                        id="linkedinUrl"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.career.linkedin}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
