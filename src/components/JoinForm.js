@@ -8,7 +8,7 @@ export default function JoinForm() {
             firstName: '',
             lastName: '',
             ethnicity: '',
-            generation: '',
+            generation: [],
             email: '',
             location: '',
             education: {
@@ -102,10 +102,14 @@ export default function JoinForm() {
                                                 <div className="flex items-center h-5">
                                                     <input
                                                         id={`${item.id}`}
-                                                        aria-describedby="comments-description"
-                                                        name="comments"
+                                                        aria-describedby="ethnicity-description"
+                                                        name="ethnicity"
                                                         type="checkbox"
-                                                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                                        onChange={
+                                                            formik.handleChange
+                                                        }
+                                                        value={item.value}
+                                                        className="focus:ring-faster-green h-4 w-4 text-faster-green border-gray-300 rounded"
                                                     />
                                                 </div>
                                                 <div className="ml-3 text-sm">
@@ -126,8 +130,6 @@ export default function JoinForm() {
                                 <fieldset>
                                     <legend className="block text-base font-medium text-gray-700">
                                         Generation
-                                        {/* Philippine immigrant (born in the Philippines) */}
-                                        {/* 1.5 generation (born in the Philippines, immigrated before or around age 12 to the U.S.) */}
                                     </legend>
 
                                     {joinFields.generation.map(
@@ -139,10 +141,14 @@ export default function JoinForm() {
                                                 <div className="flex items-center h-5">
                                                     <input
                                                         id={`${item.id}`}
-                                                        aria-describedby="comments-description"
-                                                        name="comments"
+                                                        aria-describedby="generation-description"
+                                                        name="generation"
                                                         type="checkbox"
-                                                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                                        onChange={
+                                                            formik.handleChange
+                                                        }
+                                                        value={item.value}
+                                                        className="focus:ring-faster-green h-4 w-4 text-faster-green border-gray-300 rounded"
                                                     />
                                                 </div>
                                                 <div className="ml-3 text-sm">
