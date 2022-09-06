@@ -9,9 +9,9 @@ const navigation = {
     join: {
         name: 'Join',
         items: [
-            { name: 'FASTER Education', href: '#' },
-            { name: 'FASTER Pros', href: '#' },
-            { name: 'FASTER FRESH', href: '#' },
+            { name: 'FASTER Education', href: '/join' },
+            { name: 'FASTER Pros', href: '/join' },
+            { name: 'FASTER FRESH', href: '/join' },
         ],
     },
     archive: {

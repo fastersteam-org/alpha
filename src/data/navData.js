@@ -30,9 +30,9 @@ export const navData = [
             },
         ],
     },
-    // {
-    //     name: 'Join',
-    //     navType: 'link',
-    //     href: '/join',
-    // },
+    {
+        name: 'Join',
+        navType: 'link',
+        href: '/join',
+    },
 ];
