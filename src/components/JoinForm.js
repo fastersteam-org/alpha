@@ -108,7 +108,7 @@ export default function JoinForm() {
                                         onBlur={formik.handleBlur}
                                         value={formik.values.lastName}
                                         autoComplete="given-name"
-                                        className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                        className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                     {formik.touched.lastName &&
                                     formik.errors.lastName ? (
@@ -213,7 +213,7 @@ export default function JoinForm() {
                                         onBlur={formik.handleBlur}
                                         value={formik.values.email}
                                         autoComplete="given-name"
-                                        className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                        className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                     {formik.touched.email &&
                                     formik.errors.email ? (
@@ -240,7 +240,7 @@ export default function JoinForm() {
                                         onBlur={formik.handleBlur}
                                         value={formik.values.location}
                                         autoComplete="given-name"
-                                        className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                        className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
                                     {formik.touched.location &&
                                     formik.errors.location ? (

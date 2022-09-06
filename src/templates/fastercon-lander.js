@@ -2,7 +2,6 @@ import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
-import { Link } from 'gatsby';
 
 const FasterconLander = ({ pageContext: { landerPageData } }) => {
     return (
@@ -49,18 +48,22 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
             </div>
 
             <div className="max-w-7xl mx-auto pt-4 px-4 sm:px-6 lg:px-20 flex flex-col items-center">
-                <Link
-                    to="https://bit.ly/FASTERCON22D1"
+                <a
+                    href="https://bit.ly/FASTERCON22D1"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                 >
                     RSVP to FASTERCON DAY 1
-                </Link>
-                <Link
-                    to="https://bit.ly/FASTERCON22D2"
+                </a>
+                <a
+                    href="https://bit.ly/FASTERCON22D2"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2 mt-5"
                 >
                     RSVP to FASTERCON DAY 2
-                </Link>
+                </a>
             </div>
 
             <div className="max-w-7xl mx-auto pt-4 px-4 sm:px-6 lg:px-20"></div>
@@ -144,12 +147,14 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </p>
 
                 <div className="text-center pt-4">
-                    <Link
-                        to="https://bit.ly/FASTERCON22D1"
+                    <a
+                        href="https://bit.ly/FASTERCON22D1"
+                        target="_blank"
+                        rel="noreferrer"
                         className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                     >
                         RSVP to FASTERCON DAY 1
-                    </Link>
+                    </a>
                 </div>
             </div>
 
@@ -179,12 +184,14 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </p>
                 {/* Button for FASTERCON 2 RSVP */}
                 <div className="text-center pt-4">
-                    <Link
-                        to="https://bit.ly/FASTERCON22D2"
+                    <a
+                        href="https://bit.ly/FASTERCON22D2"
+                        target="_blank"
+                        rel="noreferrer"
                         className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                     >
                         RSVP to FASTERCON DAY 2
-                    </Link>
+                    </a>
                 </div>
 
                 {/* Schedule Start */}
@@ -271,12 +278,14 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
 
                 {/* RSVP to FASTERCON DAY 2 */}
                 <div className="text-center pt-4">
-                    <Link
-                        to="https://bit.ly/FASTERCON22D2"
+                    <a
+                        href="https://bit.ly/FASTERCON22D2"
+                        target="_blank"
+                        rel="noreferrer"
                         className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                     >
                         RSVP to FASTERCON DAY 2
-                    </Link>
+                    </a>
                 </div>
             </div>
         </Layout>

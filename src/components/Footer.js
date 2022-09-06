@@ -94,8 +94,8 @@ const Footer = () => (
                                 {navigation.join.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.join.items.map((item) => (
-                                    <li key="${item.name}-${index}">
+                                {navigation.join.items.map((item, index) => (
+                                    <li key={`${item.name}-${index}`}>
                                         <Link
                                             to={item.href}
                                             className="text-base text-gray-300 hover:text-white"
@@ -111,8 +111,8 @@ const Footer = () => (
                                 {navigation.archive.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.archive.items.map((item) => (
-                                    <li key="${item.name}-${index}">
+                                {navigation.archive.items.map((item, index) => (
+                                    <li key={`${item.name}-${index}`}>
                                         <Link
                                             to={item.href}
                                             className="text-base text-gray-300 hover:text-white"
@@ -130,14 +130,16 @@ const Footer = () => (
                                 {navigation.social.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                                {navigation.social.items.map((item) => (
-                                    <li key="${item.name}-${index}">
-                                        <Link
-                                            to={item.href}
+                                {navigation.social.items.map((item, index) => (
+                                    <li key={`${item.name}-${index}`}>
+                                        <a
+                                            href={item.href}
+                                            target="_blank"
+                                            rel="noreferrer"
                                             className="text-base text-gray-300 hover:text-white"
                                         >
                                             {item.name}
-                                        </Link>
+                                        </a>
                                     </li>
                                 ))}
                             </ul>
@@ -148,7 +150,7 @@ const Footer = () => (
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
                                 {navigation.about.items.map((item) => (
-                                    <li key="${item.name}-${index}">
+                                    <li key={`${item.name}-${index}`}>
                                         <Link
                                             to={item.href}
                                             className="text-base text-gray-300 hover:text-white"
@@ -183,12 +185,14 @@ const Footer = () => (
                             placeholder="Enter your email"
                         /> */}
                         <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:ml-0 sm:flex-shrink-0">
-                            <Link
-                                to="https://bit.ly/FASTERSUBS"
+                            <a
+                                href="https://bit.ly/FASTERSUBS"
+                                target="_blank"
+                                rel="noreferrer"
                                 className="w-full bg-faster-green border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-faster-green"
                             >
                                 Subscribe
-                            </Link>
+                            </a>
                         </div>
                     </form>
                 </div>
@@ -196,14 +200,16 @@ const Footer = () => (
             <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
                 <div className="flex space-x-6 md:order-2">
                     {navigation.socialIcons.map((item) => (
-                        <Link
+                        <a
                             key={item.name}
-                            to={item.href}
+                            href={item.href}
+                            target="_blank"
+                            rel="noreferrer"
                             className="text-gray-400 hover:text-gray-300"
                         >
                             <span className="sr-only">{item.name}</span>
                             <item.icon className="h-6 w-6" aria-hidden="true" />
-                        </Link>
+                        </a>
                     ))}
                 </div>
                 <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
