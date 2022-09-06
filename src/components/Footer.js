@@ -10,7 +10,7 @@ const navigation = {
         name: 'Join',
         items: [
             { name: 'FASTER Education', href: '/join' },
-            { name: 'FASTER Pros', href: '/join' },
+            { name: 'FASTER PROS', href: '/join' },
             { name: 'FASTER FRESH', href: '/join' },
         ],
     },
