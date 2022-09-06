@@ -37,14 +37,8 @@ export default function JoinForm() {
             },
         },
         validationSchema,
-        onSubmit: (values) => {
-            console.log(values);
-            console.log(JSON.stringify(values, null, 2));
-            handleJoinSubmit(JSON.stringify(values));
-        },
+        onSubmit: (values) => handleJoinSubmit(JSON.stringify(values)),
     });
-
-    console.log('here are the errors', formik.errors);
 
     return (
         <>
