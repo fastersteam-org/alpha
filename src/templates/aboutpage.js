@@ -25,7 +25,7 @@ const AboutPage = ({ pageContext: { aboutPageData } }) => (
         </div>
 
         {/* Team Direction and Goals */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 pb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 pt-8 sm:pt-10 lg:pt-14 pb-20">
             <p className="text-base sm:text-lg lg:text-xl mb-8">
                 FASTER operates under the leadership and direction of our
                 National Board of Directors, Advisors, Committee Members, and in

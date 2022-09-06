@@ -65,7 +65,16 @@ exports.createPages = async ({ actions, graphql }) => {
                     }
                 }
             }
-
+            allContentfulFasterconLander {
+                edges {
+                    node {
+                        id
+                        heroImage {
+                            gatsbyImageData
+                        }
+                    }
+                }
+            }
             allContentfulAboutPage {
                 edges {
                     node {
@@ -82,12 +91,12 @@ exports.createPages = async ({ actions, graphql }) => {
     const { createRedirect } = actions;
 
     // fastercon redirect
-    createRedirect({
-        fromPath: '/fastercon',
-        toPath: 'https://fastersteam.notion.site/fastersteam/FASTERCON21-e0655c8ee9b84c7fa9cf39859f7a2200',
-        isPermanent: true,
-        force: true,
-    });
+    // createRedirect({
+    //     fromPath: '/fastercon',
+    //     toPath: 'https://fastersteam.notion.site/fastersteam/FASTERCON21-e0655c8ee9b84c7fa9cf39859f7a2200',
+    //     isPermanent: true,
+    //     force: true,
+    // });
 
     // redirect for API backend
     createRedirect({
@@ -106,6 +115,16 @@ exports.createPages = async ({ actions, graphql }) => {
             homePageData: homePage.node,
         },
         component: require.resolve('./src/templates/homepage.js'),
+    });
+
+    // FASTERCON Lander Render
+    const landerPage = data.allContentfulFasterconLander.edges[0];
+    actions.createPage({
+        path: '/fastercon',
+        context: {
+            landerPageData: landerPage.node,
+        },
+        component: require.resolve('./src/templates/fastercon-lander.js'),
     });
 
     // About Page Render
