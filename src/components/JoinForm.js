@@ -1,7 +1,20 @@
 import React from 'react';
-import joinFields from '../data/join-fields.json';
+import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { handleJoinSubmit } from '../api';
+import joinFields from '../data/join-fields.json';
+
+const validationSchema = Yup.object({
+    firstName: Yup.string().required('Required'),
+    lastName: Yup.string().required('Required'),
+    email: Yup.string()
+        .email('Please enter a valid email address.')
+        .required('Required'),
+    location: Yup.string().required('Required'),
+    education: Yup.object({
+        school: Yup.string().required('Required'),
+    }),
+});
 
 export default function JoinForm() {
     const formik = useFormik({
@@ -23,12 +36,15 @@ export default function JoinForm() {
                 linkedinUrl: '',
             },
         },
+        validationSchema,
         onSubmit: (values) => {
             console.log(values);
             console.log(JSON.stringify(values, null, 2));
-            handleJoinSubmit(values);
+            handleJoinSubmit(JSON.stringify(values));
         },
     });
+
+    console.log('here are the errors', formik.errors);
 
     return (
         <>
@@ -62,10 +78,17 @@ export default function JoinForm() {
                                         name="firstName"
                                         id="firstName"
                                         onChange={formik.handleChange}
+                                        onBlur={formik.handleBlur}
                                         value={formik.values.firstName}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
+                                    {formik.touched.firstName &&
+                                    formik.errors.firstName ? (
+                                        <div className="text-faster-error-red">
+                                            {formik.errors.firstName}
+                                        </div>
+                                    ) : null}
                                 </div>
                             </div>
 
@@ -82,10 +105,17 @@ export default function JoinForm() {
                                         name="lastName"
                                         id="lastName"
                                         onChange={formik.handleChange}
+                                        onBlur={formik.handleBlur}
                                         value={formik.values.lastName}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
+                                    {formik.touched.lastName &&
+                                    formik.errors.lastName ? (
+                                        <div className="text-faster-error-red">
+                                            {formik.errors.lastName}
+                                        </div>
+                                    ) : null}
                                 </div>
                             </div>
 
@@ -180,10 +210,17 @@ export default function JoinForm() {
                                         name="email"
                                         id="email"
                                         onChange={formik.handleChange}
+                                        onBlur={formik.handleBlur}
                                         value={formik.values.email}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
+                                    {formik.touched.email &&
+                                    formik.errors.email ? (
+                                        <div className="text-faster-error-red">
+                                            {formik.errors.email}
+                                        </div>
+                                    ) : null}
                                 </div>
                             </div>
 
@@ -200,10 +237,17 @@ export default function JoinForm() {
                                         name="location"
                                         id="location"
                                         onChange={formik.handleChange}
+                                        onBlur={formik.handleBlur}
                                         value={formik.values.location}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
+                                    {formik.touched.location &&
+                                    formik.errors.location ? (
+                                        <div className="text-faster-error-red">
+                                            {formik.errors.location}
+                                        </div>
+                                    ) : null}
                                 </div>
                             </div>
 
@@ -283,10 +327,17 @@ export default function JoinForm() {
                                         name="education.school"
                                         id="school"
                                         onChange={formik.handleChange}
+                                        onBlur={formik.handleBlur}
                                         value={formik.values.education.school}
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />
+                                    {(formik.touched.education || {}).school &&
+                                    (formik.errors.education || {}).school ? (
+                                        <div className="text-faster-error-red">
+                                            {formik.errors.education.school}
+                                        </div>
+                                    ) : null}
                                 </div>
                             </div>
 
@@ -410,8 +461,13 @@ export default function JoinForm() {
                 <div className="pt-5">
                     <div className="flex justify-end">
                         <button
+                            disabled={!!Object.keys(formik.errors).length}
                             type="submit"
-                            className="ml-3 inline-flex justify-center rounded-md border border-transparent bg-faster-green py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
+                            className={`ml-3 inline-flex justify-center rounded-md border border-transparent bg-faster-green py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2 ${
+                                Object.keys(formik.errors).length
+                                    ? 'opacity-75'
+                                    : ''
+                            }`}
                         >
                             Submit
                         </button>
