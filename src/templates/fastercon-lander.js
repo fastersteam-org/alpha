@@ -37,7 +37,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     annual convening celebrating Filipinx American HXStory Month
                     (FAHM) in October. Every year, we highlight rising and
                     seasoned professionals who have made significant
-                    contributions to the STEAM industry
+                    contributions to the STEAM industry.
                 </p>
             </div>
 
