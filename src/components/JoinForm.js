@@ -33,7 +33,7 @@ export default function JoinForm() {
                 role: '',
                 company: '',
                 industry: [],
-                linkedinUrl: '',
+                personalSite: '',
             },
         },
         validationSchema,
@@ -436,18 +436,21 @@ export default function JoinForm() {
 
                             <div className="col-span-1 mt-3">
                                 <label
-                                    htmlFor="linkedinUrl"
+                                    htmlFor="personalSite"
                                     className="block text-base font-medium text-gray-700"
                                 >
-                                    Linkedin Profile URL
+                                    Linkedin Profile URL/Personal Site/Social
+                                    Media
                                 </label>
                                 <div className="mt-1">
                                     <input
                                         type="text"
-                                        name="career.linkedinUrl"
-                                        id="linkedinUrl"
+                                        name="career.personalSite"
+                                        id="personalSite"
                                         onChange={formik.handleChange}
-                                        value={formik.values.career.linkedin}
+                                        value={
+                                            formik.values.career.personalSite
+                                        }
                                         autoComplete="given-name"
                                         className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
                                     />

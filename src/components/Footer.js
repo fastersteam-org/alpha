@@ -19,7 +19,7 @@ const navigation = {
         items: [
             // To be coded
             // { name: 'Speakers', href: '#' },
-            { name: 'Events', href: '/events' },
+            { name: 'Events', href: '/fastercon' },
         ],
     },
     social: {
@@ -48,14 +48,14 @@ const navigation = {
             // { name: 'Discord', href: '#' },
         ],
     },
-    about: {
-        name: 'About',
-        // Rip this out and just make this a link to /about
-        items: [
-            { name: 'Mission', href: '#' },
-            { name: 'Team', href: '#' },
-        ],
-    },
+    // about: {
+    //     name: 'About',
+    //     // Rip this out and just make this a link to /about
+    //     items: [
+    //         { name: 'Mission', href: '#' },
+    //         { name: 'Team', href: '#' },
+    //     ],
+    // },
     socialIcons: [
         {
             name: 'Facebook',
@@ -142,7 +142,7 @@ const Footer = () => (
                                 ))}
                             </ul>
                         </div>
-                        <div className="mt-12 md:mt-0">
+                        {/* <div className="mt-12 md:mt-0">
                             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                                 {navigation.about.name}
                             </h3>
@@ -158,7 +158,7 @@ const Footer = () => (
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="mt-8 xl:mt-0">
@@ -170,7 +170,7 @@ const Footer = () => (
                         inbox weekly.
                     </p>
                     <form className="mt-4 sm:flex sm:max-w-md">
-                        <label htmlFor="email-address" className="sr-only">
+                        {/* <label htmlFor="email-address" className="sr-only">
                             Email address
                         </label>
                         <input
@@ -181,14 +181,14 @@ const Footer = () => (
                             required
                             className="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
                             placeholder="Enter your email"
-                        />
-                        <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                            <button
-                                type="submit"
+                        /> */}
+                        <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:ml-0 sm:flex-shrink-0">
+                            <Link
+                                to="https://bit.ly/FASTERSUBS"
                                 className="w-full bg-faster-green border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-faster-green"
                             >
                                 Subscribe
-                            </button>
+                            </Link>
                         </div>
                     </form>
                 </div>

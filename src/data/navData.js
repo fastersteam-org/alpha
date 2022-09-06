@@ -25,14 +25,14 @@ export const navData = [
             {
                 name: 'Events',
                 description: 'Check out upcoming events.',
-                href: '/events',
+                href: '/fastercon',
                 icon: CalendarIcon,
             },
         ],
     },
-    {
-        name: 'Join',
-        navType: 'link',
-        href: '/join',
-    },
+    // {
+    //     name: 'Join',
+    //     navType: 'link',
+    //     href: '/join',
+    // },
 ];
