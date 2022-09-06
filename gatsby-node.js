@@ -139,7 +139,6 @@ exports.createPages = async ({ actions, graphql }) => {
 
     // Blog Post Render
     data.allContentfulBlogPost.edges.forEach((blogPost) => {
-        console.log('here is the slug', blogPost.node.slug);
         const { slug } = blogPost.node;
         actions.createPage({
             path: slug,
