@@ -1,15 +1,21 @@
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
     siteMetadata: {
         title: `new`,
-        siteUrl: `https://www.yourdomain.tld`,
+        siteUrl: `https://www.faster-steam${
+            process.env.NODE_ENV === 'development' ? '-staging' : ''
+        }.org`,
     },
     plugins: [
         {
             resolve: 'gatsby-source-contentful',
             options: {
-                accessToken: 'M8PQlTYcsoFbLKSu2DoaWZcDrlLla3wzaLPfDdB_p3M',
-                spaceId: 'w05unrqtrsj4',
-                environment: 'Staging',
+                accessToken: process.env.CONTENTFUL_API_KEY,
+                spaceId: process.env.CONTENTFUL_SPACE_ID,
+                environment: process.env.CONTENTFUL_ENV,
             },
         },
         'gatsby-plugin-postcss',
@@ -19,6 +25,7 @@ module.exports = {
         'gatsby-plugin-mdx',
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
+        'gatsby-plugin-netlify',
         {
             resolve: 'gatsby-plugin-react-svg',
             options: {

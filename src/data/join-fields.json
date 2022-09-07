@@ -1,0 +1,66 @@
+{
+    "generation": [
+        {
+            "id": "",
+            "value": "Philippine immigrant (born in the Philippines)"
+        },
+        {
+            "id": "",
+            "value": "1st generation immigrant (from the Philippines)"
+        },
+        {
+            "id": "",
+            "value": "1.5 generation (born in the Philippines, immigrated before or around age 12 to the U.S.)"
+        },
+        {
+            "id": "",
+            "value": "2nd generation FilipinX American (born in the U.S)"
+        },
+        {
+            "id": "",
+            "value": "3rd generation FilipinX American"
+        },
+        {
+            "id": "",
+            "value": "4th generation FilipinX American or more"
+        }
+    ],
+    "ethnicIdentity": [
+        {
+            "id": "",
+            "value": "FilipinX American"
+        },
+        {
+            "id": "",
+            "value": "African/African American/Black"
+        },
+        {
+            "id": "",
+            "value": "East Asian (Chinese, Japanese, Korean, Mongolian, Tibetan, Taiwanese etc.)"
+        },
+        {
+            "id": "",
+            "value": "LatinX American/ChicanX American/Hispanic"
+        },
+        {
+            "id": "",
+            "value": "Arab American/Middle Eastern"
+        },
+        {
+            "id": "",
+            "value": "Pacific Islander"
+        },
+        {
+            "id": "",
+            "value": "South Asian (including Bangladeshi, Bhutanese, Indian, Nepali, Pakistani, Afghanistan, Sri Lankan)"
+        },
+        {
+            "id": "",
+            "value": "Southeast Asian American (including Burmese, Cambodian, Hmong, Indonesian, Malaysian, Mien, Singaporean, Thai, Vietnamese"
+        },
+        {
+            "id": "",
+            "value": "White"
+        }
+    ]
+}

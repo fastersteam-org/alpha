@@ -49,11 +49,96 @@ exports.createPages = async ({ actions, graphql }) => {
                     }
                 }
             }
+            allContentfulHomePage {
+                edges {
+                    node {
+                        subsections {
+                            raw
+                        }
+                        heroImage {
+                            gatsbyImageData(layout: FULL_WIDTH)
+                            description
+                        }
+                        header
+                        subheader
+                        contentHeader
+                    }
+                }
+            }
+            allContentfulFasterconLander {
+                edges {
+                    node {
+                        id
+                        heroImage {
+                            gatsbyImageData
+                        }
+                    }
+                }
+            }
+            allContentfulAboutPage {
+                edges {
+                    node {
+                        id
+                        heroImage {
+                            gatsbyImageData
+                        }
+                    }
+                }
+            }
         }
     `);
 
+    const { createRedirect } = actions;
+
+    // fastercon redirect
+    // createRedirect({
+    //     fromPath: '/fastercon',
+    //     toPath: 'https://fastersteam.notion.site/fastersteam/FASTERCON21-e0655c8ee9b84c7fa9cf39859f7a2200',
+    //     isPermanent: true,
+    //     force: true,
+    // });
+
+    // redirect for API backend
+    createRedirect({
+        fromPath: '/api/*',
+        toPath: 'http://128.199.9.189/:splat',
+        isPermanent: true,
+        force: true,
+        statusCode: 200,
+    });
+
+    // Homepage Render
+    const homePage = data.allContentfulHomePage.edges[0];
+    actions.createPage({
+        path: '/',
+        context: {
+            homePageData: homePage.node,
+        },
+        component: require.resolve('./src/templates/homepage.js'),
+    });
+
+    // FASTERCON Lander Render
+    const landerPage = data.allContentfulFasterconLander.edges[0];
+    actions.createPage({
+        path: '/fastercon',
+        context: {
+            landerPageData: landerPage.node,
+        },
+        component: require.resolve('./src/templates/fastercon-lander.js'),
+    });
+
+    // About Page Render
+    const aboutPage = data.allContentfulAboutPage.edges[0];
+    actions.createPage({
+        path: '/about',
+        context: {
+            aboutPageData: aboutPage.node,
+        },
+        component: require.resolve('./src/templates/aboutpage.js'),
+    });
+
+    // Blog Post Render
     data.allContentfulBlogPost.edges.forEach((blogPost) => {
-        console.log('here is the slug', blogPost.node.slug);
         const { slug } = blogPost.node;
         actions.createPage({
             path: slug,
@@ -64,6 +149,7 @@ exports.createPages = async ({ actions, graphql }) => {
         });
     });
 
+    // Pokemon Page Render
     data.allPokemon.edges.forEach((pokemon) => {
         const { name } = pokemon.node;
         actions.createPage({
