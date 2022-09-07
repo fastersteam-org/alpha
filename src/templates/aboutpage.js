@@ -15,7 +15,7 @@ const AboutPage = ({ pageContext: { aboutPageData } }) => (
         </div>
 
         {/* main image Section */}
-        <div className="max-w-7xl pt-8 sm:pt-10 lg:pt-14 w-screen mx-auto">
+        <div className="max-w-7xl pt-8 sm:pt-10 lg:pt-14 w-screen lg:w-auto -ml-4 sm:-ml-6 lg:ml-0 mx-auto">
             <div className="w-full mx-auto">
                 <GatsbyImage
                     image={aboutPageData.heroImage.gatsbyImageData}

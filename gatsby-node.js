@@ -72,6 +72,9 @@ exports.createPages = async ({ actions, graphql }) => {
                         heroImage {
                             gatsbyImageData
                         }
+                        fasterFlyerMain {
+                            gatsbyImageData(width: 527)
+                        }
                     }
                 }
             }

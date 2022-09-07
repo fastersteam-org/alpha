@@ -48,8 +48,27 @@ const HomePage = ({ pageContext: { homePageData } }) => (
         </div>
 
         {/* About us Section */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 pb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
             {renderRichText(homePageData.subsections, richTextOptions)}
+        </div>
+
+        <div className="max-w-7xl mx-auto pt-4 px-4 sm:px-6 lg:px-20 flex flex-col items-center">
+            <a
+                href="https://bit.ly/FASTERCON22D1"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
+            >
+                Register for FASTERCON DAY 1
+            </a>
+            <a
+                href="https://bit.ly/FASTERCON22D2"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2 mt-5"
+            >
+                Register for FASTERCON DAY 2
+            </a>
         </div>
     </Layout>
 );
