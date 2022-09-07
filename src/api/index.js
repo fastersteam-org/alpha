@@ -8,7 +8,7 @@ export const handleJoinSubmit = async (data) => {
             url: 'https://faster-steam-staging.netlify.app/api/submit-form',
             data,
             headers: {
-                'Content-Type': 'multipart/form-data',
+                'Content-Type': 'application/json',
             },
         });
     } catch (err) {
