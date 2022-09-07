@@ -9,7 +9,7 @@ const navigation = {
     join: {
         name: 'Join',
         items: [
-            { name: 'FASTER Education', href: '/fastercon' },
+            { name: 'FASTER Education', href: '/EDU' },
             { name: 'FASTER PROS', href: '/fastercon' },
             { name: 'FASTER FRESH', href: '/fastercon' },
         ],

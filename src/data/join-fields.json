@@ -62,5 +62,23 @@
             "id": "",
             "value": "White"
         }
+    ],
+    "userType": [
+        {
+            "id": "education",
+            "value": "FASTER Education (K-12, post-secondary/college student)"
+        },
+        {
+            "id": "pros",
+            "value": "FASTER PROS (Employee of company in a Employee Resource Group/Business Resource Group/Affinity Group/Independent Tech Professional)"
+        },
+        {
+            "id": "fresh",
+            "value": "FASTER FRESH (High Tech Startup Entrepreneurs and Investors)"
+        },
+        {
+            "id": "ally",
+            "value": "FASTER Community Ally (I do not work in the STEAM industry, but I would like to support FASTER)"
+        }
     ]
 }

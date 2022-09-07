@@ -52,16 +52,18 @@ exports.createPages = async ({ actions, graphql }) => {
             allContentfulHomePage {
                 edges {
                     node {
+                        pageTitle
+                        subheader
                         subsections {
                             raw
                         }
+                        contentHeader
+                        header
                         heroImage {
                             gatsbyImageData(layout: FULL_WIDTH)
-                            description
+                            title
                         }
-                        header
-                        subheader
-                        contentHeader
+                        slug
                     }
                 }
             }
@@ -110,15 +112,24 @@ exports.createPages = async ({ actions, graphql }) => {
         statusCode: 200,
     });
 
-    // Homepage Render
-    const homePage = data.allContentfulHomePage.edges[0];
-    actions.createPage({
-        path: '/',
-        context: {
-            homePageData: homePage.node,
-        },
-        component: require.resolve('./src/templates/homepage.js'),
+    data.allContentfulHomePage.edges.forEach((edge) => {
+        const { slug } = edge.node;
+        actions.createPage({
+            path: slug,
+            context: {
+                pageData: edge.node,
+            },
+            component: require.resolve('./src/templates/homepage.js'),
+        });
     });
+    // const homePage = data.allContentfulHomePage.edges[0];
+    // actions.createPage({
+    //     path: '/',
+    //     context: {
+    //         homePageData: homePage.node,
+    //     },
+    //     component: require.resolve('./src/templates/homepage.js'),
+    // });
 
     // FASTERCON Lander Render
     const landerPage = data.allContentfulFasterconLander.edges[0];
