@@ -41,6 +41,17 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </p>
             </div>
 
+            {/* main image Section */}
+            <div className="max-w-7xl pt-8 sm:pt-10 lg:pt-14 mx-auto">
+                <div className="w-full mx-auto text-center">
+                    <GatsbyImage
+                        image={landerPageData.fasterFlyerMain.gatsbyImageData}
+                        alt=""
+                        layout="fullWidth"
+                    />
+                </div>
+            </div>
+
             <div className="max-w-7xl mx-auto pt-8 sm:pt-10 lg:pt-14 px-4 sm:px-6 lg:px-20 text-center">
                 <h2 className="text-xl font-bold text-faster-green sm:text-2xl lg:text-4xl">
                     REGISTER FOR FASTERCON22
@@ -137,7 +148,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </h3>
                 <p className="text-base text-faster-font-grey">
                     Erin Pangilinan (Salamat Inc, Founder and Chief Technology
-                    Officer, Faster Founder and National Board President)
+                    Officer, FASTER Founder and National Board President)
                     <br />
                     Ardees Rabang (Salamat Inc, Founder and Chief Production
                     Officer, FASTER Creative Advisor)
@@ -261,7 +272,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     </span>
                 </p>
                 <p className="text-base font-bold text-faster-font-grey py-2 pl-12">
-                    Track #2 FASTER FAVES
+                    Track #2 - FASTER FAVES
                     <span className="font-normal">
                         {' '}
                         - FASTER Subgroups by VErtical - Choose Your Own
@@ -296,6 +307,9 @@ FasterconLander.propTypes = {
     pageContext: PropTypes.shape({
         landerPageData: PropTypes.shape({
             heroImage: PropTypes.shape({
+                gatsbyImageData: PropTypes.shape({}),
+            }),
+            fasterFlyerMain: PropTypes.shape({
                 gatsbyImageData: PropTypes.shape({}),
             }),
         }),
