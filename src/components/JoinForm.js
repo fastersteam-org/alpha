@@ -38,8 +38,8 @@ const JoinForm = ({ referrer }) => {
                 personalSite: '',
             },
             userType:
-                joinFields.userType.find((item) => item.id === referrer).id ||
-                '',
+                (joinFields.userType.find((item) => item.id === referrer) || {})
+                    .id || '',
         },
         validationSchema,
         onSubmit: (values) => handleJoinSubmit(JSON.stringify(values)),
