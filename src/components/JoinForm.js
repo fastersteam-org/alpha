@@ -15,6 +15,7 @@ const validationSchema = Yup.object({
     education: Yup.object({
         school: Yup.string().required('Required'),
     }),
+    userType: Yup.string().required('Required'),
 });
 
 const JoinForm = ({ referrer }) => {
@@ -36,6 +37,9 @@ const JoinForm = ({ referrer }) => {
                 industry: [],
                 personalSite: '',
             },
+            userType:
+                joinFields.userType.find((item) => item.id === referrer).id ||
+                '',
         },
         validationSchema,
         onSubmit: (values) => handleJoinSubmit(JSON.stringify(values)),
@@ -474,11 +478,13 @@ const JoinForm = ({ referrer }) => {
                                         >
                                             <input
                                                 id={type.id}
-                                                name="notification-method"
+                                                name="userType"
                                                 type="radio"
+                                                value={type.id}
                                                 defaultChecked={
                                                     type.id === referrer
                                                 }
+                                                onChange={formik.handleChange}
                                                 className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                             />
                                             <label
