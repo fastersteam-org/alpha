@@ -65,7 +65,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     rel="noreferrer"
                     className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                 >
-                    RSVP to FASTERCON DAY 1
+                    Register for FASTERCON DAY 1
                 </a>
                 <a
                     href="https://bit.ly/FASTERCON22D2"
@@ -73,7 +73,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     rel="noreferrer"
                     className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2 mt-5"
                 >
-                    RSVP to FASTERCON DAY 2
+                    Register for FASTERCON DAY 2
                 </a>
             </div>
 
@@ -164,7 +164,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                         rel="noreferrer"
                         className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                     >
-                        RSVP to FASTERCON DAY 1
+                        Register for FASTERCON DAY 1
                     </a>
                 </div>
             </div>
@@ -201,7 +201,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                         rel="noreferrer"
                         className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                     >
-                        RSVP to FASTERCON DAY 2
+                        Register for FASTERCON DAY 2
                     </a>
                 </div>
 
@@ -287,7 +287,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     </span>
                 </p>
 
-                {/* RSVP to FASTERCON DAY 2 */}
+                {/* Register for FASTERCON DAY 2 */}
                 <div className="text-center pt-4">
                     <a
                         href="https://bit.ly/FASTERCON22D2"
@@ -295,7 +295,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                         rel="noreferrer"
                         className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                     >
-                        RSVP to FASTERCON DAY 2
+                        Register for FASTERCON DAY 2
                     </a>
                 </div>
             </div>
