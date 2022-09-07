@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { handleJoinSubmit } from '../api';
@@ -16,7 +17,7 @@ const validationSchema = Yup.object({
     }),
 });
 
-export default function JoinForm() {
+const JoinForm = ({ referrer }) => {
     const formik = useFormik({
         initialValues: {
             firstName: '',
@@ -476,7 +477,7 @@ export default function JoinForm() {
                                                 name="notification-method"
                                                 type="radio"
                                                 defaultChecked={
-                                                    type.id === 'education'
+                                                    type.id === referrer
                                                 }
                                                 className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                             />
@@ -513,4 +514,10 @@ export default function JoinForm() {
             </form>
         </>
     );
-}
+};
+
+JoinForm.propTypes = {
+    referrer: PropTypes.string,
+};
+
+export default JoinForm;

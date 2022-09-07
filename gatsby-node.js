@@ -122,14 +122,6 @@ exports.createPages = async ({ actions, graphql }) => {
             component: require.resolve('./src/templates/homepage.js'),
         });
     });
-    // const homePage = data.allContentfulHomePage.edges[0];
-    // actions.createPage({
-    //     path: '/',
-    //     context: {
-    //         homePageData: homePage.node,
-    //     },
-    //     component: require.resolve('./src/templates/homepage.js'),
-    // });
 
     // FASTERCON Lander Render
     const landerPage = data.allContentfulFasterconLander.edges[0];

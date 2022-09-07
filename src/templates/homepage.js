@@ -21,23 +21,42 @@ const richTextOptions = {
 };
 
 const convertPageTitle = (pageTitle, pageMap) => {
-    console.log(pageMap['education']);
     if (pageTitle.toLowerCase() === 'home page') return pageMap['home'];
     if (pageTitle.toLowerCase() === 'education page')
         return pageMap['education'];
+    if (pageTitle.toLowerCase() === 'pros page') return pageMap['pros'];
+    if (pageTitle.toLowerCase() === 'fresh page') return pageMap['fresh'];
 };
 
 const pageButtonsMap = {
     education: {
         buttons: [
             {
-                link: '/join',
+                link: '/join?ref=education',
                 buttonText: 'FASTERCON22 MENTOR SIGN UP',
                 type: 'internal',
             },
             {
-                link: '/join',
+                link: '/join?ref=education',
                 buttonText: 'FASTERCON22 MENTOR SIGN UP',
+                type: 'internal',
+            },
+        ],
+    },
+    pros: {
+        buttons: [
+            {
+                link: '/join?ref=pros',
+                buttonText: 'JOIN FASTER PROS',
+                type: 'internal',
+            },
+        ],
+    },
+    fresh: {
+        buttons: [
+            {
+                link: '/join?ref=fresh',
+                buttonText: 'JOIN FASTER FRESH',
                 type: 'internal',
             },
         ],
@@ -59,7 +78,6 @@ const pageButtonsMap = {
 };
 
 const renderPageButtons = (pageName) => {
-    console.log('here is the page name', pageName);
     return (
         <div className="max-w-7xl mx-auto pt-4 px-4 sm:px-6 lg:px-20 flex flex-col items-center">
             {pageName.buttons.map((button, index) => {
@@ -93,22 +111,6 @@ const renderPageButtons = (pageName) => {
                     );
                 }
             })}
-            {/* <a
-                href="https://bit.ly/FASTERCON22D1"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
-            >
-                Register for FASTERCON DAY 1
-            </a>
-            <a
-                href="https://bit.ly/FASTERCON22D2"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2 mt-5"
-            >
-                Register for FASTERCON DAY 2
-            </a> */}
         </div>
     );
 };
@@ -136,7 +138,13 @@ const HomePage = ({ pageContext: { pageData } }) => (
 
         {/* Landing Content Header */}
         <div className="max-w-7xl mx-auto pt-8 sm:pt-10 lg:pt-14 px-4 sm:px-6 lg:px-20">
-            <h2 className="text-xl font-bold text-faster-green sm:text-2xl lg:text-4xl">
+            <h2
+                className={`text-xl font-bold text-faster-green sm:text-2xl lg:text-4xl ${
+                    pageData.pageTitle.toLowerCase() === 'home page'
+                        ? ''
+                        : 'text-center'
+                }`}
+            >
                 {pageData.contentHeader}
             </h2>
         </div>
