@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { handleJoinSubmit } from '../api';
@@ -14,9 +15,10 @@ const validationSchema = Yup.object({
     education: Yup.object({
         school: Yup.string().required('Required'),
     }),
+    userType: Yup.string().required('Required'),
 });
 
-export default function JoinForm() {
+const JoinForm = ({ referrer }) => {
     const formik = useFormik({
         initialValues: {
             firstName: '',
@@ -35,6 +37,9 @@ export default function JoinForm() {
                 industry: [],
                 personalSite: '',
             },
+            userType:
+                (joinFields.userType.find((item) => item.id === referrer) || {})
+                    .id || '',
         },
         validationSchema,
         onSubmit: (values) => handleJoinSubmit(JSON.stringify(values)),
@@ -451,6 +456,48 @@ export default function JoinForm() {
                                 </div>
                             </div>
                         </div>
+
+                        {/* radio buttons */}
+                        <div className="mt-3">
+                            <label className="text-base font-medium text-gray-900">
+                                Please select the FASTER Component you would
+                                like to join
+                            </label>
+                            {/* <p className="text-sm leading-5 text-gray-500">
+                                How do you prefer to receive notifications?
+                            </p> */}
+                            <fieldset className="mt-4">
+                                <legend className="sr-only">
+                                    Notification method
+                                </legend>
+                                <div className="space-y-4">
+                                    {joinFields.userType.map((type) => (
+                                        <div
+                                            key={type.id}
+                                            className="flex items-center"
+                                        >
+                                            <input
+                                                id={type.id}
+                                                name="userType"
+                                                type="radio"
+                                                value={type.id}
+                                                defaultChecked={
+                                                    type.id === referrer
+                                                }
+                                                onChange={formik.handleChange}
+                                                className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                            />
+                                            <label
+                                                htmlFor={type.id}
+                                                className="ml-3 block text-sm font-medium text-gray-700"
+                                            >
+                                                {type.value}
+                                            </label>
+                                        </div>
+                                    ))}
+                                </div>
+                            </fieldset>
+                        </div>
                     </div>
                 </div>
 
@@ -473,4 +520,10 @@ export default function JoinForm() {
             </form>
         </>
     );
-}
+};
+
+JoinForm.propTypes = {
+    referrer: PropTypes.string,
+};
+
+export default JoinForm;
