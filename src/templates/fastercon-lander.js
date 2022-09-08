@@ -92,7 +92,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
                     FASTER Kick-Off Filipinx American History Month (FAHM)
-                    5:00PM - 5:30PM PST / 8:00PM - 8:30PM EST / 8:00AM - 8:30AM
+                    5:00PM - 5:15PM PST / 8:00PM - 8:15PM EST / 8:00AM - 8:15AM
                     PHILIPPINE TIME
                 </h3>
 
@@ -107,21 +107,29 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </p>
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    5:30PM - 6:30PM PST / 8:30PM - 9:30PM EST / 8:30AM - 9:30AM
+                    5:15PM - 6:00PM PST / 8:15PM - 9:00PM EST / 8:15AM - 9:00AM
                     PHILIPPINE TIME
+                </h3>
+                <p className="text-base text-faster-font-grey">
+                    Kumu, Director of Programming, Theresa Geneva Albea,
+                    Performance by DJ Rocky Rock
+                </p>
+                <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
+                    6:00PM - 7:00PM PST / 9:00PM - 10:00PM EST / 9:00AM -
+                    10:00AM PHILIPPINE TIME
                 </h3>
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold pt-2">
                     FASTER Keynote Panel
                 </h3>
-                <h3 className="text-base sm:text-lg text-faster-green font-bold">
-                    Featured FASTER FRESH Entrepreneurship Keynote Panel
-                </h3>
                 <p className="text-base text-faster-font-grey">
-                    Colin Gotra, Yield Games Guild (YGG), Chief Operations
-                    Officer
+                    Co-Moderators: Erin Pangilinan (Salamat Inc., Founder and
+                    Chief Technology Officer, FASTER Founder and National Board
+                    President), and Paul Gadi (Co-Founder and Chief Technology
+                    Officer, OP Games)
                     <br />
-                    Jen Yu, Yield Games Guild, Head of Design
+                    Keynote Panelists: Yield Games Guild (YGG) COO, Colin Goltra
+                    and Yield Games Guild (YGG) Head of Design, Jen Yu
                 </p>
 
                 <h3 className="text-base sm:text-lg font-bold py-2 text-faster-green">
@@ -136,8 +144,8 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </p>
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    6:30PM - 7:30PM PST / 9:30PM - 10:30PM EST / 9:30AM -
-                    10:30AM PHILIPPINE TIME
+                    7:00PM - 8:00PM PST / 10:00PM - 11:00PM EST / 10:00AM -
+                    11:00AM PHILIPPINE TIME
                 </h3>
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
                     Filipinx Americans in Creative Entertainment Technology
@@ -153,8 +161,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     Ardees Rabang (Salamat Inc, Founder and Chief Production
                     Officer, FASTER Creative Advisor)
                     <br />
-                    Hanna Lorica (FASTER FACETS Operations Coordinator,
-                    Chainlink)
+                    Hanna Lorica (FASTER FACETS Operations Coordinator)
                 </p>
 
                 <div className="text-center pt-4">
