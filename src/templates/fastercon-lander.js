@@ -123,10 +123,10 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     FASTER Keynote Panel
                 </h3>
                 <p className="text-base text-faster-font-grey">
-                    Co-Moderators: Erin Pangilinan (Salamat Inc., Founder and
+                    Co-Moderators: Erin Pangilinan - Salamat Inc., Founder and
                     Chief Technology Officer, FASTER Founder and National Board
-                    President), and Paul Gadi (Co-Founder and Chief Technology
-                    Officer, OP Games)
+                    President, and Paul Gadi - Co-Founder and Chief Technology
+                    Officer, OP Games
                     <br />
                     Keynote Panelists: Yield Games Guild (YGG) COO, Colin Goltra
                     and Yield Games Guild (YGG) Head of Design, Jen Yu
@@ -136,8 +136,8 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     Co-Moderated By
                 </h3>
                 <p className="text-base text-faster-font-grey">
-                    Erin Pangilinan (Founder and Chief Technology Officer,
-                    FASTER Founder and National Board President)
+                    Erin Pangilinan - Founder and Chief Technology Officer,
+                    FASTER Founder and National Board President
                     <br />
                     Paul Gadi - OP Games, Co-Founder and Chief Technology
                     Officer
@@ -155,13 +155,13 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     Co-Facillitators
                 </h3>
                 <p className="text-base text-faster-font-grey">
-                    Erin Pangilinan (Salamat Inc, Founder and Chief Technology
-                    Officer, FASTER Founder and National Board President)
+                    Erin Pangilinan - Salamat Inc, Founder and Chief Technology
+                    Officer, FASTER Founder and National Board President
                     <br />
-                    Ardees Rabang (Salamat Inc, Founder and Chief Production
-                    Officer, FASTER Creative Advisor)
+                    Ardees Rabang - Salamat Inc, Founder and Chief Production
+                    Officer, FASTER Creative Advisor
                     <br />
-                    Hanna Lorica (FASTER FACETS Operations Coordinator)
+                    Hanna Lorica - FASTER FACETS Operations Coordinator
                 </p>
 
                 <div className="text-center pt-4">
@@ -179,8 +179,8 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
             {/* schedule 2 */}
             <div className="max-w-7xl mx-auto pt-4 px-4 sm:px-6 lg:px-20">
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    FASTERCON Day 2 - FASTER Community Day Saturday, October 1st
-                    9:00AM-12:00PM PST
+                    9:00AM-12:00PM PST - FASTERCON Day 2 - FASTER Community Day
+                    Saturday, October 1st
                 </h3>
                 <p className="text-base sm:text-lg font-bold text-faster-green py-2">
                     *Filipinx American Fighting COVID19 ft. Filipino Young
@@ -217,10 +217,10 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     FASTERCON Day 2 Schedule
                 </h3>
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    FASTER Community and Networking Day - 9:30AM-12:00PM PST
+                    9:30AM-12:00PM PST - FASTER Community and Networking Day
                 </h3>
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    SATURDAY, OCTOBER 1 PANEL SESSION #1 - 9:30AM-10:00AM PST
+                    9:30AM-10:00AM PST - SATURDAY, OCTOBER 1 PANEL SESSION #1
                 </h3>
 
                 <p className="text-base text-faster-font-grey py-2 pl-8">
@@ -233,8 +233,8 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </p>
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    SATURDAY, October 1 10:00AM-11:00PM PST - 2:00PM-3:00PM EST
-                    NETWORKING BREAKOUT SESSION #2
+                    10:00AM-11:00PM PST - 2:00PM-3:00PM EST - SATURDAY, October
+                    1 - NETWORKING BREAKOUT SESSION #2
                 </h3>
                 <h3 className="text-base sm:text-lg font-bold text-faster-green pl-8 py-2">
                     For post-secondary Filipinx American students.
@@ -250,6 +250,10 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     Hardware)
                     <br />
                     Track #3 - Filipinx Americans in Creative/Design
+                    <span className="font-normal">
+                        {' '}
+                        - Facilitator: Jonard dela Rosa, Airbnb
+                    </span>
                     <br />
                     Track #4 - Filipinx Americans in Tech Enablement
                     <span className="font-normal">
@@ -282,7 +286,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     Track #2 - FASTER FAVES
                     <span className="font-normal">
                         {' '}
-                        - FASTER Subgroups by VErtical - Choose Your Own
+                        - FASTER Subgroups by Vertical - Choose Your Own
                         Adventure
                     </span>
                 </p>
