@@ -128,8 +128,8 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     President, and Paul Gadi - Co-Founder and Chief Technology
                     Officer, OP Games
                     <br />
-                    Keynote Panelists: Yield Games Guild (YGG) COO, Colin Goltra
-                    and Yield Games Guild (YGG) Head of Design, Jen Yu
+                    Keynote Panelists: Yield Guild Games (YGG) COO, Colin Goltra
+                    and Yield Guild Games (YGG) Head of Design, Jen Yu
                 </p>
 
                 <h3 className="text-base sm:text-lg font-bold py-2 text-faster-green">
