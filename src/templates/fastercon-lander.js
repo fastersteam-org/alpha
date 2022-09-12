@@ -163,7 +163,16 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     <br />
                     Hanna Lorica - FASTER FACETS Operations Coordinator
                 </p>
-
+                <div className="text-center pt-4">
+                    <a
+                        href="https://www.eventbrite.com/e/fastercon22-faster-facets-filipinx-americans-in-creative-entertainment-tech-tickets-417418147917"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
+                    >
+                        RSVP for FASTERCON FACETS BREAKOUT
+                    </a>
+                </div>
                 <div className="text-center pt-4">
                     <a
                         href="https://bit.ly/FASTERCON22D1"
@@ -201,6 +210,16 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     Investors, Creative
                 </p>
                 {/* Button for FASTERCON 2 RSVP */}
+                <div className="text-center pt-4">
+                    <a
+                        href="https://bit.ly/FASTERCON22COVID19"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
+                    >
+                        RSVP for FASTERCON DAY 2 Breakouts
+                    </a>
+                </div>
                 <div className="text-center pt-4">
                     <a
                         href="https://bit.ly/FASTERCON22D2"
