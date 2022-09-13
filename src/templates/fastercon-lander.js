@@ -58,7 +58,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </h2>
             </div>
 
-            <div className="max-w-7xl mx-auto pt-4 px-4 sm:px-6 lg:px-20 flex flex-col items-center">
+            <div className="max-w-7xl mx-auto pt-4 pb-4 px-4 sm:px-6 lg:px-20 flex flex-col items-center">
                 <a
                     href="https://bit.ly/FASTERCON22D1"
                     target="_blank"
