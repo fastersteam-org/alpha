@@ -68,12 +68,29 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     Register for FASTERCON DAY 1
                 </a>
                 <a
+                    href="https://www.eventbrite.com/e/fastercon22-faster-facets-filipinx-americans-in-creative-entertainment-tech-tickets-417418147917"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
+                >
+                    RSVP for FASTERCON FACETS Breakout
+                </a>
+                <a
                     href="https://bit.ly/FASTERCON22D2"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2 mt-5"
                 >
                     Register for FASTERCON DAY 2
+                </a>
+
+                <a
+                    href="https://bit.ly/FASTERCON22COVID19"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
+                >
+                    RSVP for FASTERCON DAY 2 Breakouts
                 </a>
             </div>
 
@@ -170,7 +187,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                         rel="noreferrer"
                         className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                     >
-                        RSVP for FASTERCON FACETS BREAKOUT
+                        RSVP for FASTERCON FACETS Breakout
                     </a>
                 </div>
                 <div className="text-center pt-4">
@@ -316,18 +333,6 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                         - Entrepreneurs and Investors
                     </span>
                 </p>
-
-                {/* Register for FASTERCON DAY 2 */}
-                <div className="text-center pt-4">
-                    <a
-                        href="https://bit.ly/FASTERCON22D2"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
-                    >
-                        Register for FASTERCON DAY 2
-                    </a>
-                </div>
             </div>
         </Layout>
     );
