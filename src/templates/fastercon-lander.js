@@ -58,7 +58,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </h2>
             </div>
 
-            <div className="max-w-7xl mx-auto pt-4 pb-4 px-4 sm:px-6 lg:px-20 flex flex-col items-center">
+            <div className="text-center pt-4">
                 <a
                     href="https://bit.ly/FASTERCON22D1"
                     target="_blank"
@@ -67,6 +67,8 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 >
                     Register for FASTERCON DAY 1
                 </a>
+            </div>
+            <div className="text-center pt-4">
                 <a
                     href="https://www.eventbrite.com/e/fastercon22-faster-facets-filipinx-americans-in-creative-entertainment-tech-tickets-417418147917"
                     target="_blank"
@@ -76,7 +78,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     RSVP for FASTERCON FACETS Breakout
                 </a>
             </div>
-            <div className="max-w-7xl mx-auto pt-4 pb-4 px-4 sm:px-6 lg:px-20 flex flex-col items-center">
+            <div className="text-center pt-4">
                 <a
                     href="https://bit.ly/FASTERCON22D2"
                     target="_blank"
@@ -85,6 +87,8 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 >
                     Register for FASTERCON DAY 2
                 </a>
+            </div>
+            <div className="text-center pt-4">
                 <a
                     href="https://bit.ly/FASTERCON22COVID19"
                     target="_blank"
