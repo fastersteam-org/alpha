@@ -4,6 +4,7 @@ import FacebookLogo from '../assets/svgs/facebook-logo.svg';
 import InstagramLogo from '../assets/svgs/instagram-logo.svg';
 import TwitterLogo from '../assets/svgs/twitter-logo.svg';
 import GithubLogo from '../assets/svgs/github-logo.svg';
+import LinkedinLogo from '../assets/svgs/linkedin-logo.svg';
 
 const navigation = {
     join: {
@@ -27,10 +28,6 @@ const navigation = {
         items: [
             { name: 'Twitter', href: 'https://twitter.com/fastersteam/' },
             // To be coded
-            {
-                name: 'LinkedIn',
-                href: 'https://www.linkedin.com/company/faster-steam/',
-            },
             { name: 'Facebook', href: 'https://www.facebook.com/fastersteam/' },
             {
                 name: 'Instagram',
@@ -76,6 +73,11 @@ const navigation = {
             name: 'GitHub',
             href: 'https://github.com/fastersteam-org',
             icon: GithubLogo,
+        },
+        {
+            name: 'LinkedIn',
+            href: 'https://www.linkedin.com/company/faster-steam/',
+            icon: LinkedinLogo,
         },
     ],
 };
