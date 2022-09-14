@@ -77,6 +77,9 @@ exports.createPages = async ({ actions, graphql }) => {
                         fasterFlyerMain {
                             gatsbyImageData(width: 527)
                         }
+                        fasterSpeakers1 {
+                            gatsbyImageData(width: 527)
+                        }
                     }
                 }
             }

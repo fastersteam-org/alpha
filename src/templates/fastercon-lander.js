@@ -205,11 +205,24 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                         Register for FASTERCON FACETS Breakout
                     </a>
                 </div>
+
+                {/* main image Section */}
+                <div className="max-w-7xl pt-8 sm:pt-10 lg:pt-14 mx-auto">
+                    <div className="w-full mx-auto text-center">
+                        <GatsbyImage
+                            image={
+                                landerPageData.fasterSpeakers1.gatsbyImageData
+                            }
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
+                </div>
             </div>
 
             {/* schedule 2 */}
             <div className="max-w-7xl mx-auto pt-4 px-4 sm:px-6 lg:px-20">
-                <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
+                <h3 className="text-base text-faster-green sm:text-lg lg:text-2xl font-bold py-2">
                     9:00AM-12:00PM PST - FASTERCON Day 2 - FASTER Community Day
                     Saturday, October 1st
                 </h3>
@@ -350,6 +363,9 @@ FasterconLander.propTypes = {
                 gatsbyImageData: PropTypes.shape({}),
             }),
             fasterFlyerMain: PropTypes.shape({
+                gatsbyImageData: PropTypes.shape({}),
+            }),
+            fasterSpeakers1: PropTypes.shape({
                 gatsbyImageData: PropTypes.shape({}),
             }),
         }),
