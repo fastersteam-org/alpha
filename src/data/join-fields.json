@@ -77,8 +77,70 @@
             "value": "FASTER FRESH (High Tech Startup Entrepreneurs and Investors)"
         },
         {
+            "id": "facets",
+            "value": "FASTER FACETS (Filipinx Americans in Creative Entertainment Technology and Startups)"
+        },
+        {
             "id": "ally",
             "value": "FASTER Community Ally (I do not work in the STEAM industry, but I would like to support FASTER)"
+        }
+    ],
+    "industryVertical": [
+        {
+            "id": "b2c",
+            "value": "B2C (includes social, ecommerce)"
+        },
+        {
+            "id": "b2b",
+            "value": "B2B (Enterprise Software As a Service - SaaS, Platform as a Service PaaS etc.)"
+        },
+        {
+            "id": "ai",
+            "value": "Artificial Intelligence (AI), Data Science (DS), Machine Learning (ML) - includes robotics"
+        },
+        {
+            "id": "health",
+            "value": "Healthtech, MedTech, Biotech, Health and Safety Tech"
+        },
+        {
+            "id": "agtech",
+            "value": "AgTech (Agriculture Tech)"
+        },
+        {
+            "id": "cleantech",
+            "value": "Cleantech (solar, energy)"
+        },
+        {
+            "id": "metaverse",
+            "value": "Metaverse (Augmented Reality - AR, Virtual Realit - VR, Mixed Reality (MR), eXtended Reality (XR), Sapital Computing)"
+        },
+        {
+            "id": "web3",
+            "value": "Web3/Cryptocurrency/Blockchain"
+        },
+        {
+            "id": "fintech",
+            "value": "Fintech (Finance Tech)"
+        },
+        {
+            "id": "devops",
+            "value": "Infrastructure/DevOps"
+        },
+        {
+            "id": "socialimpact",
+            "value": "Tech for Good, Social Impact, Civic Tech, GovTech"
+        },
+        {
+            "id": "edtech",
+            "value": "EdTech (Education)"
+        },
+        {
+            "id": "media",
+            "value": "Creative/Media/Entertainment"
+        },
+        {
+            "id": "gaming",
+            "value": "Gaming"
         }
     ]
 }

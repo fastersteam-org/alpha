@@ -26,28 +26,35 @@ const convertPageTitle = (pageTitle, pageMap) => {
         return pageMap['education'];
     if (pageTitle.toLowerCase() === 'pros page') return pageMap['pros'];
     if (pageTitle.toLowerCase() === 'fresh page') return pageMap['fresh'];
+    if (pageTitle.toLowerCase() === 'facets page') return pageMap['facets'];
+    if (pageTitle.toLowerCase() === 'join page') return pageMap['join'];
 };
 
 const pageButtonsMap = {
     education: {
         buttons: [
             {
-                link: '/join?ref=education',
+                link: '/join/signup?ref=education',
                 buttonText: 'FASTERCON22 MENTOR SIGN UP',
                 type: 'internal',
             },
             {
-                link: '/join?ref=education',
-                buttonText: 'FASTERCON22 MENTOR SIGN UP',
-                type: 'internal',
+                link: 'https://bit.ly/FASTERCON22Mentee',
+                buttonText: 'FASTERCON22 MENTEE SIGN UP',
+                type: 'external',
             },
         ],
     },
     pros: {
         buttons: [
             {
-                link: '/join?ref=pros',
+                link: '/join/signup?ref=pros',
                 buttonText: 'JOIN FASTER PROS',
+                type: 'internal',
+            },
+            {
+                link: '/join/FACETS',
+                buttonText: 'JOIN FASTER FACETS',
                 type: 'internal',
             },
         ],
@@ -55,8 +62,41 @@ const pageButtonsMap = {
     fresh: {
         buttons: [
             {
-                link: '/join?ref=fresh',
+                link: '/join/signup?ref=fresh',
                 buttonText: 'JOIN FASTER FRESH',
+                type: 'internal',
+            },
+        ],
+    },
+    facets: {
+        buttons: [
+            {
+                link: '/join/signup?ref=facets',
+                buttonText: 'JOIN FASTER FACETS',
+                type: 'internal',
+            },
+        ],
+    },
+    join: {
+        buttons: [
+            {
+                link: '/join/EDU',
+                buttonText: 'JOIN FASTER Education',
+                type: 'internal',
+            },
+            {
+                link: '/join/PROS',
+                buttonText: 'JOIN FASTER PROS',
+                type: 'internal',
+            },
+            {
+                link: '/join/FRESH',
+                buttonText: 'JOIN FASTER FRESH',
+                type: 'internal',
+            },
+            {
+                link: '/join/FACETS',
+                buttonText: 'JOIN FASTER FACETS',
                 type: 'internal',
             },
         ],

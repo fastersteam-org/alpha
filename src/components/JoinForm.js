@@ -34,8 +34,8 @@ const JoinForm = ({ referrer }) => {
             career: {
                 role: '',
                 company: '',
-                industry: [],
                 personalSite: '',
+                industry: '',
             },
             userType:
                 (joinFields.userType.find((item) => item.id === referrer) || {})
@@ -412,27 +412,7 @@ const JoinForm = ({ referrer }) => {
                             </div>
                         </div>
 
-                        <div className="grid md:grid-cols-2 grid-rows-2 grid-flow-col gap-x-10">
-                            <div className="col-span-1 mt-3">
-                                <label
-                                    htmlFor="industry"
-                                    className="block text-base font-medium text-gray-700"
-                                >
-                                    Industry
-                                </label>
-                                <div className="mt-1">
-                                    <input
-                                        type="text"
-                                        name="career.industry"
-                                        id="industry"
-                                        onChange={formik.handleChange}
-                                        value={formik.values.career.industry}
-                                        autoComplete="given-name"
-                                        className="shadow-sm focus:ring-faster-green focus:border-faster-green block w-full sm:text-sm border-gray-300 rounded-md"
-                                    />
-                                </div>
-                            </div>
-
+                        <div className="grid md:grid-cols-2 grid-flow-col gap-x-10">
                             <div className="col-span-1 mt-3">
                                 <label
                                     htmlFor="personalSite"
@@ -458,17 +438,20 @@ const JoinForm = ({ referrer }) => {
                         </div>
 
                         {/* radio buttons */}
-                        <div className="mt-3">
+                        <div className="mt-6">
                             <label className="text-base font-medium text-gray-900">
                                 Please select the FASTER Component you would
-                                like to join
+                                like to join*
                             </label>
-                            {/* <p className="text-sm leading-5 text-gray-500">
-                                How do you prefer to receive notifications?
-                            </p> */}
+                            {formik.touched.location &&
+                            formik.errors.location ? (
+                                <div className="text-faster-error-red">
+                                    {formik.errors.location}
+                                </div>
+                            ) : null}
                             <fieldset className="mt-4">
                                 <legend className="sr-only">
-                                    Notification method
+                                    FASTER Component Selection
                                 </legend>
                                 <div className="space-y-4">
                                     {joinFields.userType.map((type) => (
@@ -485,7 +468,46 @@ const JoinForm = ({ referrer }) => {
                                                     type.id === referrer
                                                 }
                                                 onChange={formik.handleChange}
-                                                className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                                className="h-4 w-4 border-gray-300 text-faster-green focus:ring-faster-green"
+                                            />
+                                            <label
+                                                htmlFor={type.id}
+                                                className="ml-3 block text-sm font-medium text-gray-700"
+                                            >
+                                                {type.value}
+                                            </label>
+                                        </div>
+                                    ))}
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div className="mt-6">
+                            <label className="text-base font-medium text-gray-900">
+                                Select your STEAM industry vertical that you
+                                most identify with (ex. I either work in/aim to
+                                work in x y z, I work/want to work in biotech)
+                            </label>
+                            <fieldset className="mt-4">
+                                <legend className="sr-only">
+                                    FASTER Component Selection*
+                                </legend>
+                                <div className="space-y-4">
+                                    {joinFields.industryVertical.map((type) => (
+                                        <div
+                                            key={type.id}
+                                            className="flex items-center"
+                                        >
+                                            <input
+                                                id={type.id}
+                                                name="career.industry"
+                                                type="radio"
+                                                value={type.id}
+                                                defaultChecked={
+                                                    type.id === referrer
+                                                }
+                                                onChange={formik.handleChange}
+                                                className="h-4 w-4 border-gray-300 text-faster-green focus:ring-faster-green"
                                             />
                                             <label
                                                 htmlFor={type.id}

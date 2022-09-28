@@ -1,32 +1,56 @@
 import React, { Fragment } from 'react';
 import { Link } from 'gatsby';
 import { Popover, Transition } from '@headlessui/react';
-import { ChevronDownIcon } from '@heroicons/react/solid';
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
 import { classNames } from '../utilities';
 import PropTypes from 'prop-types';
 
 const renderDropdownLinks = (navItems = []) =>
-    navItems.map((item) => (
-        <Link
-            key={item.name}
-            to={item.href}
-            className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-        >
-            <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-faster-green text-white sm:h-12 sm:w-12">
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-            </div>
-            <div className="ml-4">
-                <p className="text-base font-medium text-gray-900">
-                    {item.name}
-                </p>
-                {item.description ?? (
-                    <p className="mt-1 text-sm text-gray-500">
-                        {item.description}
+    navItems.map((item) => {
+        return item.linkType === 'internal' ? (
+            <Link
+                key={item.name}
+                to={item.href}
+                className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+            >
+                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-faster-green text-white sm:h-12 sm:w-12">
+                    <item.icon className="h-6 w-6" aria-hidden="true" />
+                </div>
+                <div className="ml-4">
+                    <p className="text-base font-medium text-gray-900">
+                        {item.name}
                     </p>
-                )}
-            </div>
-        </Link>
-    ));
+                    {item.description ?? (
+                        <p className="mt-1 text-sm text-gray-500">
+                            {item.description}
+                        </p>
+                    )}
+                </div>
+            </Link>
+        ) : (
+            <a
+                key={item.name}
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+            >
+                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-faster-green text-white sm:h-12 sm:w-12">
+                    <item.icon className="h-6 w-6" aria-hidden="true" />
+                </div>
+                <div className="ml-4">
+                    <p className="text-base font-medium text-gray-900">
+                        {item.name}
+                    </p>
+                    {item.description ?? (
+                        <p className="mt-1 text-sm text-gray-500">
+                            {item.description}
+                        </p>
+                    )}
+                </div>
+            </a>
+        );
+    });
 
 const HeaderDropdownLink = ({ linkData }) => (
     <Popover className="relative">
