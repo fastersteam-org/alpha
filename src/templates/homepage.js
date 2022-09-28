@@ -39,9 +39,9 @@ const pageButtonsMap = {
                 type: 'internal',
             },
             {
-                link: 'https://bit.ly/FASTERCON22Mentee',
+                link: '/join/signup?ref=education',
                 buttonText: 'FASTERCON22 MENTEE SIGN UP',
-                type: 'external',
+                type: 'internal',
             },
         ],
     },
@@ -105,12 +105,22 @@ const pageButtonsMap = {
         buttons: [
             {
                 link: 'https://bit.ly/FASTERCON22D1',
-                buttonText: 'Register for FASTERCON DAY 1',
+                buttonText: 'Register for FASTERCON DAY 1 Talks',
+                type: 'external',
+            },
+            {
+                link: 'https://www.eventbrite.com/e/fastercon22-faster-facets-filipinx-americans-in-creative-entertainment-tech-tickets-417418147917',
+                buttonText: 'Register for FASTERCON FACETS Breakout',
                 type: 'external',
             },
             {
                 link: 'https://bit.ly/FASTERCON22D2',
-                buttonText: 'Register for FASTERCON DAY 2',
+                buttonText: 'Register for FASTERCON DAY 2 Talks',
+                type: 'external',
+            },
+            {
+                link: 'https://bit.ly/FASTERCON22COVID19',
+                buttonText: 'Register for FASTERCON Networking Breakouts',
                 type: 'external',
             },
         ],

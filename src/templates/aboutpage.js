@@ -53,9 +53,9 @@ const AboutPage = ({ pageContext: { aboutPageData } }) => (
                 Christopher de Leon - Tech Committee Co-Chair (Web Team)
             </p>
             <p className="text-base py-2">
-                Stefanie Deo - Tech Committee Co-Chair (Data Team) AJ Sales -
-                FASTER Education
+                Stefanie Deo - Tech Committee Co-Chair (Data Team)
             </p>
+            <p className="text-base py-2">AJ Sales - FASTER Education</p>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 pt-8 sm:pt-10 lg:pt-14">
@@ -93,11 +93,12 @@ const AboutPage = ({ pageContext: { aboutPageData } }) => (
             <p className="text-base py-2">Earl Martin Valencia</p>
             <p className="text-base py-2">Kendrick Kho</p>
             <p className="text-base py-2">Kenn Daniel So</p>
+            <p className="text-base py-2">Christina Laskowski</p>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 pt-8 sm:pt-10 lg:pt-14">
             <h3 className="text-base sm:text-lg lg:text-2xl py-2">
-                Tech Comittee
+                Tech Committee
             </h3>
             <p className="text-base py-2">
                 Christopher de Leon, Tech Committee Co-Chair

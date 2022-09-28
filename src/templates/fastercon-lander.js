@@ -58,22 +58,44 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </h2>
             </div>
 
-            <div className="max-w-7xl mx-auto pt-4 px-4 sm:px-6 lg:px-20 flex flex-col items-center">
+            <div className="text-center pt-4">
                 <a
                     href="https://bit.ly/FASTERCON22D1"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                 >
-                    Register for FASTERCON DAY 1
+                    Register for FASTERCON DAY 1 Talks
                 </a>
+            </div>
+            <div className="text-center pt-4">
+                <a
+                    href="https://www.eventbrite.com/e/fastercon22-faster-facets-filipinx-americans-in-creative-entertainment-tech-tickets-417418147917"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
+                >
+                    Register for FASTERCON FACETS Breakout
+                </a>
+            </div>
+            <div className="text-center pt-4">
                 <a
                     href="https://bit.ly/FASTERCON22D2"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2 mt-5"
                 >
-                    Register for FASTERCON DAY 2
+                    Register for FASTERCON DAY 2 Talks
+                </a>
+            </div>
+            <div className="text-center pt-4">
+                <a
+                    href="https://bit.ly/FASTERCON22COVID19"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
+                >
+                    Register for FASTERCON Networking Breakouts
                 </a>
             </div>
 
@@ -92,7 +114,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
                     FASTER Kick-Off Filipinx American History Month (FAHM)
-                    5:00PM - 5:30PM PST / 8:00PM - 8:30PM EST / 8:00AM - 8:30AM
+                    5:00PM - 5:15PM PST / 8:00PM - 8:15PM EST / 8:00AM - 8:15AM
                     PHILIPPINE TIME
                 </h3>
 
@@ -107,37 +129,45 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </p>
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    5:30PM - 6:30PM PST / 8:30PM - 9:30PM EST / 8:30AM - 9:30AM
+                    5:15PM - 6:00PM PST / 8:15PM - 9:00PM EST / 8:15AM - 9:00AM
                     PHILIPPINE TIME
+                </h3>
+                <p className="text-base text-faster-font-grey">
+                    Kumu, Director of Programming, Theresa Geneva Albea,
+                    Performance by DJ Rocky Rock
+                </p>
+                <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
+                    6:00PM - 7:00PM PST / 9:00PM - 10:00PM EST / 9:00AM -
+                    10:00AM PHILIPPINE TIME
                 </h3>
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold pt-2">
                     FASTER Keynote Panel
                 </h3>
-                <h3 className="text-base sm:text-lg text-faster-green font-bold">
-                    Featured FASTER FRESH Entrepreneurship Keynote Panel
-                </h3>
                 <p className="text-base text-faster-font-grey">
-                    Colin Gotra, Yield Games Guild (YGG), Chief Operations
-                    Officer
+                    Co-Moderators: Erin Pangilinan - Salamat Inc., Founder and
+                    Chief Technology Officer, FASTER Founder and National Board
+                    President, and Paul Gadi - Co-Founder and Chief Technology
+                    Officer, OP Games
                     <br />
-                    Jen Yu, Yield Games Guild, Head of Design
+                    Keynote Panelists: Yield Guild Games (YGG) COO, Colin Goltra
+                    and Yield Guild Games (YGG) Head of Design, Jen Yu
                 </p>
 
                 <h3 className="text-base sm:text-lg font-bold py-2 text-faster-green">
                     Co-Moderated By
                 </h3>
                 <p className="text-base text-faster-font-grey">
-                    Erin Pangilinan (Founder and Chief Technology Officer,
-                    FASTER Founder and National Board President)
+                    Erin Pangilinan - Founder and Chief Technology Officer,
+                    FASTER Founder and National Board President
                     <br />
                     Paul Gadi - OP Games, Co-Founder and Chief Technology
                     Officer
                 </p>
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    6:30PM - 7:30PM PST / 9:30PM - 10:30PM EST / 9:30AM -
-                    10:30AM PHILIPPINE TIME
+                    7:00PM - 8:00PM PST / 10:00PM - 11:00PM EST / 10:00AM -
+                    11:00AM PHILIPPINE TIME
                 </h3>
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
                     Filipinx Americans in Creative Entertainment Technology
@@ -147,16 +177,14 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     Co-Facillitators
                 </h3>
                 <p className="text-base text-faster-font-grey">
-                    Erin Pangilinan (Salamat Inc, Founder and Chief Technology
-                    Officer, FASTER Founder and National Board President)
+                    Erin Pangilinan - Salamat Inc, Founder and Chief Technology
+                    Officer, FASTER Founder and National Board President
                     <br />
-                    Ardees Rabang (Salamat Inc, Founder and Chief Production
-                    Officer, FASTER Creative Advisor)
+                    Ardees Rabang - Salamat Inc, Founder and Chief Production
+                    Officer, FASTER Creative Advisor
                     <br />
-                    Hanna Lorica (FASTER FACETS Operations Coordinator,
-                    Chainlink)
+                    Hanna Lorica - FASTER FACETS Operations Coordinator
                 </p>
-
                 <div className="text-center pt-4">
                     <a
                         href="https://bit.ly/FASTERCON22D1"
@@ -164,16 +192,39 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                         rel="noreferrer"
                         className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                     >
-                        Register for FASTERCON DAY 1
+                        Register for FASTERCON DAY 1 Talks
                     </a>
+                </div>
+                <div className="text-center pt-4">
+                    <a
+                        href="https://www.eventbrite.com/e/fastercon22-faster-facets-filipinx-americans-in-creative-entertainment-tech-tickets-417418147917"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
+                    >
+                        Register for FASTERCON FACETS Breakout
+                    </a>
+                </div>
+
+                {/* main image Section */}
+                <div className="max-w-7xl pt-8 sm:pt-10 lg:pt-14 mx-auto">
+                    <div className="w-full mx-auto text-center">
+                        <GatsbyImage
+                            image={
+                                landerPageData.fasterSpeakers1.gatsbyImageData
+                            }
+                            alt=""
+                            layout="fullWidth"
+                        />
+                    </div>
                 </div>
             </div>
 
             {/* schedule 2 */}
             <div className="max-w-7xl mx-auto pt-4 px-4 sm:px-6 lg:px-20">
-                <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    FASTERCON Day 2 - FASTER Community Day Saturday, October 1st
-                    9:00AM-12:00PM PST
+                <h3 className="text-base text-faster-green sm:text-lg lg:text-2xl font-bold py-2">
+                    9:00AM-12:00PM PST - FASTERCON Day 2 - FASTER Community Day
+                    Saturday, October 1st
                 </h3>
                 <p className="text-base sm:text-lg font-bold text-faster-green py-2">
                     *Filipinx American Fighting COVID19 ft. Filipino Young
@@ -201,7 +252,17 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                         rel="noreferrer"
                         className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
                     >
-                        Register for FASTERCON DAY 2
+                        Register for FASTERCON DAY 2 Talks
+                    </a>
+                </div>
+                <div className="text-center pt-4">
+                    <a
+                        href="https://bit.ly/FASTERCON22COVID19"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
+                    >
+                        Register for FASTERCON Networking Breakouts
                     </a>
                 </div>
 
@@ -210,10 +271,10 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     FASTERCON Day 2 Schedule
                 </h3>
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    FASTER Community and Networking Day - 9:30AM-12:00PM PST
+                    9:30AM-12:00PM PST - FASTER Community and Networking Day
                 </h3>
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    SATURDAY, OCTOBER 1 PANEL SESSION #1 - 9:30AM-10:00AM PST
+                    9:30AM-10:00AM PST - SATURDAY, OCTOBER 1 PANEL SESSION #1
                 </h3>
 
                 <p className="text-base text-faster-font-grey py-2 pl-8">
@@ -226,8 +287,8 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </p>
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    SATURDAY, October 1 10:00AM-11:00PM PST - 2:00PM-3:00PM EST
-                    NETWORKING BREAKOUT SESSION #2
+                    10:00AM-11:00AM PST - 1:00PM-2:00PM EST - SATURDAY, October
+                    1 - NETWORKING BREAKOUT SESSION #2
                 </h3>
                 <h3 className="text-base sm:text-lg font-bold text-faster-green pl-8 py-2">
                     For post-secondary Filipinx American students.
@@ -241,8 +302,16 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     <br />
                     Track #2 - Filipinx Americans in Engineering (Software,
                     Hardware)
+                    <span className="font-normal">
+                        {' '}
+                        - AJ Sales, FASTER Youth Liaison
+                    </span>
                     <br />
                     Track #3 - Filipinx Americans in Creative/Design
+                    <span className="font-normal">
+                        {' '}
+                        - Facilitator: Jonard dela Rosa, Airbnb
+                    </span>
                     <br />
                     Track #4 - Filipinx Americans in Tech Enablement
                     <span className="font-normal">
@@ -275,8 +344,9 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     Track #2 - FASTER FAVES
                     <span className="font-normal">
                         {' '}
-                        - FASTER Subgroups by VErtical - Choose Your Own
-                        Adventure
+                        - FASTER Subgroups by Vertical - Choose Your Own
+                        Adventure, Michael Beadle, Christopher Navalta -
+                        Filipinos @ Ubisoft
                     </span>
                 </p>
                 <p className="text-base font-bold text-faster-font-grey py-2 pl-12">
@@ -286,18 +356,6 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                         - Entrepreneurs and Investors
                     </span>
                 </p>
-
-                {/* Register for FASTERCON DAY 2 */}
-                <div className="text-center pt-4">
-                    <a
-                        href="https://bit.ly/FASTERCON22D2"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center rounded-md border border-transparent bg-faster-dark-green px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-faster-green focus:ring-offset-2"
-                    >
-                        Register for FASTERCON DAY 2
-                    </a>
-                </div>
             </div>
         </Layout>
     );
@@ -310,6 +368,9 @@ FasterconLander.propTypes = {
                 gatsbyImageData: PropTypes.shape({}),
             }),
             fasterFlyerMain: PropTypes.shape({
+                gatsbyImageData: PropTypes.shape({}),
+            }),
+            fasterSpeakers1: PropTypes.shape({
                 gatsbyImageData: PropTypes.shape({}),
             }),
         }),
