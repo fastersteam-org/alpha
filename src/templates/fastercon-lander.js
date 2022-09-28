@@ -287,7 +287,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </p>
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
-                    10:00AM-11:00PM PST - 2:00PM-3:00PM EST - SATURDAY, October
+                    10:00AM-11:00AM PST - 1:00PM-2:00PM EST - SATURDAY, October
                     1 - NETWORKING BREAKOUT SESSION #2
                 </h3>
                 <h3 className="text-base sm:text-lg font-bold text-faster-green pl-8 py-2">
