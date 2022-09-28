@@ -133,8 +133,8 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     PHILIPPINE TIME
                 </h3>
                 <p className="text-base text-faster-font-grey">
-                    Kumu, Director of Programming, Theresa Geneva Albea,
-                    Performance by DJ Rocky Rock
+                    Kumu, Director of Programming, Theresa Geneva Albea, DJ
+                    Rocky Rock
                 </p>
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
                     6:00PM - 7:00PM PST / 9:00PM - 10:00PM EST / 9:00AM -
@@ -278,12 +278,14 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                 </h3>
 
                 <p className="text-base text-faster-font-grey py-2 pl-8">
-                    Filipino Young Leaders Program (FYLPRO) COVID19 Task Force
-                    Update on Filipinx COVID19 Vaccine Survey by FASTER Adviser
-                    and FYLPRO Vice Chair, COVID19 Task Force Lead - Leezel
-                    Tanglao and CYFAM Founder, Dr. Melissa Palma Moderator: Dome
-                    Lupac, Formerly, Centers for Disease Control and Prevention
-                    (CDC) Foundation
+                    Leezel Tanglao, FYLPRO, President
+                    <br />
+                    Dr. Melissa Palma, Council of Young Filipinx Americans in
+                    Medicine (CYFAM), Research Committee
+                    <br />
+                    Dome Lupac MPH, CHES
+                    <br />
+                    Samantha Sumait, Tayo, Research Team
                 </p>
 
                 <h3 className="text-base sm:text-lg lg:text-2xl font-bold py-2">
@@ -310,7 +312,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     Track #3 - Filipinx Americans in Creative/Design
                     <span className="font-normal">
                         {' '}
-                        - Facilitator: Jonard dela Rosa, Airbnb
+                        - Facilitator: Jonard La Rosa, Airbnb
                     </span>
                     <br />
                     Track #4 - Filipinx Americans in Tech Enablement
@@ -345,8 +347,9 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     <span className="font-normal">
                         {' '}
                         - FASTER Subgroups by Vertical - Choose Your Own
-                        Adventure, Michael Beadle, Christopher Navalta -
-                        Filipinos @ Ubisoft
+                        Adventure, Filipinx / Filipinx Americans in Gaming -
+                        Michael Beadle, Christopher Navalta - Filipinos @
+                        Ubisoft
                     </span>
                 </p>
                 <p className="text-base font-bold text-faster-font-grey py-2 pl-12">
