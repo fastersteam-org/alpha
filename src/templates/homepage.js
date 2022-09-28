@@ -38,7 +38,7 @@ const pageButtonsMap = {
             },
             {
                 link: '/join?ref=education',
-                buttonText: 'FASTERCON22 MENTOR SIGN UP',
+                buttonText: 'FASTERCON22 MENTEE SIGN UP',
                 type: 'internal',
             },
         ],
