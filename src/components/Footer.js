@@ -191,7 +191,7 @@ const Footer = () => (
                                 href="https://bit.ly/FASTERSUBS"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="w-full bg-faster-green border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-faster-green"
+                                className="w-full bg-faster-dark-green border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-faster-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-faster-green"
                             >
                                 Subscribe
                             </a>
