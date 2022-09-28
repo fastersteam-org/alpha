@@ -302,6 +302,10 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     <br />
                     Track #2 - Filipinx Americans in Engineering (Software,
                     Hardware)
+                    <span className="font-normal">
+                        {' '}
+                        - AJ Sales, FASTER Youth Liaison
+                    </span>
                     <br />
                     Track #3 - Filipinx Americans in Creative/Design
                     <span className="font-normal">
@@ -341,7 +345,7 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     <span className="font-normal">
                         {' '}
                         - FASTER Subgroups by Vertical - Choose Your Own
-                        Adventure
+                        Adventure, Michael Beadle, Christopher Navalta - Filipinos @ Ubisoft
                     </span>
                 </p>
                 <p className="text-base font-bold text-faster-font-grey py-2 pl-12">
