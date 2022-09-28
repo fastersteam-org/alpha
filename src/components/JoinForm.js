@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
-import { handleJoinSubmit } from '../api';
+import { handleJoinSubmit } from '../form-api';
 import joinFields from '../data/join-fields.json';
 
 const validationSchema = Yup.object({
