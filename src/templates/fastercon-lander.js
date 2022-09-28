@@ -345,7 +345,8 @@ const FasterconLander = ({ pageContext: { landerPageData } }) => {
                     <span className="font-normal">
                         {' '}
                         - FASTER Subgroups by Vertical - Choose Your Own
-                        Adventure, Michael Beadle, Christopher Navalta - Filipinos @ Ubisoft
+                        Adventure, Michael Beadle, Christopher Navalta -
+                        Filipinos @ Ubisoft
                     </span>
                 </p>
                 <p className="text-base font-bold text-faster-font-grey py-2 pl-12">

@@ -1,8 +1,10 @@
 import {
     CalendarIcon,
     InformationCircleIcon,
-    // BookOpenIcon,
-} from '@heroicons/react/outline';
+    GlobeAltIcon,
+    BuildingStorefrontIcon,
+    PencilIcon,
+} from '@heroicons/react/24/outline';
 
 export const navData = [
     {
@@ -12,6 +14,7 @@ export const navData = [
             {
                 name: 'About',
                 description: 'Learn about our mission.',
+                linkType: 'internal',
                 href: '/about',
                 icon: InformationCircleIcon,
             },
@@ -25,8 +28,23 @@ export const navData = [
             {
                 name: 'Events',
                 description: 'Check out upcoming events.',
+                linkType: 'internal',
                 href: '/fastercon',
                 icon: CalendarIcon,
+            },
+            {
+                name: 'Store',
+                description: 'Check out upcoming events.',
+                linkType: 'external',
+                href: 'https://filipinx-americans-in-steam-faster.myshopify.com/collections/all',
+                icon: BuildingStorefrontIcon,
+            },
+            {
+                name: 'Donate',
+                description: 'Check out upcoming events.',
+                linkType: 'internal',
+                href: '/donate',
+                icon: GlobeAltIcon,
             },
         ],
     },
@@ -34,5 +52,6 @@ export const navData = [
         name: 'Join',
         navType: 'link',
         href: '/join',
+        icon: PencilIcon,
     },
 ];

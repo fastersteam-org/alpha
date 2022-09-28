@@ -12,6 +12,7 @@ const navigation = {
         items: [
             { name: 'FASTER Education', href: '/join/EDU' },
             { name: 'FASTER PROS', href: '/join/PROS' },
+            { name: 'FASTER FACETS', href: '/join/FACETS' },
             { name: 'FASTER FRESH', href: '/join/FRESH' },
         ],
     },
@@ -43,6 +44,18 @@ const navigation = {
             },
             // { name: 'Slack', href: '#' },
             // { name: 'Discord', href: '#' },
+        ],
+    },
+    organization: {
+        name: 'Organization',
+        items: [
+            { name: 'About', href: '/about' },
+            {
+                name: 'Store',
+                href: 'https://filipinx-americans-in-steam-faster.myshopify.com/collections/all',
+                type: 'internal',
+            },
+            { name: 'Donate', href: '/donate' },
         ],
     },
     // about: {
@@ -93,6 +106,36 @@ const Footer = () => (
                     <div className="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                {navigation.organization.name}
+                            </h3>
+                            <ul role="list" className="mt-4 space-y-4">
+                                {navigation.organization.items.map(
+                                    (item, index) => (
+                                        <li key={`${item.name}-${index}`}>
+                                            {item.type !== 'internal' ? (
+                                                <Link
+                                                    to={item.href}
+                                                    className="text-base text-gray-300 hover:text-white"
+                                                >
+                                                    {item.name}
+                                                </Link>
+                                            ) : (
+                                                <a
+                                                    className="text-base text-gray-300 hover:text-white"
+                                                    href={item.href}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    {item.name}
+                                                </a>
+                                            )}
+                                        </li>
+                                    )
+                                )}
+                            </ul>
+                        </div>
+                        <div className="mt-12 md:mt-0">
+                            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                                 {navigation.join.name}
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
@@ -108,7 +151,9 @@ const Footer = () => (
                                 ))}
                             </ul>
                         </div>
-                        <div className="mt-12 md:mt-0">
+                    </div>
+                    <div className="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
                             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                                 {navigation.archive.name}
                             </h3>
@@ -125,9 +170,7 @@ const Footer = () => (
                                 ))}
                             </ul>
                         </div>
-                    </div>
-                    <div className="md:grid md:grid-cols-2 md:gap-8">
-                        <div>
+                        <div className="mt-12 md:mt-0">
                             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                                 {navigation.social.name}
                             </h3>
