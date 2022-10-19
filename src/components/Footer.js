@@ -27,6 +27,7 @@ const navigation = {
     social: {
         name: 'Social',
         items: [
+            { name: 'LinkedIn', href: 'https://www.linkedin.com/company/faster-steam/' },
             { name: 'Twitter', href: 'https://twitter.com/fastersteam/' },
             // To be coded
             { name: 'Facebook', href: 'https://www.facebook.com/fastersteam/' },
