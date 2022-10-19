@@ -34,14 +34,14 @@ export const navData = [
             },
             {
                 name: 'Store',
-                description: 'Check out upcoming events.',
+                description: 'Buy.',
                 linkType: 'external',
                 href: 'https://filipinx-americans-in-steam-faster.myshopify.com/collections/all',
                 icon: BuildingStorefrontIcon,
             },
             {
                 name: 'Donate',
-                description: 'Check out upcoming events.',
+                description: 'Give to FASTER.',
                 linkType: 'internal',
                 href: '/donate',
                 icon: GlobeAltIcon,
