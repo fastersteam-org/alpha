@@ -4,6 +4,7 @@ import {
     GlobeAltIcon,
     BuildingStorefrontIcon,
     PencilIcon,
+    CurrencyDollarIcon,
 } from '@heroicons/react/24/outline';
 
 export const navData = [
@@ -44,7 +45,7 @@ export const navData = [
                 description: 'Give to FASTER.',
                 linkType: 'internal',
                 href: '/donate',
-                icon: GlobeAltIcon,
+                icon: CurrencyDollarIcon,
             },
         ],
     },
