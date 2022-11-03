@@ -38,6 +38,7 @@
         "gatsby-plugin-sharp": "^4.9.1",
         "gatsby-source-contentful": "^7.7.2",
         "gatsby-source-filesystem": "^4.9.1",
+        "gatsby-source-shopify": "^7.13.0",
         "gatsby-transformer-sharp": "^4.9.0",
         "husky": "^8.0.1",
         "node-fetch": "^2.6.7",
