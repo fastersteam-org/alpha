@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import ProductCard from '../components/ProductCard';
 
 export const query = graphql`
     query MyQuery {
@@ -26,8 +27,14 @@ export const query = graphql`
 
 // eslint-disable-next-line react/prop-types
 const Products = ({ data }) => {
-    console.log(data);
-    return <div></div>;
+    const { nodes } = data.allShopifyProduct;
+    return (
+        <div>
+            {nodes?.map((product, index) => (
+                <ProductCard key={index} product={product} />
+            ))}
+        </div>
+    );
 };
 
 export default Products;
