@@ -93,16 +93,6 @@ exports.createPages = async ({ actions, graphql }) => {
                     }
                 }
             }
-            allContentfulTeamPage {
-                edges {
-                    node {
-                        id
-                        heroImage {
-                            gatsbyImageData
-                        }
-                    }
-                }
-            }
         }
     `);
 
