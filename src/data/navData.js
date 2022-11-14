@@ -1,10 +1,10 @@
 import {
     CalendarIcon,
     InformationCircleIcon,
-    GlobeAltIcon,
     BuildingStorefrontIcon,
     PencilIcon,
     CurrencyDollarIcon,
+    UserGroupIcon,
 } from '@heroicons/react/24/outline';
 
 export const navData = [
@@ -46,6 +46,13 @@ export const navData = [
                 linkType: 'internal',
                 href: '/donate',
                 icon: CurrencyDollarIcon,
+            },
+            {
+                name: 'Members',
+                description: 'Learn about the members.',
+                linkType: 'internal',
+                href: '/team',
+                icon: UserGroupIcon,
             },
         ],
     },

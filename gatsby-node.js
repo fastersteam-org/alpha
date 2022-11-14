@@ -93,6 +93,16 @@ exports.createPages = async ({ actions, graphql }) => {
                     }
                 }
             }
+            allContentfulTeamPage {
+                edges {
+                    node {
+                        id
+                        heroImage {
+                            gatsbyImageData
+                        }
+                    }
+                }
+            }
         }
     `);
 
@@ -144,6 +154,16 @@ exports.createPages = async ({ actions, graphql }) => {
             aboutPageData: aboutPage.node,
         },
         component: require.resolve('./src/templates/aboutpage.js'),
+    });
+
+    // Team Page Render
+    const teamPage = data.allContentfulAboutPage.edges[0];
+    actions.createPage({
+        path: '/team',
+        context: {
+            teamPageData: teamPage.node,
+        },
+        component: require.resolve('./src/templates/teampage.js'),
     });
 
     // Blog Post Render

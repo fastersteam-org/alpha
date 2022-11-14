@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
+import MemberDescription from '../components/MemberDescription';
 
 const AboutPage = ({ pageContext: { aboutPageData } }) => (
     <Layout>
@@ -42,6 +43,7 @@ const AboutPage = ({ pageContext: { aboutPageData } }) => (
         </div>
 
         {/* TEAM LISTING */}
+        <MemberDescription />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 pt-8 sm:pt-10 lg:pt-14">
             <h3 className="text-base sm:text-lg lg:text-2xl py-2">
                 National Board of Directors
