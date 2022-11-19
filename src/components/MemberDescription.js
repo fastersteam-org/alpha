@@ -14,7 +14,7 @@ const MemberDescription = ({
         <div className="overflow-hidden bg-white">
             <div className="relative mx-auto max-w-6xl py-14 px-4 sm:px-6 lg:px-8">
                 <div className="mt-7 lg:grid gap-0 lg:grid-cols-2">
-                    <div className="relative ml-8 mt-4 lg:col-start-1 lg:row-start-1">
+                    <div className="relative mt-4 lg:ml-8 md:-ml-12 lg:col-start-1 lg:row-start-1">
                         <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
                             <figure>
                                 <img
@@ -49,7 +49,7 @@ const MemberDescription = ({
                             </div>
                         </div>
                     </div>
-                    <div className="mr-8 -ml-24 lg:mt-0">
+                    <div className="mr-8 lg:-ml-24 md:ml-2 sm:ml-2 mt-2">
                         <h3 className="font-bold leading-8 text-faster-green sm:text-2xl">
                             BIO
                         </h3>
