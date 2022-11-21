@@ -146,6 +146,16 @@ exports.createPages = async ({ actions, graphql }) => {
         component: require.resolve('./src/templates/aboutpage.js'),
     });
 
+    // Team Page Render
+    const teamPage = data.allContentfulAboutPage.edges[0];
+    actions.createPage({
+        path: '/team',
+        context: {
+            teamPageData: teamPage.node,
+        },
+        component: require.resolve('./src/templates/teampage.js'),
+    });
+
     // Blog Post Render
     data.allContentfulBlogPost.edges.forEach((blogPost) => {
         const { slug } = blogPost.node;
