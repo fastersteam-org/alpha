@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
+import { navigate } from 'gatsby-link';
 
 const ProductCard = ({ product }) => {
     return (
@@ -8,7 +9,7 @@ const ProductCard = ({ product }) => {
             <AddButton onClick={() => alert('Added to cart!')}>
                 <p>+</p>
             </AddButton>
-            <ContentWrapper>
+            <ContentWrapper onClick={() => navigate(`${product.handle}`)}>
                 <Image src={product.variants[0].image.src} />
                 <TextWrapper>
                     <Title>{product.title}</Title>
