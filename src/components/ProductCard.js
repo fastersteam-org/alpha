@@ -2,10 +2,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { navigate } from 'gatsby-link';
+import useStore from '../context/StoreContext';
 
 const ProductCard = ({ product }) => {
+    const { addVariantToCart } = useStore();
     return (
         <Wrapper>
+            <AddButton onClick={() => addVariantToCart(product, 1)}>
+                <p>+</p>
+            </AddButton>
+            ;
             <ContentWrapper onClick={() => navigate(`${product.handle}`)}>
                 <Image src={product.variants[0].image.src} />
                 <TextWrapper>
@@ -67,4 +73,29 @@ const Price = styled.p`
     font-weight: normal;
     text-align: center;
     margin: 0;
+`;
+
+const AddButton = styled.div`
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #014c40;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :hover {
+        transform: scale(1.2);
+        transition: 0.2s;
+    }
+
+    p {
+        margin: 0;
+        color: white;
+        font-weight: bold;
+    }
 `;
