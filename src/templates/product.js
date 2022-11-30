@@ -4,10 +4,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Layout from '../components/layout';
-import useInput from '../utils/useInput';
+import PrimaryButton from '../components/PrimaryButton';
+import useStore from '../context/StoreContext';
+import useInput from '../utilities/useInput';
 
 const ProductTemplate = ({ pageContext }) => {
     const { product } = pageContext;
+    const { addVariantToCart } = useStore();
     const bind = useInput(1);
 
     return (
@@ -32,6 +35,10 @@ const ProductTemplate = ({ pageContext }) => {
                             {...bind}
                         />
                     </InputForm>
+                    <PrimaryButton
+                        text="Add to cart"
+                        onClick={() => addVariantToCart(product, bind.value)}
+                    />
                 </InfoContainer>
             </Wrapper>
         </Layout>
