@@ -4,9 +4,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Layout from '../components/layout';
+import useInput from '../utils/useInput';
 
 const ProductTemplate = ({ pageContext }) => {
     const { product } = pageContext;
+    const bind = useInput(1);
 
     return (
         <Layout>
@@ -27,7 +29,7 @@ const ProductTemplate = ({ pageContext }) => {
                             placeholder="1"
                             id="qty"
                             type="number"
-                            defaultValue={1}
+                            {...bind}
                         />
                     </InputForm>
                 </InfoContainer>
