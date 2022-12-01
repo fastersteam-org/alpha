@@ -21,7 +21,7 @@ const ProductTemplate = ({ pageContext }) => {
                 <InfoContainer>
                     <Title>{product.title}</Title>
                     <Subtitle>
-                        {product.priceRangeV2.maxVariantPrice.amount}0$
+                        {product.priceRangeV2.maxVariantPrice.amount}$
                     </Subtitle>
                     <p>{product.description}</p>
                     <InputForm>
