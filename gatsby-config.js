@@ -18,6 +18,13 @@ module.exports = {
                 environment: process.env.CONTENTFUL_ENV,
             },
         },
+        {
+            resolve: 'gatsby-source-shopify',
+            options: {
+                storeUrl: process.env.SHOPIFY_STORE_NAME,
+                password: process.env.SHOPIFY_ADMIN_ACCESS_TOKEN,
+            },
+        },
         'gatsby-plugin-postcss',
         'gatsby-plugin-sass',
         'gatsby-plugin-image',

@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+const path = require('path');
 
 // Create source nodes
 exports.sourceNodes = async ({
@@ -93,6 +94,26 @@ exports.createPages = async ({ actions, graphql }) => {
                     }
                 }
             }
+            allShopifyProduct {
+                edges {
+                    node {
+                        title
+                        handle
+                        variants {
+                            shopifyId
+                            image {
+                                src
+                            }
+                        }
+                        priceRangeV2 {
+                            maxVariantPrice {
+                                amount
+                            }
+                        }
+                        description
+                    }
+                }
+            }
         }
     `);
 
@@ -117,6 +138,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
     data.allContentfulHomePage.edges.forEach((edge) => {
         const { slug } = edge.node;
+        console.log('here is the slug', slug);
         actions.createPage({
             path: slug,
             context: {
@@ -167,6 +189,18 @@ exports.createPages = async ({ actions, graphql }) => {
                 pokemon: pokemon.node,
             },
             component: require.resolve('./src/templates/pokemon.js'),
+        });
+    });
+
+    // Iterate over all products and create a new page using a template
+    // The product "handle" is generated automatically by Shopify
+    data.allShopifyProduct.edges.forEach(({ node }) => {
+        actions.createPage({
+            path: `/products/${node.handle}`,
+            component: path.resolve(`./src/templates/product.js`),
+            context: {
+                product: node,
+            },
         });
     });
 };
