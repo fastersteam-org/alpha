@@ -11,7 +11,6 @@ const ProductCard = ({ product }) => {
             <AddButton onClick={() => addVariantToCart(product, 1)}>
                 <p>+</p>
             </AddButton>
-            ;
             <ContentWrapper onClick={() => navigate(`${product.handle}`)}>
                 <Image src={product.variants[0].image.src} />
                 <TextWrapper>
