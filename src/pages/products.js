@@ -2,7 +2,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import ProductCard from '../components/ProductCard';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 export const query = graphql`
     query MyQuery {
