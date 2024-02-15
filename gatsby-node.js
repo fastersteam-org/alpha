@@ -109,7 +109,7 @@ exports.createPages = async ({ actions, graphql }) => {
     // redirect for API backend
     createRedirect({
         fromPath: '/api/*',
-        toPath: 'http://128.199.9.189/:splat',
+        toPath: 'http://165.232.133.227/:splat',
         isPermanent: true,
         force: true,
         statusCode: 200,
