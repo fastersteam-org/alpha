@@ -1,3 +1,3 @@
 # Redirect to create a facade for fastercon website
 /fastercon    https://fastersteam.notion.site/fastersteam/FASTERCON21-e0655c8ee9b84c7fa9cf39859f7a2200
-/api/*  http://128.199.9.189/:splat  200
+/api/*  http://165.232.133.227/:splat  200
